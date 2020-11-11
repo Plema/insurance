@@ -75,6 +75,36 @@ $(document).ready(function(){
         ]
     });
 
+    $('.news-slider').slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                dots: true,
+                arrows: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true
+              }
+            }
+        ]
+    });
+
     $('.companies-item').matchHeight({
         byRow: false
     }); 
@@ -93,14 +123,18 @@ $(document).ready(function(){
             byRow: false
         }); 
 
+        $('.nav-item h4').matchHeight({
+            byRow: false
+        }); 
+
     }
 
     $('.insurance-item .img').height( $('.insurance-item .img').width() / 1.83 );
 
     if($(window).width() <= 767){
-        $('.insurance-items').height( ( $('.insurance-item').height() + 10.5 ) * 4 );
+      $('.insurance-items').height( ( $('.insurance-item').height() + 10.5 ) * 4 );
     }else{
-        $('.insurance-items').css({height: 'auto'})
+      $('.insurance-items').css({height: 'auto'})
     }
 
     $('.insurance-cost .show-more').click(function(){
@@ -118,10 +152,20 @@ $(document).ready(function(){
     });	
 
     if($(window).width() >= 768){
-        $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.12 );
+      $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.12 );
     }else{
-        $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.64 );
+      $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.64 );
     }
+
+    if($(window).width() >= 768){
+      $('.news-item .img').height( $('.news-item .img').width() / 1.72 );
+    }else{
+      $('.news-item .img').height( $('.news-item .img').width() / 1.64 );
+    }
+
+    $("#faq-accordion").accordionjs({
+        closeAble: true,
+    });
 
 });
 
@@ -130,15 +174,21 @@ $(window).resize(function(){
     $('.insurance-item .img').height( $('.insurance-item .img').width() / 1.83 );   
     
     if($(window).width() <= 767){
-        $('.insurance-items').height( ( $('.insurance-item').height() + 10.5 ) * 4 );
+      $('.insurance-items').height( ( $('.insurance-item').height() + 10.5 ) * 4 );
     }else{
-        $('.insurance-items').css({height: 'auto'})
+      $('.insurance-items').css({height: 'auto'})
     }
 
     if($(window).width() >= 768){
-        $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.12 );
+      $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.12 );
     }else{
-        $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.64 );
+      $('.best-deals-item .img').height( $('.insurance-item .img').width() / 1.64 );
+    }
+
+    if($(window).width() >= 768){
+      $('.news-item .img').height( $('.news-item .img').width() / 1.72 );
+    }else{
+      $('.news-item .img').height( $('.news-item .img').width() / 1.64 );
     }
 
 });
