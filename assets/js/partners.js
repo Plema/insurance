@@ -158,7 +158,7 @@ $(document).ready(function(){
               }
           }
       ]
-  });
+    });
 
   $('.earn-item .text h4').matchHeight({
     byRow: false
@@ -177,6 +177,30 @@ $(document).ready(function(){
 
   $("#my-accordion").accordionjs({
     closeAble: true,
+  });
+
+  $('.start-work-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+              rows: 2,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+        }
+    ]
   });
 
 });
