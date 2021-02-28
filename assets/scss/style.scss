@@ -126,6 +126,7 @@ a {
     padding: 1px 0 11px;
     ul{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         li{
             margin-right: 3px;
