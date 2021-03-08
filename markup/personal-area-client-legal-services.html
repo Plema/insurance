@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="css/personal-area.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/personal-area-client.min.css" data-inprogress="">
 </head>
 
 <body>
@@ -68,8 +68,8 @@
       <div class="container">
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="personal-area.html">Личный кабинет клиента</a></li>
-            <li><span>Поиск</span></li>
+            <li><a href="personal-area-client.html">Личный кабинет клиента</a></li>
+            <li><span>Услуги юриста</span></li>
         </ul>
       </div>
   </div>
@@ -77,53 +77,54 @@
    <!-- Основной контент -->
   <section class="wrapper">
 
-    <section class="personal-area-policy">
+    <section class="personal-area-legal-services">
         <div class="container">
             <div class="title">
-                <h3>Поиск полиса по параметрам</h3>
+                <h3>Услуги юриста </h3>
             </div>
-            <form>
-                <div class="form-content">
-                    <div class="inputs">
-                        <div class="input-item">
-                            <label>Номер полиса</label>
-                            <input type="search"> 
-                        </div>
-                        <div class="input-item">
-                            <label>Название страховой компании</label>
-                            <input type="text" placeholder="Выберете из списка"> 
-                        </div>
-                        <div class="input-item">
-                            <label>Вид страхования</label>
-                            <input type="text" placeholder="Выберете из списка"> 
-                        </div>
-                    </div>
-                    <div class="inputs">
-                        <div class="input-item">
-                            <label>Дата оформления</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
-                        </div>
-                        <div class="input-item">
-                            <label>Начало действия полиса</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
-                        </div>
-                        <div class="input-item">
-                            <label>Дата очередного платежа полиса</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
-                        </div>
-                        <div class="input-item">
-                            <label>Окончание действия полиса</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
-                        </div>
-                    </div>
-                    <div class="inputs"></div>
+            <div class="legal-services-content">
+                <div class="legal-services-text">
+                    <h3>Квалифицированная помощь при отказе страховых компаний выплачивать Вам положенные страховые выплаты. </h3>
+                    <h5>Мы осуществляем:</h5>
+                    <ul>
+                        <li>консультации;</li>
+                        <li>экспертизу документов, оценку судебной перспективы;</li>
+                        <li>выработку правовой позиции;</li>
+                        <li>подготовку процессуальных документов (искового заявления, претензий, жалоб, ответов на них и пр.);</li>
+                        <li>участие во всех назначенных судебных заседаниях.</li>
+                    </ul>
                 </div>
-                <button>Найти полис</button>
-            </form>
+                <div class="legal-services-items">
+                    <div class="legal-services-item">
+                        <a href="javascript:void(0)"></a>
+                        <div class="img" style="background: url('img/legal-services-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                        <div class="text">
+                            <h4>Консультация по страховым спорам</h4>
+                        </div>
+                    </div>
+                    <div class="legal-services-item">
+                        <a href="javascript:void(0)"></a>
+                        <div class="img" style="background: url('img/legal-services-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                        <div class="text">
+                            <h4>Консультация по нестраховым спорам</h4>
+                        </div>
+                    </div>
+                    <div class="legal-services-item">
+                        <a href="javascript:void(0)"></a>
+                        <div class="img" style="background: url('img/legal-services-img3.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                        <div class="text">
+                            <h4>Составление претензий</h4>
+                        </div>
+                    </div>
+                    <div class="legal-services-item">
+                        <a href="javascript:void(0)"></a>
+                        <div class="img" style="background: url('img/legal-services-img4.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                        <div class="text">
+                            <h4>Полное или частичное споровождение в суде</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -235,7 +236,7 @@
   <script src="js/jquery.showmore.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/personal-area.min.js"></script>
+  <script src="js/personal-area-client.min.js"></script>
 
 </body>
 

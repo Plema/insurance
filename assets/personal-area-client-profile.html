@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="css/personal-area.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/personal-area-client.min.css" data-inprogress="">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
       <div class="container">
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="personal-area.html">Личный кабинет клиента</a></li>
-            <li><span>Поиск</span></li>
+            <li><a href="personal-area-client.html">Личный кабинет клиента</a></li>
+            <li><span>Профиль</span></li>
         </ul>
       </div>
   </div>
@@ -30,52 +30,50 @@
    <!-- Основной контент -->
   <section class="wrapper">
 
-    <section class="personal-area-policy">
+    <section class="personal-area-profile">
         <div class="container">
             <div class="title">
-                <h3>Поиск полиса по параметрам</h3>
+                <h3>Профиль</h3>
             </div>
             <form>
                 <div class="form-content">
                     <div class="inputs">
                         <div class="input-item">
-                            <label>Номер полиса</label>
-                            <input type="search"> 
+                            <label>Фамилия</label>
+                            <input type="text" placeholder="Иванова"> 
                         </div>
                         <div class="input-item">
-                            <label>Название страховой компании</label>
-                            <input type="text" placeholder="Выберете из списка"> 
+                            <label>Имя</label>
+                            <input type="text" placeholder="Наталья"> 
                         </div>
                         <div class="input-item">
-                            <label>Вид страхования</label>
-                            <input type="text" placeholder="Выберете из списка"> 
+                            <label>Отчество</label>
+                            <input type="text" placeholder="Александровна"> 
+                        </div>
+                        <div class="input-item">
+                            <label>Дата рождения</label>
+                            <input class="date" type="date" placeholder="21.08.1990">
+                            <i class="icon-data"></i>
                         </div>
                     </div>
                     <div class="inputs">
                         <div class="input-item">
-                            <label>Дата оформления</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
+                            <label>Телефон</label>
+                            <input type="text" placeholder="+7 (123) 456 78 92">
                         </div>
                         <div class="input-item">
-                            <label>Начало действия полиса</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
+                            <label>E-mail</label>
+                            <input type="text" placeholder="test@gmail.com">
                         </div>
                         <div class="input-item">
-                            <label>Дата очередного платежа полиса</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
+                            <label>Пароль</label>
+                            <input type="text" placeholder="">
                         </div>
                         <div class="input-item">
-                            <label>Окончание действия полиса</label>
-                            <input class="date" type="date" placeholder="Выберете дату">
-                            <i class="icon-data"></i>
+                            <button>Изменить поля</button>
                         </div>
                     </div>
-                    <div class="inputs"></div>
                 </div>
-                <button>Найти полис</button>
             </form>
         </div>
     </section>
@@ -118,7 +116,7 @@
   <script src="js/jquery.showmore.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/personal-area.min.js"></script>
+  <script src="js/personal-area-client.min.js"></script>
 
 </body>
 

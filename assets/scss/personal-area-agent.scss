@@ -101,7 +101,7 @@
         }
     }
     @media (min-width: 768px) {
-        padding: 0;
+        padding: 12px 0 0;
         .brokers-content {
             margin: 0;
         }
@@ -212,9 +212,7 @@
 }
 
 .personal-description{
-    z-index: 0;
-    position: relative;
-    padding: 17px 0 15px;
+    padding: 19px 0 22px;
     .title{
         margin-bottom: 35px;
         text-align: center;
@@ -232,113 +230,6 @@
             line-height: 24px;
         }
     }
-    .personal-area-content{
-        article{
-            p{
-                font-size: 16px;
-                color: #373737;
-                line-height: 21px;
-                font-weight: normal;
-                padding-bottom: 21px;
-                strong{
-                    font-weight: 500;
-                    display: inline-block;
-                }
-            }
-        }
-        .showmore-button{
-            margin-top: 15px;
-            .showmore-button-inner {
-                font-size: 14px;
-                color: #758191;
-                line-height: 16px;
-                position: relative;
-                font-weight: normal;
-                padding-right: 12px;
-                display: inline-block;
-                text-decoration: underline;
-                transition: all 0.3s;
-                &:hover{
-                    color: #517ea1;
-                    &::after{
-                        color: #517ea1;
-                    }    
-                }
-                &::after{
-                    content: '>';
-                    top: 50%;
-                    right: 0;
-                    font-size: 14px;
-                    color: #758191;
-                    line-height: 16px;
-                    position: absolute;
-                    transform: translate(0, -50%);
-                    transition: all 0.3s;
-                }
-            }
-        }
-    }
-    @media (min-width: 768px) {
-        .title{
-            width: 80%;
-            margin: 0 auto 30px;
-            h3{
-                margin-bottom: 10px;
-            }
-            p{
-                text-align: center;
-            }
-        }
-    }
-    @media (min-width: 1024px) {
-        padding: 60px 0 40px;
-        .title {
-            width: 610px;
-            margin-bottom: 45px;
-            h3 {
-                font-size: 30px;
-                line-height: 34px;
-                margin-bottom: 30px;
-            }
-        }
-        form {
-            width: 610px;
-            .inputs {
-                display: flex;
-                justify-content: space-between;
-                input{
-                    width: 31%;
-                    margin: 0;
-                }
-            }
-            .button {
-                label {
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }
-    @media (min-width: 1280px) {
-        padding: 48px 0 30px;
-    }
-    @media (min-width: 1400px) {
-        padding: 83px 0 30px;
-        .title {
-            margin-bottom: 51px;
-            h3 {
-                font-size: 38px;
-                line-height: 42px;
-                margin-bottom: 40px;
-            }
-            p{
-                padding: 0 25px;
-            }
-        }
-    }
-}
-
-.personal-enumeration{
-    padding: 19px 0 22px;
     .personal-items{
         .personal-item{
             padding: 5px;
@@ -384,7 +275,7 @@
         }
     }
     .showmore-button{
-        margin-top: 26px;
+        margin-top: 14px;
         .showmore-button-inner {
             display: table;
             margin: 0 auto;
@@ -404,6 +295,16 @@
         }
     }
     @media (min-width: 768px) {
+        .title{
+            width: 80%;
+            margin: 0 auto 30px;
+            h3{
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: center;
+            }
+        }
         .personal-items{
             margin: 0 -1%;
             display: flex;
@@ -415,7 +316,16 @@
         }
     }
     @media (min-width: 1024px) {
-        padding: 28px 0 30px;
+        padding: 60px 0 30px;
+        .title {
+            width: 610px;
+            margin-bottom: 45px;
+            h3 {
+                font-size: 30px;
+                line-height: 34px;
+                margin-bottom: 30px;
+            }
+        }
         .personal-items {
             .personal-item {
                 width: 31.33%;
@@ -427,7 +337,18 @@
         
     }
     @media (min-width: 1400px) {
-        padding: 38px 0 30px;
+        padding: 85px 0 10px;
+        .title {
+            margin-bottom: 51px;
+            h3 {
+                font-size: 38px;
+                line-height: 42px;
+                margin-bottom: 40px;
+            }
+            p{
+                padding: 0 25px;
+            }
+        }
         .personal-items {
             .personal-item {
                 height: 208px;
@@ -653,177 +574,6 @@
             }
             p{
                 padding: 0 25px;
-            }
-        }
-    }
-}
-
-
-
-
-// Страница Поиск полиса по параметрам
-
-.personal-area-policy{
-    z-index: 0;
-    position: relative;
-    padding: 13px 0 15px;
-    .title{
-        margin-bottom: 35px;
-        text-align: center;
-        h3{
-            font-size: 24px;
-            color: #517EA1;
-            font-weight: 700;
-            line-height: 28px;
-            margin-bottom: 20px;
-        }
-        p{
-            font-size: 18px;
-            color: #595959;
-            text-align: left;
-            line-height: 24px;
-        }
-    }
-    form{
-        .form-content{
-            margin-bottom: 36px;
-        }
-        .inputs{
-            .input-item{
-                position: relative;
-                margin-bottom: 26px;
-                label{
-                    display: block;
-                    font-size: 16px;
-                    color: #373737;
-                    font-weight: 400;
-                    line-height: 19px;
-                    margin-bottom: 12px;
-                }
-                input{
-                    width: 100%;
-                    height: 40px;
-                    font-size: 15px;
-                    padding: 0 15px;
-                    font-weight: 300;
-                    color: #373737;
-                    line-height: 18px;
-                    background: #fff;
-                    border-radius: 8px;
-                    border: 1px solid #ccd7e2;
-                    &:last-child{
-                        margin-bottom: 0;
-                    }
-                }
-                input::placeholder{
-                    color: #90A1B8;
-                }
-                .error{
-                    border: 1px solid red;
-                }
-                i{
-                    z-index: 1;
-                    right: 11px;
-                    bottom: 12px;
-                    font-size: 14px;
-                    color: #90A1B8;
-                    position: absolute;
-                }
-            }
-        }
-        button{
-            display: table;
-            margin: 0 auto;
-            min-width: 255px;
-            font-size: 16px;
-            color: #FFFFFF;
-            line-height: 19px;
-            padding: 14px 12px;
-            text-align: center;
-            background: #517EA1;
-            border: 1px solid #517EA1;
-            transition: all 0.3s;
-            &:hover{
-                color: #517EA1;
-                background: #FFFFFF;
-            }
-        }
-    }
-    @media (min-width: 768px) {
-        padding: 30px 0 25px;
-        .title{
-            width: 80%;
-            margin: 0 auto 30px;
-            h3{
-                margin-bottom: 10px;
-            }
-            p{
-                text-align: center;
-            }
-        }
-        form{
-            .form-content{
-                margin-bottom: 10px;
-            }
-            .inputs{
-                margin: 0 -1%;
-                flex-wrap: wrap;
-                display: flex;
-                align-items: flex-start;
-                .input-item{
-                    width: 48%;
-                    margin: 0 1% 25px;
-                }
-            }
-        }
-    }
-    @media (min-width: 1024px) {
-        padding: 38px 0 40px;
-        .title {
-            width: 610px;
-            margin-bottom: 45px;
-            h3 {
-                font-size: 30px;
-                line-height: 34px;
-                margin-bottom: 30px;
-            }
-        }
-        form {
-            .inputs {
-                .input-item {
-                    width: 31.33%;
-                }
-            }
-        }
-    }
-    @media (min-width: 1280px) {
-        padding: 38px 0 30px;
-    }
-    @media (min-width: 1400px) {
-        padding: 38px 0 30px;
-        .title {
-            margin-bottom: 51px;
-            h3 {
-                font-size: 38px;
-                line-height: 42px;
-                margin-bottom: 40px;
-            }
-            p{
-                padding: 0 25px;
-            }
-        }
-        form {
-            .form-content {
-                margin-bottom: 22px;
-            }
-            .inputs {
-                .input-item {
-                    width: 23%;
-                    margin: 0 1% 32px;
-                }
-            }
-            button {
-                min-width: 190px;
             }
         }
     }
