@@ -68,7 +68,8 @@
       <div class="container">
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><span>Личный кабинет агента</span></li>
+            <li><a href="personal-area-agent.html">Личный кабинет агента</a></li>
+            <li><span>Поиск</span></li>
         </ul>
       </div>
   </div>
@@ -76,74 +77,53 @@
    <!-- Основной контент -->
   <section class="wrapper">
 
-    <section class="personal-banner">
-        <div class="container">
-          <div class="brokers-content">
-              <div class="brokers-item">
-                  <div class="img" style="background: url('img/banner-img6.jpg') no-repeat 8% 50%; background-size: cover;"></div>
-                  <div class="content">
-                    <div class="text">
-                      <h2>Станьте агентом с доходом <span>от 14 000 руб. в день</span></h2>
-                      <a href="javasceipr:void(0)">Присоедениться</a>
-                    </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </section>
-
-    <section class="personal-description">
+    <section class="personal-area-policy">
         <div class="container">
             <div class="title">
-                <h3>Личный кабинет</h3>
+                <h3>Поиск полиса по параметрам</h3>
             </div>
-            <div class="personal-items">
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img1.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Расчитать стоимость страховки и купить онлайн</h4>
+            <form>
+                <div class="form-content">
+                    <div class="inputs">
+                        <div class="input-item">
+                            <label>Номер полиса</label>
+                            <input type="search"> 
+                        </div>
+                        <div class="input-item">
+                            <label>Название страховой компании</label>
+                            <input type="text" placeholder="Выберете из списка"> 
+                        </div>
+                        <div class="input-item">
+                            <label>Вид страхования</label>
+                            <input type="text" placeholder="Выберете из списка"> 
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input-item">
+                            <label>Дата оформления</label>
+                            <input class="date" type="date" placeholder="Выберете дату">
+                            <i class="icon-data"></i>
+                        </div>
+                        <div class="input-item">
+                            <label>Начало действия полиса</label>
+                            <input class="date" type="date" placeholder="Выберете дату">
+                            <i class="icon-data"></i>
+                        </div>
+                        <div class="input-item">
+                            <label>Дата очередного платежа полиса</label>
+                            <input class="date" type="date" placeholder="Выберете дату">
+                            <i class="icon-data"></i>
+                        </div>
+                        <div class="input-item">
+                            <label>Окончание действия полиса</label>
+                            <input class="date" type="date" placeholder="Выберете дату">
+                            <i class="icon-data"></i>
+                        </div>
+                    </div>
+                    <div class="inputs"></div>
                 </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img2.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Спецпредложения, Акции</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img3.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Полисы</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img4.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Информация от ООО “ Лидер 24 “</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img5.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Бланк строгой отчетности</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img6.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Он-лайн полисы</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img7.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Страховые компании</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img8.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Стать страховым агентом?</h4>
-                </div>
-                <div class="personal-item">
-                  <div class="img" style="background: url(img/enumeration-agent-img9.jpg) 100% 50% no-repeat; background-size: cover;"></div>
-                  <a href="javascritp:void(0)"></a>
-                  <h4>Услуги юриста</h4>
-                </div>
-            </div>
+                <button>Найти полис</button>
+            </form>
         </div>
     </section>
 
