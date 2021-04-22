@@ -1,4 +1,7 @@
-.popup{
+.connecting, 
+.write-me, 
+.send-form, 
+.become-partner{
     position: relative;    
     position: fixed;
     min-width: 320px;
@@ -284,7 +287,7 @@
             line-height: 28px;
             margin-bottom: 30px;
         }
-        .selector{
+        .selector-tabs{
             display: flex;
             justify-content: center;
             cursor: pointer;
@@ -305,7 +308,11 @@
             }
         }
     }
+    .active{
+        display: block;
+    }
     form{
+        display: none;
         .inputs{
             margin-bottom: 26px;
             input{
@@ -438,6 +445,7 @@
         }
     }
     
+    
     .title{
         margin-bottom: 24px;
         text-align: center;
@@ -448,7 +456,8 @@
             line-height: 28px;
             margin-bottom: 30px;
         }
-        .selector{
+        
+        .selector-tabs{
             display: flex;
             justify-content: center;
             cursor: pointer;
@@ -469,7 +478,11 @@
             }
         }
     }
+    .active{
+        display: block;
+    }
     form{
+        display: none;
         .inputs{
             margin-bottom: 26px;
             .wrapper{
@@ -644,5 +657,9 @@
 .registration,
 .recovery{          
     display: none;
+}
+
+.open-popup{
+    display: block;
 }
 

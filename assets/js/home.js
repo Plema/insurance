@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     $('.banner-slider').slick({
         dots: true,
-        autoplay: true,
+        // autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: false,
-        autoplaySpeed: 4000,
+        // autoplaySpeed: 4000,
         nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         responsive: [

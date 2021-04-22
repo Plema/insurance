@@ -120,7 +120,7 @@
     </nav>
 </div>
 
-<div class="error">
+<div class="popup error">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
@@ -129,19 +129,34 @@
     </div>
 </div>
 
-<div class="login">
+<div class="popup login">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
     <div class="content-popup">
         <div class="title">
             <h3>Войти как</h3>
-            <div class="selector">
-                <div class="active">Клиент</div>
-                <div>Агент</div>
+            <div class="selector-tabs">
+                <div data-group="client" class="active">Клиент</div>
+                <div data-group="agent">Агент</div>
             </div>
         </div>
-        <form>
+        <form class="client active">
+            <div class="inputs">
+              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error --> 
+              <input type="text" placeholder="Ваш e-mail">
+              <div class="password">
+                <input type="text" placeholder="Введите пароль">
+                <a href="javascript:void(0)">Забыли пароль?</a>
+              </div>
+              
+            </div>
+            <div class="button">
+                <button>Войти</button>
+                <a href="javascript:void(0)">Зарегестрироватся</a>
+            </div>
+          </form>
+          <form class="agent">
             <div class="inputs">
               <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error --> 
               <input type="text" placeholder="Ваш e-mail">
@@ -159,19 +174,19 @@
     </div>
 </div>
 
-<div class="registration">
+<div class="popup registration">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
     <div class="content-popup">
         <div class="title">
             <h3>Зарегистрироваться как</h3>
-            <div class="selector">
-                <div class="active">Клиент</div>
-                <div>Агент</div>
+            <div class="selector-tabs">
+                <div data-group="client" class="active">Клиент</div>
+                <div data-group="agent">Агент</div>
             </div>
         </div>
-        <form>
+        <form class="client active">
             <div class="inputs">
               <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
                 <div class="wrapper">
@@ -201,23 +216,54 @@
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
                 <button>Отправить</button>
             </div>
-          </form>
+        </form>
+        <form class="agent">
+        <div class="inputs">
+            <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+            <div class="wrapper">
+                <div class="subtitle">Впишите ваше имя</div>
+                <input type="text" placeholder="Ваше имя">
+            </div>
+            <div class="wrapper">
+                <div class="subtitle">Впишите ваш телефон</div>                     
+                <input type="text" placeholder="Ваш e-mail">  
+            </div>
+            <div class="wrapper">
+                <div class="subtitle">Впишите вашу почту</div>
+                <input type="text" placeholder="Ваш телефон">
+            </div>
+            <div class="password">
+                <div class="wrapper">
+                    <div class="subtitle">Придумайте пароль</div>
+                    <input type="text" >
+                </div>
+                <div class="wrapper">
+                    <div class="subtitle">Повторите пароль</div>
+                    <input type="text" >
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
+            <button>Отправить</button>
+        </div>
+        </form>
     </div>
 </div> 
 
-<div class="recovery">
+<div class="popup recovery">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
     <div class="content-popup">
         <div class="title">
             <h3>Восстановленте пароля</h3>
-            <div class="selector">
-                <div class="active">Клиент</div>
-                <div>Агент</div>
+            <div class="selector-tabs">
+                <div data-group="client" class="active">Клиент</div>
+                <div data-group="agent">Агент</div>
             </div>
         </div>
-        <form>
+        <form class="client active">
             <div class="inputs">
               <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
                 <div class="wrapper">
@@ -242,6 +288,32 @@
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
                 <button>Отправить</button>
             </div>
-          </form>
+        </form>
+        <form class="agent">
+            <div class="inputs">
+              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+                <div class="wrapper">
+                    <div class="subtitle">Впишите вашу почту</div>
+                    <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="wrapper">
+                    <p>Ссылка для подтверждения нового пароля будет отправлена на вашу почту.</p> 
+                </div>
+                <div class="password">
+                    <div class="wrapper">
+                        <div class="subtitle">Введите новый пароль</div>
+                        <input type="text" >
+                    </div>
+                    <div class="wrapper">
+                        <div class="subtitle">Повторите пароль</div>
+                        <input type="text" >
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
+                <button>Отправить</button>
+            </div>
+        </form>
     </div>
 </div> 

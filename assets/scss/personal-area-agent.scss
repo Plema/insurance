@@ -837,6 +837,7 @@
                         height: 100%;
                         cursor: pointer;
                         position: absolute;
+                        z-index: 2;
                     }
                 }
                 .jcf-checked{
@@ -3267,9 +3268,18 @@
                     margin-bottom: 0;
                 }
             }
-            input::placeholder{
+
+            select{
+                background: url('../img/polygon4.png') no-repeat right ;
+            }
+            
+            select, input::placeholder{
                 color: #90A1B8;
             }
+            option{
+                color: #373737;
+            }
+
             .error{
                 border: 1px solid red;
             }
@@ -3386,6 +3396,7 @@
             .button {
                 label {
                     margin-bottom: 40px;
+                    width: 85%;
                 }
             }
         }

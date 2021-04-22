@@ -16,6 +16,17 @@
   <!-- Header -->
   <include src="assets/templates/header.html"></include>
 
+  <div class="bread-crumbs">
+    <div class="container">
+      <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index-corporate.html">Корпоративным клиентам</a></li>
+          <li><a href="corporative-clients-cars.html">Автомобили</a></li>
+          <li><span>Расчет стоимости полиса ОСАГО</span></li>
+      </ul>
+    </div>
+  </div>
+
    <!-- Основной контент -->
   <section class="wrapper">
     
@@ -139,7 +150,8 @@
             <li>Все значения подставляются в формулу: П = ТБ * КТ * КБМ * КВС * КО * КМ * КС * КН * КП.</li>
             <li>Следует сразу отметить, что дороже всего обойдется покупка полиса новичкам, проживающим в крупных городах. Но чем дальше от мегаполиса и чем опытней будет водитель, тем меньше для него размер страховой премии.</li>
         </ul>
-          </div>
+        </div>
+        <button>Хочу знать больше об осаго</button>
       </div>
     </section>
 
@@ -290,7 +302,7 @@
               <span>Текст</span>
             </div>
           </form>
-          <div class="form-desctop">
+          <div class="form-desktop">
             <form>
                 <div class="row">
                   <div class="selects">
@@ -471,23 +483,7 @@
       </div>
     </section>
 
-    <section class="order-polices">
-      <div class="container">
-        <div class="title">
-          <h3>Заказать полис</h3>
-        </div>
-        <form>
-          <div class="inputs">
-            <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-            <input type="text" placeholder="Ваше имя"> 
-            <input type="text" placeholder="Ваш телефон">
-            <button>Заказать</button>
-          </div>          
-                      
-          
-        </form>
-      </div>
-    </section>
+
 
     <section class="online-calculating">
       <div class="container">
@@ -1004,7 +1000,6 @@
   <script src="js/jcf.min.js"></script>
   <script src="js/jcf.checkbox.min.js"></script>
   <script src="js/jcf.radio.min.js"></script>
-  <script src="js/jcf.select.min.js"></script>
   <script src="js/accordion.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>

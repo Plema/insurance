@@ -124,6 +124,7 @@
             .clients-amount-items {
                 margin: 0 -1.5%;
                 display: flex;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
                 .clients-amount-item{
                     width: 47%;
@@ -781,6 +782,7 @@
                         height: 100%;
                         cursor: pointer;
                         position: absolute;
+                        z-index: 2;
                     }
                 }
                 .jcf-checked{

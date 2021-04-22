@@ -1,7 +1,7 @@
 /*!
  * JavaScript Custom Forms : Select Module
  *
- * Copyright 2014-2016 PSD2HTML - http://psd2html.com/jcf
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
  * Released under the MIT license (LICENSE.txt)
  *
  * Version: 1.2.3
@@ -38,16 +38,6 @@ jcf.addModule(function($, window) {
 			if (this.instance) {
 				this.instance.destroy();
 			}
-
-			if (this.isListBox() && !this.options.multipleCompactStyle && this.options.isMobileDevice && this.options.wrapNativeOnMobile) {
-				this.options.multipleCompactStyle = true;
-			}
-
-			// workaround for iOS issue with multiple selects and autoselection of first option 
-			if (this.options.isMobileDevice && this.options.multipleCompactStyle && this.options.wrapNativeOnMobile && !this.element.children('optgroup:first-child').length) {
-				$('<optgroup disabled hidden></optgroup>').prependTo(this.element);
-			}
-
 			if (this.isListBox() && !this.options.multipleCompactStyle) {
 				this.instance = new ListBox(this.options);
 			} else {

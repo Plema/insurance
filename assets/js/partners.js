@@ -177,6 +177,7 @@ $(document).ready(function(){
 
   $("#my-accordion").accordionjs({
     closeAble: true,
+    animate:"slow",
   });
 
   $('.start-work-slider').slick({

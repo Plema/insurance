@@ -74,6 +74,10 @@ select {
   appearance: none;
 }
 
+select{
+    background: url('../img/polygon4.png') no-repeat right ;
+}
+
 button {
     cursor: pointer;
 }
@@ -100,6 +104,10 @@ a {
 
 .wrapper{
     overflow: hidden;
+}
+
+.active{
+    display: block;
 }
 
 .container {

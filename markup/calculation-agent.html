@@ -183,7 +183,7 @@
     </nav>
 </div>
 
-<div class="error">
+<div class="popup error">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
@@ -192,19 +192,34 @@
     </div>
 </div>
 
-<div class="login">
+<div class="popup login">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
     <div class="content-popup">
         <div class="title">
             <h3>Войти как</h3>
-            <div class="selector">
-                <div class="active">Клиент</div>
-                <div>Агент</div>
+            <div class="selector-tabs">
+                <div data-group="client" class="active">Клиент</div>
+                <div data-group="agent">Агент</div>
             </div>
         </div>
-        <form>
+        <form class="client active">
+            <div class="inputs">
+              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error --> 
+              <input type="text" placeholder="Ваш e-mail">
+              <div class="password">
+                <input type="text" placeholder="Введите пароль">
+                <a href="javascript:void(0)">Забыли пароль?</a>
+              </div>
+              
+            </div>
+            <div class="button">
+                <button>Войти</button>
+                <a href="javascript:void(0)">Зарегестрироватся</a>
+            </div>
+          </form>
+          <form class="agent">
             <div class="inputs">
               <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error --> 
               <input type="text" placeholder="Ваш e-mail">
@@ -222,19 +237,19 @@
     </div>
 </div>
 
-<div class="registration">
+<div class="popup registration">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
     <div class="content-popup">
         <div class="title">
             <h3>Зарегистрироваться как</h3>
-            <div class="selector">
-                <div class="active">Клиент</div>
-                <div>Агент</div>
+            <div class="selector-tabs">
+                <div data-group="client" class="active">Клиент</div>
+                <div data-group="agent">Агент</div>
             </div>
         </div>
-        <form>
+        <form class="client active">
             <div class="inputs">
               <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
                 <div class="wrapper">
@@ -264,23 +279,54 @@
                 <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
                 <button>Отправить</button>
             </div>
-          </form>
+        </form>
+        <form class="agent">
+        <div class="inputs">
+            <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+            <div class="wrapper">
+                <div class="subtitle">Впишите ваше имя</div>
+                <input type="text" placeholder="Ваше имя">
+            </div>
+            <div class="wrapper">
+                <div class="subtitle">Впишите ваш телефон</div>                     
+                <input type="text" placeholder="Ваш e-mail">  
+            </div>
+            <div class="wrapper">
+                <div class="subtitle">Впишите вашу почту</div>
+                <input type="text" placeholder="Ваш телефон">
+            </div>
+            <div class="password">
+                <div class="wrapper">
+                    <div class="subtitle">Придумайте пароль</div>
+                    <input type="text">
+                </div>
+                <div class="wrapper">
+                    <div class="subtitle">Повторите пароль</div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
+            <button>Отправить</button>
+        </div>
+        </form>
     </div>
 </div> 
 
-<div class="recovery">
+<div class="popup recovery">
     <div class="close-popup">
         <i class="icon-cross"></i>
     </div>
     <div class="content-popup">
         <div class="title">
             <h3>Восстановленте пароля</h3>
-            <div class="selector">
-                <div class="active">Клиент</div>
-                <div>Агент</div>
+            <div class="selector-tabs">
+                <div data-group="client" class="active">Клиент</div>
+                <div data-group="agent">Агент</div>
             </div>
         </div>
-        <form>
+        <form class="client active">
             <div class="inputs">
               <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
                 <div class="wrapper">
@@ -305,7 +351,33 @@
                 <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
                 <button>Отправить</button>
             </div>
-          </form>
+        </form>
+        <form class="agent">
+            <div class="inputs">
+              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+                <div class="wrapper">
+                    <div class="subtitle">Впишите вашу почту</div>
+                    <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="wrapper">
+                    <p>Ссылка для подтверждения нового пароля будет отправлена на вашу почту.</p> 
+                </div>
+                <div class="password">
+                    <div class="wrapper">
+                        <div class="subtitle">Введите новый пароль</div>
+                        <input type="text">
+                    </div>
+                    <div class="wrapper">
+                        <div class="subtitle">Повторите пароль</div>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
+                <button>Отправить</button>
+            </div>
+        </form>
     </div>
 </div> 
 </header>
@@ -524,85 +596,136 @@
           </div>
         </div>
 
-        <div class="osago-insurance-companies-desctop">
-                    
-          <div class="title-row">
-            <div>Страховая компания</div>
-            <div>Страховая сумма</div>
-            <div>Условия</div>
-            <div>Стоимость</div>
-            <div>Комиссионное вознаграждение ( % )</div>
-            <div>Комиссионное вознаграждение ( руб )</div>
-            
-          </div>
-          <div class="insurance-row">
-            <div>
+        <div class="osago-insurance-companies-desktop">
+          <div class="agent">
+            <div class="image">
               <img src="img/companies-item1-hover.png" alt="">
               <a href="javascript:void(0)">Подробнее </a>
             </div>
-            <div>1000 000 р.</div>
-            <div>Без скидки</div>
-            <div>11 992 р.</div>
-            <div>00%</div>
-            <div>11 992 р.</div>
-            <div class="buttons">
+            <div class="column">
+              <h6>Страховая сумма</h6>
+              <div>1000 000 р.</div>
+            </div>
+            <div class="column">
+              <h6>Условия</h6>
+              <div>Без скидки</div>
+            </div>
+            <div class="column">
+              <h6>Стоимость</h6>
+              <div>11 992 р.</div>
+            </div>
+            <div class="column">
+              <h6>Комиссионное вознаграждение ( % )</h6>
+              <div>00%</div>
+            </div>
+            <div class="column">
+              <h6>Комиссионное вознаграждение ( руб )</h6>
+              <div>11 992 р.</div>
+            </div>
+            <div class="buttons column">
               <button>Оформить он-лайн</button>
               <button>Оформить через менеджера Брокера</button>
               <a href="javascript:void(0)">Подробнее </a>
             </div>
           </div>
-        
-          <div class="insurance-row">
-            <div>
+          <div class="drop-down">
+            <div class="files">
+              <a href="javascript:void(0)">Правила страхования.pdf</a>
+              <a href="javascript:void(0)">Пример страхового полиса.doc</a>
+            </div>    
+            <div class="options">
+              <div class="standart-option">
+                <h4>Стандартные опции</h4>          
+                <ul>
+                  <li>Пожар</li>
+                  <li>Взрыв</li>
+                  <li>Террористический акт</li>
+                  <li>Противоправные действия третьих лиц</li>
+                  <li>Залив водой</li>
+                  <li>Стихийные бедствия</li>
+                  <li>Удар молнии</li>
+                  <li>Наезд транспортного средства</li>
+                  <li>Кража с незаконным проникновением</li>
+                  <li>Падение летательных аппаратов</li>
+                  <li>Расходы по расчистке</li>
+                  <li>Бой стёкол</li>
+                </ul>
+              </div>
+              <div class="not-include">
+                <h4>Страховка не включает</h4>
+                <ul>
+                  <li>Поджог</li>
+                  <li>Авария инженерных систем</li>
+                </ul>
+              </div>
+            </div> 
+          </div> 
+          <div class="agent">
+            <div class="image">
               <img src="img/companies-item3-hover.png" alt="">
               <a href="javascript:void(0)">Подробнее </a>
             </div>
-            <div>1000 000 р.</div>
-            <div>Без скидки</div>
-            <div>11 992 р.</div>
-            <div>00%</div>
-            <div>11 992 р.</div>
-            <div class="buttons">
+            <div class="column">
+              <h6>Страховая сумма</h6>
+              <div>1000 000 р.</div>
+            </div>
+            <div class="column">
+              <h6>Условия</h6>
+              <div>Без скидки</div>
+            </div>
+            <div class="column">
+              <h6>Стоимость</h6>
+              <div>11 992 р.</div>
+            </div>
+            <div class="column">
+              <h6>Комиссионное вознаграждение ( % )</h6>
+              <div>00%</div>
+            </div>
+            <div class="column">
+              <h6>Комиссионное вознаграждение ( руб )</h6>
+              <div>11 992 р.</div>
+            </div>
+            <div class="buttons column">
               <button>Оформить он-лайн</button>
               <button>Оформить через менеджера Брокера</button>
               <a href="javascript:void(0)">Подробнее </a>
             </div>
           </div>
+          <div class="drop-down">
+            <div class="files">
+              <a href="javascript:void(0)">Правила страхования.pdf</a>
+              <a href="javascript:void(0)">Пример страхового полиса.doc</a>
+            </div>    
+            <div class="options">
+              <div class="standart-option">
+                <h4>Стандартные опции</h4>          
+                <ul>
+                  <li>Пожар</li>
+                  <li>Взрыв</li>
+                  <li>Террористический акт</li>
+                  <li>Противоправные действия третьих лиц</li>
+                  <li>Залив водой</li>
+                  <li>Стихийные бедствия</li>
+                  <li>Удар молнии</li>
+                  <li>Наезд транспортного средства</li>
+                  <li>Кража с незаконным проникновением</li>
+                  <li>Падение летательных аппаратов</li>
+                  <li>Расходы по расчистке</li>
+                  <li>Бой стёкол</li>
+                </ul>
+              </div>
+              <div class="not-include">
+                <h4>Страховка не включает</h4>
+                <ul>
+                  <li>Поджог</li>
+                  <li>Авария инженерных систем</li>
+                </ul>
+              </div>
+            </div> 
+          </div> 
         </div>
-        
-        <div class="files">
-          <a href="javascript:void(0)">Правила страхования.pdf</a>
-          <a href="javascript:void(0)">Пример страхового полиса.doc</a>
-        </div>
-        
-
-        <div class="options">
-          <div class="standart-option">
-            <h4>Стандартные опции</h4>          
-            <ul>
-              <li>Пожар</li>
-              <li>Взрыв</li>
-              <li>Террористический акт</li>
-              <li>Противоправные действия третьих лиц</li>
-              <li>Залив водой</li>
-              <li>Стихийные бедствия</li>
-              <li>Удар молнии</li>
-              <li>Наезд транспортного средства</li>
-              <li>Кража с незаконным проникновением</li>
-              <li>Падение летательных аппаратов</li>
-              <li>Расходы по расчистке</li>
-              <li>Бой стёкол</li>
-            </ul>
-          </div>
-          <div class="not-include">
-            <h4>Страховка не включает</h4>
-            <ul>
-              <li>Поджог</li>
-              <li>Авария инженерных систем</li>
-            </ul>
-          </div>
-        </div>        
-        <div class="osago-insurance-companies-desctop">
+      
+        <div class="osago-insurance-companies-desktop">
           <div class="insurance-row">
             <div>
               <img src="img/companies-item1-hover.png" alt="">
