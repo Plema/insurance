@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     $('.banner-slider').slick({
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: false,
-        // autoplaySpeed: 4000,
+        autoplaySpeed: 4000,
         nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         responsive: [
@@ -19,6 +19,12 @@ $(document).ready(function(){
             }
         ]
     });
+    $(window).blur(function() { 
+      $('.banner-slider').slick('slickPause')
+    }); //Покинули вкладку
+    $(window).focus(function() { 
+      $('.banner-slider').slick('slickPlay')
+    }); //Во вкладке
 
 
     if($(window).width() >= 1024){
@@ -177,7 +183,7 @@ $(document).ready(function(){
 
   $("#my-accordion").accordionjs({
     closeAble: true,
-    animate:"slow",
+    slideSpeed: 300
   });
 
   $('.start-work-slider').slick({

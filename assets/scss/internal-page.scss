@@ -197,7 +197,7 @@
                         transform: rotateY(-90deg);
                         transform-style: preserve-3d;
                         backface-visibility: hidden;
-                        transition: all .3s;
+                        transition: all .5s;
                         li{
                             margin-bottom: 14px;
                             &:last-child{
@@ -229,7 +229,7 @@
             text-align: center;
             background: #517ea1;
             border: 1px solid #517ea1;
-            transition: all .3s;
+            transition: all .5s;
             &:hover{
                 color: #517ea1;
                 background: #fff;
@@ -739,11 +739,11 @@
                 cursor: pointer;
                 border-radius: 50%;
                 position: absolute;
-                background: #517EA1;
+                background: transparent;
                 border: 1px solid #517EA1;
                 transition: all 0.3s;
                 &:hover{
-                    background: #FFFFFF;
+                    background: #517EA1;
                     i{
                         color: #517EA1;
                     }
@@ -752,7 +752,7 @@
                     top: 50%;
                     left: 50%;
                     font-size: 10px;
-                    color: #FFFFFF;
+                    color: #000;
                     position: absolute;
                     transform: translate(-50%, -50%);
                     transition: all 0.3s;

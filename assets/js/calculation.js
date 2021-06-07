@@ -2,11 +2,11 @@ $(document).ready(function(){
 
   $('.banner-slider').slick({
       dots: true,
-      autoplay: false,
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: false,
-      // autoplaySpeed: 4000,
+      autoplaySpeed: 4000,
       nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
       prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
       responsive: [
@@ -19,6 +19,12 @@ $(document).ready(function(){
           }
       ]
   });
+  $(window).blur(function() { 
+    $('.banner-slider').slick('slickPause')
+  }); //Покинули вкладку
+  $(window).focus(function() { 
+    $('.banner-slider').slick('slickPlay')
+  }); //Во вкладке
 
   $('.best-deals-slider').slick({
       dots: false,
@@ -62,6 +68,9 @@ $(document).ready(function(){
     dots: false,
     slidesToShow: 7,
     slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    playSpeed: 4000,
     nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
     prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
@@ -76,6 +85,13 @@ $(document).ready(function(){
         }
     ]
 });
+
+$(window).blur(function() { 
+  $('.companies-slider').slick('slickPause')
+}); //Покинули вкладку
+$(window).focus(function() { 
+  $('.companies-slider').slick('slickPlay')
+}); //Во вкладке
 
   $('.news-slider').slick({
       dots: false,

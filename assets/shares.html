@@ -121,28 +121,7 @@
         </div>
     </section>
 
-    <section class="hot-offer">
-        <div class="container">
-          <div class="title">
-            <h3>Получайте больше горячих предложени</h3>
-            <p>Подпишитесь на рассылку горячих предложений и новостей</p>
-          </div>
-          <div class="hot-offer-content">
-            <form>
-              <div class="inputs">
-                <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-                <input type="text" placeholder="Ваше имя"> 
-                <input type="text" placeholder="Ваш e-mail">
-                <input type="text" placeholder="Ваш телефон">
-              </div>
-              <div class="button">
-                <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Подписаться</button>
-              </div>
-            </form>
-          </div>
-        </div>
-    </section>
+    <include src="assets/templates/hot-offer.html"></include>
 
     <section class="question">
         <div class="container">
@@ -161,7 +140,7 @@
               <textarea placeholder="Ваше сообщение"></textarea>
               <div class="button">
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
               </div>
             </form>
           </div>

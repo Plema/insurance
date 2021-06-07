@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     $('.banner-slider').slick({
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: false,
-        // autoplaySpeed: 4000,
+        autoplaySpeed: 4000,
         nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         responsive: [
@@ -18,6 +18,19 @@ $(document).ready(function(){
               }
             }
         ]
+    });
+    $(window).blur(function() { 
+        $('.banner-slider').slick('slickPause')
+      }); //Покинули вкладку
+      $(window).focus(function() { 
+        $('.banner-slider').slick('slickPlay')
+      }); //Во вкладке
+
+    $(".description-content a").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top ; 
+        $('body,html').animate({scrollTop: top}, 700);
     });
 
     if($(window).width() >= 1024){

@@ -111,7 +111,7 @@
 			closeOther  : true,
 
 			// Animation Speed.
-			slideSpeed  : 150,
+			slideSpeed  : 300,
 
 			// The section open on first init. A number from 1 to X or false.
 			activeIndex : 1,

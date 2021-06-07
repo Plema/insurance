@@ -1,3 +1,18 @@
+<div class="mobile-menu">
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Частным клиентам</a></li>
+            <li><a href="index-corporate.html">Корпоративным клиентам</a></li>
+            <li><a href="partners-insurance-companies.html">Партнерам</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="about.html">О компании</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="dark-display">
+</div>
+
 <div class="popup connecting">
     <div class="close-popup">
         <i class="icon-cross"></i>
@@ -16,9 +31,9 @@
             <textarea placeholder="Ваш комментарий"></textarea>
             <div class="button">
                 <p>Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)</p>
-                <button>Прикрепить файл</button>
+                <button type="button">Прикрепить файл</button>
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
             </div>
           </form>
     </div>
@@ -30,7 +45,7 @@
     </div>
     <div class="content-popup">
         <div class="title">
-            <h3>Присоединиться</h3>
+            <h3>Написать нам</h3>
         </div>
         <form>
             <div class="inputs">
@@ -41,7 +56,30 @@
             <textarea placeholder="Ваш комментарий"></textarea>
             <div class="button">
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
+            </div>
+          </form>
+    </div>
+</div> 
+
+<div class="popup request-offer">
+    <div class="close-popup">
+        <i class="icon-cross"></i>
+    </div>
+    <div class="content-popup">
+        <div class="title">
+            <h3>Запросить предложение</h3>
+        </div>
+        <form>
+            <div class="inputs">
+              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+              <input type="text" placeholder="Ваше имя"> 
+              <input type="text" placeholder="Ваш e-mail">
+            </div>
+            <textarea placeholder="Ваш комментарий"></textarea>
+            <div class="button">
+                <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
+                <button type="button">Запросить предложение</button>
             </div>
           </form>
     </div>
@@ -65,9 +103,9 @@
             <textarea placeholder="Ваш комментарий"></textarea>
             <div class="button">
                 <p>Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)</p>
-                <button>Прикрепить файл</button>
+                <button type="button">Прикрепить файл</button>
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
             </div>
           </form>
     </div>
@@ -91,25 +129,14 @@
             <textarea placeholder="Ваш комментарий"></textarea>
             <div class="button">
                 <p>Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)</p>
-                <button>Прикрепить файл</button>
+                <a href="javascript:void(0)">Скачать образец анкеты</a>
+                <button type="button">Прикрепить файл</button>
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
             </div>
           </form>
     </div>
 </div> 
-
-<div class="mobile-menu">
-    <nav>
-        <ul>
-            <li class="active"><a href="index.html">Частным клиентам</a></li>
-            <li><a href="index-corporate.html">Корпоративным клиентам</a></li>
-            <li><a href="partners-insurance-companies.html">Партнерам</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="about.html">О компании</a></li>
-        </ul>
-    </nav>
-</div>
 
 <div class="phone">
     <nav>
@@ -126,6 +153,24 @@
     </div>
     <div class="wrapper">
         <p>Ошибка данных!</p>
+    </div>
+</div>
+
+<div class="popup thanks">
+    <div class="close-popup">
+        <i class="icon-cross"></i>
+    </div>
+    <div class="wrapper">
+        <p>Ваша заявка отправлена.</p>
+    </div>
+</div>
+
+<div class="popup dev-error">
+    <div class="close-popup">
+        <i class="icon-cross"></i>
+    </div>
+    <div class="wrapper">
+        <p>Раздел находится в разработке</p>
     </div>
 </div>
 
@@ -152,7 +197,7 @@
               
             </div>
             <div class="button">
-                <button>Войти</button>
+                <button type="button">Войти</button>
                 <a href="javascript:void(0)">Зарегестрироватся</a>
             </div>
           </form>
@@ -167,7 +212,7 @@
               
             </div>
             <div class="button">
-                <button>Войти</button>
+                <button type="button">Войти</button>
                 <a href="javascript:void(0)">Зарегестрироватся</a>
             </div>
           </form>
@@ -214,7 +259,7 @@
             </div>
             <div class="button">
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
             </div>
         </form>
         <form class="agent">
@@ -245,7 +290,7 @@
         </div>
         <div class="button">
             <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-            <button>Отправить</button>
+            <button type="button">Отправить</button>
         </div>
         </form>
     </div>
@@ -286,7 +331,7 @@
             </div>
             <div class="button">
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
             </div>
         </form>
         <form class="agent">
@@ -312,7 +357,7 @@
             </div>
             <div class="button">
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
             </div>
         </form>
     </div>

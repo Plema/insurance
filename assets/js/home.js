@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     $('.banner-slider').slick({
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: false,
-        // autoplaySpeed: 4000,
+        autoplaySpeed: 15000,
         nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         responsive: [
@@ -20,12 +20,34 @@ $(document).ready(function(){
         ]
     });
 
+    $('.banner-slider').hover(function(){
+      $(this).find('.next').css('right', '10px');
+      $(this).find('.prev').css('left', '10px');
+    }, function(){
+      $(this).find('.next').css('right', '-100%');
+      $(this).find('.prev').css('left', '-100%');
+    })
+    
+
+    $(window).blur(function() { 
+      $('.banner-slider').slick('slickPause')
+    }); //Покинули вкладку
+    $(window).focus(function() { 
+      $('.banner-slider').slick('slickPlay')
+    }); //Во вкладке
+
     $('.companies-slider').slick({
         dots: false,
         slidesToShow: 7,
         slidesToScroll: 1,
-        nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-        prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 5000,
+        cssEase: 'linear',
+        arrows: false,
+        pauseOnHover: false,
+        // nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+        // prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         responsive: [
             {
               breakpoint: 1024,

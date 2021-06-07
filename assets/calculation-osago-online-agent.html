@@ -20,7 +20,7 @@
     <div class="container">
       <ul>
           <li><a href="index.html">Главная</a></li>
-          <li><a href="index-corporate.html">Корпоративным клиентам</a></li>
+          <li><a href="index-corporate.html">Агентам</a></li>
           <li><a href="corporative-clients-cars.html">Автомобили</a></li>
           <li><span>Расчет стоимости полиса ОСАГО</span></li>
       </ul>
@@ -30,104 +30,7 @@
    <!-- Основной контент -->
   <section class="wrapper">
     
-    <section class="banner">
-      <div class="container">
-        <div class="banner-slider">
-          <div>
-            <div class="banner-item">
-              <div class="img" style="background: url('img/banner-img1.jpg') no-repeat 0 50%; background-size: cover;"></div>
-              <div class="content">
-                <div class="text">
-                  <h2>Страхование осаго</h2>
-                  <ul>
-                    <li><i class="icon-interface"></i>Выбор из страховых компаний <strong> ТОП - 20</strong></li>
-                    <li><i class="icon-interface"></i>Индивидуальная скидка до <strong> 50%</strong></li>
-                    <li><i class="icon-interface"></i>Проверка и восстановление <strong> Кбм</strong></li>
-                    <li><i class="icon-interface"></i>Расчет по <strong> 20 </strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                  </ul>
-                  <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="banner-item">
-              <div class="img" style="background: url('img/banner-img2.jpg') no-repeat 0 50%; background-size: cover;"></div>
-              <div class="content">
-                <div class="text">
-                  <h2>КАСКО</h2>
-                  <ul>
-                    <li><i class="icon-interface"></i>Выбор из страховых компаний <strong> ТОП - 20</strong></li>
-                    <li><i class="icon-interface"></i>Взр всего за 150 руб</li>
-                    <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                  </ul>
-                  <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="banner-item">
-              <div class="img" style="background: url('img/banner-img3.jpg') no-repeat 0 50%; background-size: cover;"></div>
-              <div class="content">
-                <div class="text">
-                  <h2>Здоровье</h2>
-                  <ul>
-                    <li><i class="icon-interface"></i>Скидки 5-10%</li>
-                    <li><i class="icon-interface"></i>ДМС + несчастный случай для взрослых и детей</li>
-                    <li><i class="icon-interface"></i>ДМС для мигрантов</li>
-                    <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                  </ul>
-                  <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="banner-item">
-              <div class="img" style="background: url('img/banner-img4.jpg') no-repeat 0 50%; background-size: cover;"></div>
-              <div class="content">
-                <div class="text">
-                  <h2>Страхование имущества</h2>
-                  <ul>
-                    <li><i class="icon-interface"></i>Скидка от 15 %</li>
-                    <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                  </ul>
-                  <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="banner-item">
-              <div class="img" style="background: url('img/banner-img5.jpg') no-repeat 0 50%; background-size: cover;"></div>
-              <div class="content">
-                <div class="text">
-                  <h2>Зеленая карта + ВЗР</h2>
-                  <ul>
-                    <li><i class="icon-interface"></i>Выбор из страховых компаний <strong> ТОП - 20</strong></li>
-                    <li><i class="icon-interface"></i>Взр всего за 150 руб</li>
-                    <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                  </ul>
-                  <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="banner-item">
-              <div class="img" style="background: url('img/banner-img6.jpg') no-repeat 0 50%; background-size: cover;"></div>
-              <div class="content">
-                <div class="text">
-                  <h2>Станьте агентом с доходом <span>от 14 000 руб. в день</span></h2>
-                  <a href="javasceipr:void(0)">Присоедениться</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <include src="assets/templates/banner.html"></include>
 
     <section class="online-calculation-description">
       <div class="container">
@@ -151,7 +54,7 @@
             <li>Следует сразу отметить, что дороже всего обойдется покупка полиса новичкам, проживающим в крупных городах. Но чем дальше от мегаполиса и чем опытней будет водитель, тем меньше для него размер страховой премии.</li>
         </ul>
         </div>
-        <button>Хочу знать больше об осаго</button>
+        <button type="button">Хочу знать больше об осаго</button>
       </div>
     </section>
 
@@ -490,8 +393,8 @@
         <div class="title">
           <h3>Он-лайн расчет стоимости по всем страховым компаниям-партнерам</h3>
         </div>
-        <button>Рассчитать стоимость полиса</button>
-        <button>Хотите получить расчет по всем страховым компаниям-партнерам</button>
+        <button type="button">Рассчитать стоимость полиса</button>
+        <button type="button">Хотите получить расчет по всем страховым компаниям-партнерам</button>
         <p>Стоимость полиса от <span>3650 руб.</span> до <span>4434 руб.</span> </p>
       </div>
     </section>
@@ -769,7 +672,7 @@
           </div>
         </div>
         <div class="button">
-          <button>Онлайн оформление</button>
+          <button type="button">Онлайн оформление</button>
         </div>        
       </div>
     </section>
@@ -819,8 +722,8 @@
           </div>
           <div class="button">
             <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-            <button>Заказать полис через нас</button>
-            <button>Заказать оформление полиса нашим менеджером</button>
+            <button type="button">Заказать полис через нас</button>
+            <button type="button">Заказать оформление полиса нашим менеджером</button>
           </div>
         </form>
       </div>
@@ -865,8 +768,8 @@
                       </div>
                   </div>
                   <ul>
-                      <li><button>Показать кбм</button></li>
-                      <li><button>Очистить</button></li>
+                      <li><button type="button">Показать кбм</button></li>
+                      <li><button type="button">Очистить</button></li>
                   </ul>
               </form>
             </div>
@@ -896,8 +799,8 @@
                       </div>
                   </div>
                   <ul>
-                      <li><button>Показать кбм</button></li>
-                      <li><button>Очистить</button></li>
+                      <li><button type="button">Показать кбм</button></li>
+                      <li><button type="button">Очистить</button></li>
                   </ul>
               </form>
             </div>
@@ -934,7 +837,7 @@
                         <input type="text">
                     </div>
                 </div>
-                <button>Проверить</button>
+                <button type="button">Проверить</button>
             </form>
           </div>
         </div>
@@ -982,7 +885,7 @@
             <textarea placeholder="Ваше сообщение"></textarea>
             <div class="button">
               <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-              <button>Отправить</button>
+              <button type="button">Отправить</button>
             </div>
           </form>
         </div>

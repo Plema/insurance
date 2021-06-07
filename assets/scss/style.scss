@@ -104,6 +104,8 @@ a {
 
 .wrapper{
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .active{
@@ -133,6 +135,8 @@ a {
 
 .bread-crumbs{
     padding: 1px 0 11px;
+    position: relative;
+    z-index: 1;
     ul{
         display: flex;
         flex-wrap: wrap;

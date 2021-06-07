@@ -29,104 +29,7 @@
    <!-- Основной контент -->
   <section class="wrapper">
 
-    <section class="banner">
-        <div class="container">
-          <div class="banner-slider">
-            <div>
-              <div class="banner-item">
-                <div class="img" style="background: url('img/banner-img1.jpg') no-repeat 0 50%; background-size: cover;"></div>
-                <div class="content">
-                  <div class="text">
-                    <h2>Страхование осаго</h2>
-                    <ul>
-                      <li><i class="icon-interface"></i>Выбор из страховых компаний <strong> ТОП - 20</strong></li>
-                      <li><i class="icon-interface"></i>Индивидуальная скидка до <strong> 50%</strong></li>
-                      <li><i class="icon-interface"></i>Проверка и восстановление <strong> Кбм</strong></li>
-                      <li><i class="icon-interface"></i>Расчет по <strong> 20 </strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                    </ul>
-                    <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-item">
-                <div class="img" style="background: url('img/banner-img2.jpg') no-repeat 0 50%; background-size: cover;"></div>
-                <div class="content">
-                  <div class="text">
-                    <h2>КАСКО</h2>
-                    <ul>
-                      <li><i class="icon-interface"></i>Выбор из страховых компаний <strong> ТОП - 20</strong></li>
-                      <li><i class="icon-interface"></i>Взр всего за 150 руб</li>
-                      <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                    </ul>
-                    <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-item">
-                <div class="img" style="background: url('img/banner-img3.jpg') no-repeat 0 50%; background-size: cover;"></div>
-                <div class="content">
-                  <div class="text">
-                    <h2>Здоровье</h2>
-                    <ul>
-                      <li><i class="icon-interface"></i>Скидки 5-10%</li>
-                      <li><i class="icon-interface"></i>ДМС + несчастный случай для взрослых и детей</li>
-                      <li><i class="icon-interface"></i>ДМС для мигрантов</li>
-                      <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                    </ul>
-                    <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-item">
-                <div class="img" style="background: url('img/banner-img4.jpg') no-repeat 0 50%; background-size: cover;"></div>
-                <div class="content">
-                  <div class="text">
-                    <h2>Страхование имущества</h2>
-                    <ul>
-                      <li><i class="icon-interface"></i>Скидка от 15 %</li>
-                      <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                    </ul>
-                    <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-item">
-                <div class="img" style="background: url('img/banner-img5.jpg') no-repeat 0 50%; background-size: cover;"></div>
-                <div class="content">
-                  <div class="text">
-                    <h2>Зеленая карта + ВЗР</h2>
-                    <ul>
-                      <li><i class="icon-interface"></i>Выбор из страховых компаний <strong> ТОП - 20</strong></li>
-                      <li><i class="icon-interface"></i>Взр всего за 150 руб</li>
-                      <li><i class="icon-interface"></i>Расчет по <strong>20</strong> страховым компаниям за <strong> 30 секунд</strong></li>
-                    </ul>
-                    <a href="javasceipr:void(0)">Рассчитать стоимость</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-item">
-                <div class="img" style="background: url('img/banner-img6.jpg') no-repeat 0 50%; background-size: cover;"></div>
-                <div class="content">
-                  <div class="text">
-                    <h2>Станьте агентом с доходом <span>от 14 000 руб. в день</span></h2>
-                    <a href="javasceipr:void(0)">Присоедениться</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
+    <include src="assets/templates/banner.html"></include>
 
     <section class="data-checking-description">
         <div class="container">
@@ -148,16 +51,16 @@
                   более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется 
                   Lorem Ipsum.</p>
                 <ul>
-                    <li>1. Проверка КБМ в единой базе РСА;</li>
-                    <li>2. Проверка факта прохождения государственного технического осмотра через АИС РСА;</li>
-                    <li>3. Сведения для страхователей о статусе бланков полисов ОСАГО и дате заключения договора; </li>
-                    <li>4. Сведения для потерпевших и других участников ДТП о наличии действующего договора ОСАГО в отношении определенного лица или транспортного средства</li>
+                    <li><a href="#check-online">1. Проверка КБМ в единой базе РСА;</a></li>
+                    <li><a href="#fact-check">2. Проверка факта прохождения государственного технического осмотра через АИС РСА;</a></li>
+                    <li><a href="#policyholders">3. Сведения для страхователей о статусе бланков полисов ОСАГО и дате заключения договора;</a> </li>
+                    <li><a href="#info-victims">4. Сведения для потерпевших и других участников ДТП о наличии действующего договора ОСАГО в отношении определенного лица или транспортного средства</a></li>
                 </ul>
           </div>
         </div>
     </section>
 
-    <section class="check-online">
+    <section class="check-online" id="check-online">
         <div class="container">
           <div class="title">
             <h3>Проверка БКМ онлайн в единой базе РСА</h3>
@@ -196,8 +99,8 @@
                         </div>
                     </div>
                     <ul>
-                        <li><button>Показать кбм</button></li>
-                        <li><button>Очистить</button></li>
+                        <li><button type="button">Показать кбм</button></li>
+                        <li><button type="button">Очистить</button></li>
                     </ul>
                 </form>
               </div>
@@ -227,8 +130,8 @@
                         </div>
                     </div>
                     <ul>
-                        <li><button>Показать кбм</button></li>
-                        <li><button>Очистить</button></li>
+                        <li><button type="button">Показать кбм</button></li>
+                        <li><button type="button">Очистить</button></li>
                     </ul>
                 </form>
               </div>
@@ -236,7 +139,7 @@
         </div>
     </section>
 
-    <section class="fact-check">
+    <section class="fact-check" id="fact-check">
         <div class="container">
           <div class="title">
             <h3>Проверка факта прохождения государственного техосмотра через АИС РСА</h3>
@@ -265,13 +168,13 @@
                         <input type="text">
                     </div>
                 </div>
-                <button>Проверить</button>
+                <button type="button">Проверить</button>
             </form>
           </div>
         </div>
     </section>
 
-    <section class="policyholders">
+    <section class="policyholders" id="policyholders">
         <div class="container">
             <div class="title">
               <h3>Сведения для страхователей о статуса бланков полисов ОСАГО и дате заключения договоров</h3>
@@ -291,13 +194,13 @@
                             <span>Используйте только цифры</span>
                         </div>
                     </div>
-                    <button>Поиск</button>
+                    <button type="button">Поиск</button>
                 </form>
             </div>
           </div>
     </section>
 
-    <section class="info-victims">
+    <section class="info-victims" id="info-victims">
         <div class="container">
             <div class="title">
               <h3>Сведения для потерпевших и других участников ДТП о наличии действующего договора ОСАГО в отношении определенного лица или транспортного средства </h3>
@@ -326,7 +229,7 @@
                             <i class="icon-data"></i>
                         </div>
                     </div>
-                    <button>Поиск</button>
+                    <button type="button">Поиск</button>
                 </form>
             </div>
             <a href="javascript:void(0)">Расчет и оформление полиса ОСАГО</a>
@@ -350,7 +253,7 @@
               <textarea placeholder="Ваше сообщение"></textarea>
               <div class="button">
                 <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button>Отправить</button>
+                <button type="button">Отправить</button>
               </div>
             </form>
           </div>
