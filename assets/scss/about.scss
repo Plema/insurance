@@ -1,657 +1,677 @@
-@import "libs/slick";
+@import 'libs/slick';
 
 .header {
+  .header-nav {
+    padding: 11px 0 11px;
+  }
+  @media (min-width: 768px) {
     .header-nav {
-        padding: 11px 0 11px;
+      padding: 16px 15px;
     }
-    @media (min-width: 768px) {
-        .header-nav {
-            padding: 16px 15px;
-        }
+  }
+  @media (min-width: 1024px) {
+    .header-nav {
+      background: #f8f8fb;
+      border-bottom: 1px solid #dbdee3;
     }
-    @media (min-width: 1024px) {
-        .header-nav{
-            background: #F8F8FB;
-            border-bottom: 1px solid #DBDEE3;
-        }       
+  }
+  @media (min-width: 1280px) {
+    .header-nav {
+      margin: 0 -10px;
+      background: #f8f8fb;
     }
-    @media (min-width: 1280px) {
-        .header-nav{
-            margin: 0 -10px;
-            background: #F8F8FB;
-        }       
+  }
+  @media (min-width: 1400px) {
+    .header-nav {
+      margin: 0 -20px;
+      padding: 22px 20px 26px;
     }
-    @media (min-width: 1400px) {
-        .header-nav {
-            margin: 0 -20px;
-            padding: 22px 20px 26px;
-        }
-    }
+  }
 }
 
 .about {
-    padding: 13px 0 20px;
-    .title{
-        margin-bottom: 37px;
-        text-align: center;
-        h3{
-            font-size: 24px;
-            color: #517EA1;
-            font-weight: 700;
-            line-height: 28px;
-        }
+  padding: 7px 0 10px;
+  .title {
+    margin-bottom: 18px;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      color: #517ea1;
+      font-weight: 700;
+      line-height: 28px;
     }
-    .about-content{
-        img{
-            width: 190px;
-            display: block;
-            margin: 0 auto 34px;
-        }
-        p{
-            font-size: 16px;
-            color: #373737;
-            line-height: 21px;
-            font-weight: normal;
-            padding-bottom: 17px;
-            &:last-child{
-                padding-bottom: 0;
-            }
-            strong{
-                color: #517EA1;
-                line-height: 19px;
-                font-weight: bold;
-            }
-        }
+  }
+  .about-content {
+    img {
+      width: 190px;
+      display: block;
+      margin: 0 auto 34px;
     }
-    @media (min-width: 768px) {
-        padding: 20px 0 25px;
+    p {
+      font-size: 16px;
+      color: #373737;
+      line-height: 21px;
+      font-weight: normal;
+      padding-bottom: 17px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      strong {
+        color: #517ea1;
+        line-height: 19px;
+        font-weight: bold;
+      }
     }
-    @media (min-width: 1024px) {
-        padding: 20px 0 35px;
-        .title {
-            margin-bottom: 45px;
-            h3 {
-                font-size: 30px;
-                line-height: 34px;
-            }
-        }
-        .about-content{
-            img {
-                float: left;
-                width: 220px;
-                margin: 20px 40px 30px 25px;
-            }
-        }
+  }
+  @media (min-width: 768px) {
+    padding: 10px 0 12px;
+  }
+  @media (min-width: 1024px) {
+    padding: 10px 0 18px;
+    .title {
+      margin-bottom: 22px;
+      h3 {
+        font-size: 30px;
+        line-height: 34px;
+      }
     }
-    @media (min-width: 1280px) {
-        padding: 20px 0 40px;
-        .about-content{
-            img {
-                width: 280px;
-                margin: 40px 50px 40px 30px;
-            }
-        }
+    .about-content {
+      img {
+        float: left;
+        width: 220px;
+        margin: 20px 40px 30px 25px;
+      }
     }
-    @media (min-width: 1400px) {
-        padding: 20px 0 45px;
-        .title {
-            margin-bottom: 58px;
-            h3 {
-                font-size: 38px;
-                line-height: 42px;
-            }
-        }
-        .about-content{
-            img {
-                width: 303px;
-                margin: 20px 61px 45px 50px;
-            }
-            p{
-                padding-bottom: 21px;
-            }
-        }
+  }
+  @media (min-width: 1280px) {
+    padding: 10px 0 20px;
+    .about-content {
+      img {
+        width: 280px;
+        margin: 40px 50px 40px 30px;
+      }
     }
+  }
+  @media (min-width: 1400px) {
+    padding: 10px 0 22px;
+    .title {
+      margin-bottom: 29px;
+      h3 {
+        font-size: 38px;
+        line-height: 42px;
+      }
+    }
+    .about-content {
+      img {
+        width: 303px;
+        margin: 20px 61px 45px 50px;
+      }
+      p {
+        padding-bottom: 21px;
+      }
+    }
+  }
 }
 
 .insurance-companies {
-    z-index: 0;
-    padding: 21px 0;
-    position: relative;
-    .title{
-        margin-bottom: 15px;
-        text-align: center;
-        h3{
-            font-size: 24px;
-            color: #517EA1;
-            font-weight: 700;
-            line-height: 28px;
-            margin-bottom: 16px;
-        }
-        p{
-            font-size: 20px;
-            color: #373737;            
-            line-height: 23px;
-        }
+  z-index: 0;
+  padding: 11px 0;
+  position: relative;
+  .title {
+    margin-bottom: 8px;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      color: #517ea1;
+      font-weight: 700;
+      line-height: 28px;
+      margin-bottom: 16px;
     }
-    .companies-slider{
-        padding-bottom: 11px;
-        .slick-list{
-            top: 0;
-            left: 50%;
-            width: 700px;
-            position: relative;
-            padding: 10px 0 20px;
-            transform: translate(-50%, 0);
-        }
-        .slick-slide{
-            margin: 0 10px;
-        }
-        .companies-item{
-            display: flex;
-            padding: 10px 0;
-            position: relative;
-            align-items: center;
-            background: #FFFFFF;
-            justify-content: center;
-            transition: all 0.5s;
-            &:hover{
-                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
-                .hover{
-                    opacity: 1;
-                }
-            }
-            a{
-                top: 0;
-                left: 0;
-                z-index: 2;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-            }
-            img{
-                width: 65%;
-                display: block;
-            }
-            .hover{
-                top: 50%;
-                left: 50%;
-                opacity: 0;
-                position: absolute;
-                transition: all 0.5s;
-                transform: translate(-50%, -50%);
-            }
-        }
-        .slick-dots{
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            position: absolute;
-            justify-content: center;
-            li{
-                margin: 0 4px;
-                display: flex;
-                button{
-                    width: 8px;
-                    height: 8px;
-                    border: none;
-                    cursor: pointer;
-                    border-radius: 50%;
-                    text-indent: -9999px;
-                    background: #97B6D3;
-                    transition: all 0.3s;
-                    &:hover{
-                        background: #517EA1;    
-                    }
-                }
-            }
-            li.slick-active{
-                button{
-                    background: #517EA1;
-                }
-            }
-        }
+    p {
+      font-size: 20px;
+      color: #373737;
+      line-height: 23px;
     }
-    @media (min-width: 768px) {
-        .title{
-            h3{
-                margin-bottom: 10px;
-            }
-        }
-        .insurance-companies-content{
-            position: relative;
-            &::after{
-                content: '';
-                top: 43%;
-                left: -70px;
-                z-index: 2;
-                width: 150px;
-                height: 110px;
-                position: absolute;
-                background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0.539626) 59.66%, rgba(255, 255, 255, 0) 78.51%);
-                transform: translate(0, -50%);
-            }
-            &::before{
-                content: '';
-                top: 43%;
-                z-index: 2;
-                right: -70px;
-                width: 150px;
-                height: 110px;
-                position: absolute;
-                background: linear-gradient(90deg,#fff 50%,rgba(255,255,255,.539626) 59.66%,rgba(255,255,255,0) 78.51%);
-                transform: translate(0, -50%) rotate(-180deg);
-            }
-        }
-        .companies-slider {
-            overflow: hidden;
-            .slick-list {
-                left: 50%;
-                width: 900px;
-            }
-            .companies-item {
-                img {
-                    width: 82%;
-                }
-            }
-        }
+  }
+  .companies-slider {
+    padding-bottom: 11px;
+    .slick-list {
+      top: 0;
+      left: 50%;
+      width: 700px;
+      position: relative;
+      padding: 10px 0 20px;
+      transform: translate(-50%, 0);
     }
-    @media (min-width: 1024px) {
-        padding: 30px 0 30px;
-        .title {
-            margin-bottom: 45px;
-            h3 {
-                font-size: 30px;
-                line-height: 34px;
-                margin-bottom: 6px;
-            }
-            p {
-                font-size: 24px;
-                line-height: 28px;
-            }
-        }
-        .insurance-companies-content{
-            &::after {
-                left: -20px;
-                background: linear-gradient(90deg,#fff 25%,rgba(255,255,255,.539626) 59.66%,rgba(255,255,255,0) 78.51%);
-            }
-            &::before {
-                right: -20px;
-                background: linear-gradient(90deg,#fff 25%,rgba(255,255,255,.539626) 59.66%,rgba(255,255,255,0) 78.51%);
-            }
-        }
-        .companies-slider{
-            padding-bottom: 0;
-            .slick-list {
-                width: 105%;
-            }
-            .slick-arrow{
-                top: 45%;
-                z-index: 4;
-                width: 28px;
-                height: 28px;
-                cursor: pointer;
-                border-radius: 50%;
-                position: absolute;
-                background: #517EA1;
-                border: 1px solid #517EA1;
-                transform: translate(0, -50%);
-                transition: all 0.3s;
-                &:hover{
-                    background: #FFFFFF;
-                    i{
-                        color: #517EA1;
-                    }
-                }
-                i{
-                    top: 50%;
-                    left: 50%;
-                    font-size: 10px;
-                    color: #FFFFFF;
-                    position: absolute;
-                    transform: translate(-50%, -50%);
-                    transition: all 0.3s;
-                }
-            }
-            .next{
-                right: 10px;
-            }
-            .prev{
-                left: 10px;
-            }
-        }
+    .slick-slide {
+      margin: 0 10px;
     }
-    @media (min-width: 1400px) {
-        padding: 42px 0 35px;
-        .title {
-            margin-bottom: 53px;
-            h3 {
-                font-size: 38px;
-                line-height: 42px;
-                margin-bottom: 8px;
-            }
-            p {
-                font-size: 30px;
-                line-height: 34px;
-            }
+    .companies-item {
+      display: flex;
+      padding: 10px 0;
+      position: relative;
+      align-items: center;
+      background: #ffffff;
+      justify-content: center;
+      transition: all 0.5s;
+      &:hover {
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+        .hover {
+          opacity: 1;
         }
-        .insurance-companies-content{
-            &::after {
-                left: -10px;
-            }
-            &::before {
-                right: -10px;
-            }
-        }
-        .companies-slider {
-            .slick-arrow {
-                width: 34px;
-                height: 34px;
-                i{
-                    font-size: 12px;
-                }
-            }
-            .next{
-                right: 0;
-            }
-            .prev{
-                left: 0;
-            }
-            .slick-slide {
-                margin: 0 5px;
-            }
-        }
+      }
+      a {
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      img {
+        width: 65%;
+        display: block;
+      }
+      .hover {
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s;
+        transform: translate(-50%, -50%);
+      }
     }
+    .slick-dots {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      li {
+        margin: 0 4px;
+        display: flex;
+        button {
+          width: 8px;
+          height: 8px;
+          border: none;
+          cursor: pointer;
+          border-radius: 50%;
+          text-indent: -9999px;
+          background: #97b6d3;
+          transition: all 0.3s;
+          &:hover {
+            background: #517ea1;
+          }
+        }
+      }
+      li.slick-active {
+        button {
+          background: #517ea1;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .title {
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+    .insurance-companies-content {
+      position: relative;
+      &::after {
+        content: '';
+        top: 43%;
+        left: -70px;
+        z-index: 2;
+        width: 150px;
+        height: 110px;
+        position: absolute;
+        background: linear-gradient(
+          90deg,
+          #ffffff 50%,
+          rgba(255, 255, 255, 0.539626) 59.66%,
+          rgba(255, 255, 255, 0) 78.51%
+        );
+        transform: translate(0, -50%);
+      }
+      &::before {
+        content: '';
+        top: 43%;
+        z-index: 2;
+        right: -70px;
+        width: 150px;
+        height: 110px;
+        position: absolute;
+        background: linear-gradient(
+          90deg,
+          #fff 50%,
+          rgba(255, 255, 255, 0.539626) 59.66%,
+          rgba(255, 255, 255, 0) 78.51%
+        );
+        transform: translate(0, -50%) rotate(-180deg);
+      }
+    }
+    .companies-slider {
+      overflow: hidden;
+      .slick-list {
+        left: 50%;
+        width: 900px;
+      }
+      .companies-item {
+        img {
+          width: 82%;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    padding: 15px 0 15px;
+    .title {
+      margin-bottom: 22px;
+      h3 {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 6px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    .insurance-companies-content {
+      &::after {
+        left: -20px;
+        background: linear-gradient(
+          90deg,
+          #fff 25%,
+          rgba(255, 255, 255, 0.539626) 59.66%,
+          rgba(255, 255, 255, 0) 78.51%
+        );
+      }
+      &::before {
+        right: -20px;
+        background: linear-gradient(
+          90deg,
+          #fff 25%,
+          rgba(255, 255, 255, 0.539626) 59.66%,
+          rgba(255, 255, 255, 0) 78.51%
+        );
+      }
+    }
+    .companies-slider {
+      padding-bottom: 0;
+      .slick-list {
+        width: 105%;
+      }
+      .slick-arrow {
+        top: 45%;
+        z-index: 4;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        background: #517ea1;
+        border: 1px solid #517ea1;
+        transform: translate(0, -50%);
+        transition: all 0.3s;
+        &:hover {
+          background: #ffffff;
+          i {
+            color: #517ea1;
+          }
+        }
+        i {
+          top: 50%;
+          left: 50%;
+          font-size: 10px;
+          color: #ffffff;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          transition: all 0.3s;
+        }
+      }
+      .next {
+        right: 10px;
+      }
+      .prev {
+        left: 10px;
+      }
+    }
+  }
+  @media (min-width: 1400px) {
+    padding: 21px 0 17px;
+    .title {
+      margin-bottom: 26px;
+      h3 {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 30px;
+        line-height: 34px;
+      }
+    }
+    .insurance-companies-content {
+      &::after {
+        left: -10px;
+      }
+      &::before {
+        right: -10px;
+      }
+    }
+    .companies-slider {
+      .slick-arrow {
+        width: 34px;
+        height: 34px;
+        i {
+          font-size: 12px;
+        }
+      }
+      .next {
+        right: 0;
+      }
+      .prev {
+        left: 0;
+      }
+      .slick-slide {
+        margin: 0 5px;
+      }
+    }
+  }
 }
 
 .beneficial {
-    padding: 19px 0 22px;
-    .title{
-        margin-bottom: 36px;
-        text-align: center;
-        h3{
-            font-size: 24px;
-            color: #517EA1;
-            font-weight: 700;
-            line-height: 28px;
-        }
+  padding: 10px 0 11px;
+  .title {
+    margin-bottom: 18px;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      color: #517ea1;
+      font-weight: 700;
+      line-height: 28px;
     }
-    .beneficial-slider{
-        .slick-list{
-            margin: 0 -8px;
-        }
-        .slick-slide{
-            margin: 0 8px;       
-        }
-        .beneficial-item{
-            .img{
-                margin-bottom: 13px;
-            }
-            .text{
-                h4{
-                    font-size: 18px;
-                    color: #517EA1;                    
-                    font-weight: bold;
-                    line-height: 21px;
-                    margin-bottom: 19px;
-                    text-align: center;
-                }
-                p{
-                    font-size: 16px;
-                    color: #373737;
-                    line-height: 21px;
-                    font-weight: normal;
-                }
-            }
-        }
+  }
+  .beneficial-slider {
+    .slick-list {
+      margin: 0 -8px;
     }
-    @media (min-width: 768px) {
-        padding: 20px 0 25px;
+    .slick-slide {
+      margin: 0 8px;
     }
-    @media (min-width: 1024px) {
-        padding: 20px 0 35px;
-        .title {
-            margin-bottom: 45px;
-            h3 {
-                font-size: 30px;
-                line-height: 34px;
-            }
+    .beneficial-item {
+      .img {
+        margin-bottom: 13px;
+      }
+      .text {
+        h4 {
+          font-size: 18px;
+          color: #517ea1;
+          font-weight: bold;
+          line-height: 21px;
+          margin-bottom: 19px;
+          text-align: center;
         }
-    }
-    @media (min-width: 1280px) {
-        padding: 20px 0 40px;
-        .beneficial-slider {
-            .beneficial-item {
-                .img {
-                    margin-bottom: 15px;
-                }
-            }
+        p {
+          font-size: 16px;
+          color: #373737;
+          line-height: 21px;
+          font-weight: normal;
         }
+      }
     }
-    @media (min-width: 1400px) {
-        padding: 22px 0 60px;
-        .title {
-            margin-bottom: 58px;
-            h3 {
-                font-size: 38px;
-                line-height: 42px;
-            }
+  }
+  @media (min-width: 768px) {
+    padding: 10px 0 12px;
+  }
+  @media (min-width: 1024px) {
+    padding: 10px 0 17px;
+    .title {
+      margin-bottom: 22px;
+      h3 {
+        font-size: 30px;
+        line-height: 34px;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    padding: 10px 0 20px;
+    .beneficial-slider {
+      .beneficial-item {
+        .img {
+          margin-bottom: 15px;
         }
+      }
     }
+  }
+  @media (min-width: 1400px) {
+    padding: 11px 0 20px;
+    .title {
+      margin-bottom: 29px;
+      h3 {
+        font-size: 38px;
+        line-height: 42px;
+      }
+    }
+  }
 }
 
-.question{
-    z-index: 0;
-    position: relative;
-    padding: 17px 0 69px;
-    .title{
-        margin-bottom: 24px;
-        text-align: center;
-        h3{
-            font-size: 24px;
-            color: #517EA1;
-            font-weight: 700;
-            line-height: 28px;
-            margin-bottom: 33px;
-        }
-        p{
-            font-size: 18px;
-            color: #595959;
-            text-align: left;
-            line-height: 24px;
-        }
+.question {
+  z-index: 0;
+  position: relative;
+  padding: 9px 0 35px;
+  .title {
+    margin-bottom: 12px;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      color: #517ea1;
+      font-weight: 700;
+      line-height: 28px;
+      margin-bottom: 16px;
     }
-    form{
-        .inputs{
-            margin-bottom: 26px;
-            input{
-                width: 100%;
-                height: 40px;
-                font-size: 15px;
-                padding: 0 15px;
-                font-weight: 300;
-                color: #373737;
-                line-height: 18px;
-                background: #fff;
-                border-radius: 8px;
-                margin-bottom: 25px;
-                border: 1px solid #ccd7e2;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-            }
-            input::placeholder{
-                color: #90A1B8;
-            }
-            .error{
-                border: 1px solid red;
-            }
+    p {
+      font-size: 18px;
+      color: #595959;
+      text-align: left;
+      line-height: 24px;
+    }
+  }
+  form {
+    .inputs {
+      margin-bottom: 26px;
+      input {
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+        padding: 0 15px;
+        font-weight: 300;
+        color: #373737;
+        line-height: 18px;
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        border: 1px solid #ccd7e2;
+        &:last-child {
+          margin-bottom: 0;
         }
-        textarea{
+      }
+      input::placeholder {
+        color: #90a1b8;
+      }
+      .error {
+        border: 1px solid red;
+      }
+    }
+    textarea {
+      width: 100%;
+      resize: none;
+      height: 143px;
+      font-size: 15px;
+      padding: 10px 15px;
+      font-weight: 300;
+      color: #373737;
+      line-height: 18px;
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 22px;
+      border: 1px solid #ccd7e2;
+    }
+    textarea::placeholder {
+      color: #90a1b8;
+    }
+    .button {
+      label {
+        display: block;
+        font-size: 14px;
+        color: #858585;
+        line-height: 19px;
+        position: relative;
+        padding-left: 41px;
+        margin-bottom: 21px;
+        letter-spacing: 0.2px;
+        .jcf-checkbox {
+          top: 5px;
+          left: 1px;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          position: absolute;
+          border: 1px solid #afb3bd;
+          transition: all 0.5s;
+          &::after {
+            content: '\E803';
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            font-size: 10px;
+            color: #517ea1;
+            position: absolute;
+            font-family: 'fontello';
+            transform: translate(-50%, -50%);
+            transition: all 0.5s;
+          }
+          input {
+            top: 0;
+            left: 0;
             width: 100%;
-            resize: none;
-            height: 143px;
-            font-size: 15px;
-            padding: 10px 15px;
-            font-weight: 300;
-            color: #373737;
-            line-height: 18px;
-            background: #fff;
-            border-radius: 8px;
-            margin-bottom: 22px;
-            border: 1px solid #ccd7e2;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            z-index: 2;
+          }
         }
-        textarea::placeholder{
-            color: #90A1B8;
+        .jcf-checked {
+          border: 1px solid #517ea1;
+          &::after {
+            opacity: 1;
+          }
         }
-        .button{
-            label{
-                display: block;
-                font-size: 14px;
-                color: #858585;
-                line-height: 19px;
-                position: relative;
-                padding-left: 41px;
-                margin-bottom: 21px;
-                letter-spacing: 0.2px;
-                .jcf-checkbox{
-                    top: 5px;
-                    left: 1px;
-                    width: 20px;
-                    height: 20px;
-                    cursor: pointer;
-                    position: absolute;
-                    border: 1px solid #AFB3BD;
-                    transition: all 0.5s;
-                    &::after{
-                        content: '\E803';
-                        top: 50%;
-                        left: 50%;
-                        opacity: 0;
-                        font-size: 10px;
-                        color: #517ea1;
-                        position: absolute;
-                        font-family: 'fontello';
-                        transform: translate(-50%, -50%);
-                        transition: all 0.5s;
-                    }
-                    input{
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        cursor: pointer;
-                        position: absolute;
-                        z-index: 2;
-                    }
-                }
-                .jcf-checked{
-                    border: 1px solid #517ea1;
-                    &::after{
-                        opacity: 1;
-                    }
-                }
-            }
-            button{
-                display: table;
-                margin: 0 auto;
-                min-width: 255px;
-                font-size: 16px;
-                color: #FFFFFF;
-                line-height: 19px;
-                padding: 14px 12px;
-                text-align: center;
-                background: #517EA1;
-                border: 1px solid #517EA1;
-                transition: all 0.3s;
-                &:hover{
-                    color: #517EA1;
-                    background: #FFFFFF;
-                }
-            }
+      }
+      button {
+        display: table;
+        margin: 0 auto;
+        min-width: 255px;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 19px;
+        padding: 14px 12px;
+        text-align: center;
+        background: #517ea1;
+        border: 1px solid #517ea1;
+        transition: all 0.3s;
+        &:hover {
+          color: #517ea1;
+          background: #ffffff;
         }
+      }
     }
-    @media (min-width: 768px) {
-        .title{
-            width: 80%;
-            margin: 0 auto 30px;
-            h3{
-                margin-bottom: 10px;
-            }
-            p{
-                text-align: center;
-            }
-        }
-        form {
-            width: 80%;
-            margin: 0 auto;
-            .button {
-                button{
-                    min-width: 215px;
-                }
-            }
-        }
+  }
+  @media (min-width: 768px) {
+    .title {
+      width: 80%;
+      margin: 0 auto 15px;
+      h3 {
+        margin-bottom: 10px;
+      }
+      p {
+        text-align: center;
+      }
     }
-    @media (min-width: 1024px) {
-        padding: 24px 0 69px;
-        .title {
-            width: 610px;
-            margin-bottom: 45px;
-            h3 {
-                font-size: 30px;
-                line-height: 34px;
-                margin-bottom: 30px;
-            }
+    form {
+      width: 80%;
+      margin: 0 auto;
+      .button {
+        button {
+          min-width: 215px;
         }
-        form {
-            width: 610px;
-            .inputs {
-                display: flex;
-                justify-content: space-between;
-                input{
-                    width: 31%;
-                    margin: 0;
-                }
-            }
-            .button {
-                label {
-                    margin-bottom: 40px;
-                }
-            }
-        }
+      }
     }
-    @media (min-width: 1280px) {
-        padding: 48px 0 80px;
-        form {
-            .inputs{
-                margin-bottom: 25px;
-                input {
-                    width: 31.6%;
-                }
-            }
-            textarea {
-                height: 113px;
-            }
-            .button {
-                label {
-                    padding-left: 40px;
-                    padding-right: 100px;
-                }
-            }
-        }
+  }
+  @media (min-width: 1024px) {
+    padding: 12px 0 34px;
+    .title {
+      width: 610px;
+      margin-bottom: 22px;
+      h3 {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 15px;
+      }
     }
-    @media (min-width: 1400px) {
-        padding: 48px 0 100px;
-        .title {
-            margin-bottom: 51px;
-            h3 {
-                font-size: 38px;
-                line-height: 42px;
-                margin-bottom: 40px;
-            }
-            p{
-                padding: 0 25px;
-            }
+    form {
+      width: 610px;
+      .inputs {
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 31%;
+          margin: 0;
         }
+      }
+      .button {
+        label {
+          margin-bottom: 40px;
+        }
+      }
     }
+  }
+  @media (min-width: 1280px) {
+    padding: 24px 0 40px;
+    form {
+      .inputs {
+        margin-bottom: 25px;
+        input {
+          width: 31.6%;
+        }
+      }
+      textarea {
+        height: 113px;
+      }
+      .button {
+        label {
+          padding-left: 40px;
+          padding-right: 100px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1400px) {
+    padding: 24px 0 50px;
+    .title {
+      margin-bottom: 25px;
+      h3 {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 20px;
+      }
+      p {
+        padding: 0 25px;
+      }
+    }
+  }
 }
