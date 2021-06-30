@@ -121,7 +121,7 @@
         background: transparent;
         border: 1px solid #b4b5b4;
         transform: translate(0, -50%);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.9s ease-in-out;
         &:hover {
           border: 1px solid #517ea1;
           i {
@@ -145,7 +145,7 @@
         left: -100%;
       }
       .slick-dots {
-        bottom: 20px;
+        bottom: 30px;
       }
     }
     .banner-item {
@@ -182,7 +182,7 @@
     .banner-slider {
       margin: 0 -10px;
       .slick-list {
-        height: 370px;
+        height: 430px;
       }
     }
     .banner-item {

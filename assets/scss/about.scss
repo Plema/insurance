@@ -316,7 +316,7 @@
         background: #517ea1;
         border: 1px solid #517ea1;
         transform: translate(0, -50%);
-        transition: all 0.3s;
+        transition: all 0.9s ease-in-out;
         &:hover {
           background: #ffffff;
           i {
@@ -406,6 +406,7 @@
     .beneficial-item {
       .img {
         margin-bottom: 13px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
       }
       .text {
         h4 {
