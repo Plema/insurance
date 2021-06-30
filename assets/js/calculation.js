@@ -80,6 +80,9 @@ $(document).ready(function () {
       },
     ],
   })
+  $('.best-deals-slider .best-deals-item').hover(function () {
+    $(this).find('.description').slideToggle()
+  })
 
   $('.companies-slider').slick({
     dots: false,
