@@ -2424,14 +2424,15 @@
             border-radius: 50%;
             transition: all 0.5s;
             &::after {
-              content: '\E803';
+              content: '';
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background-color: #517ea1;
               top: 50%;
               left: 50%;
               opacity: 0;
-              font-size: 6px;
-              color: #517ea1;
               position: absolute;
-              font-family: 'fontello';
               transform: translate(-50%, -50%);
               transition: all 0.5s;
             }
@@ -2625,7 +2626,7 @@
                   font-size: 15px;
                   line-height: 18px;
                   text-align: left;
-                  padding-left: 15px;
+                  // padding-left: 15px;
                 }
               }
               .description {
@@ -2638,10 +2639,14 @@
                   font-size: 15px;
                   line-height: 18px;
                   width: 41%;
-                  text-align: center;
+                  padding-left: 1px;
+                  // text-align: center;
                   &:last-of-type {
                     text-align: left;
                   }
+                }
+                .kbm-koff {
+                  padding-left: 23px;
                 }
                 .span-wrapper {
                   display: flex;
