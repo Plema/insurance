@@ -629,16 +629,21 @@
               font-size: 5px;
               position: absolute;
               top: 0;
-              right: 27px;
+              right: 17px;
               content: '\E804';
               transition: all 0.5s;
               color: #535c67;
             }
           }
-
           .active {
             &:after {
               transform: rotate(180deg);
+            }
+          }
+          .last-arrow {
+            padding-left: 13px;
+            &:after {
+              right: 7px;
             }
           }
         }
@@ -672,7 +677,7 @@
         ul {
           column-count: 2;
           li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
           }
         }
       }
@@ -706,6 +711,20 @@
           margin: 0 0 50px 20px;
           &:last-of-type {
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1400px) {
+    .osago-insurance-companies-desktop {
+      .insurance-row {
+        .buttons {
+          .last-arrow {
+            padding-left: 0px;
+            &:after {
+              right: 27px;
+            }
           }
         }
       }
