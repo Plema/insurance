@@ -1,97 +1,95 @@
-$(document).ready(function(){
-   
-    jcf.replaceAll();
+$(document).ready(function () {
+  jcf.replaceAll()
 
-    $('.selector-tabs div').on('click', function(){
-        var formItem = $(this).data('group');
-        $('.selector-tabs div').removeClass('active');
-        $(this).addClass('active');
-        $('form').removeClass('active');
-        $('.' + formItem).addClass('active');
-    });
+  $('.selector-tabs div').on('click', function () {
+    var formItem = $(this).data('group')
+    $('.selector-tabs div').removeClass('active')
+    $(this).addClass('active')
+    $('form').removeClass('active')
+    $('.' + formItem).addClass('active')
+  })
 
-    $('.close-popup').click(function(event){
-        console.log('thanks')
-        $('.popup').removeClass('open-popup');
-        $('.dark-display').removeClass('open-popup');
-    });
+  $('.close-popup').click(function (event) {
+    console.log('thanks')
+    $('.popup').removeClass('open-popup')
+    $('.dark-display').removeClass('open-popup')
+  })
 
-    $('.dark-display').click(function(event){
-        $('.popup').removeClass('open-popup');
-        $('.dark-display').removeClass('open-popup');
-    })
-    
-    $('.open-menu').click(function(){
-        $('.mobile-menu').toggleClass('active')
-    })
+  $('.dark-display').click(function (event) {
+    $('.popup').removeClass('open-popup')
+    $('.dark-display').removeClass('open-popup')
+  })
 
-    // Popups
+  $('.open-menu').click(function () {
+    $('.mobile-menu').toggleClass('active')
+  })
 
-    $('.hot-offer-content button').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  // Popups
 
-    $('.faq button').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  $('.hot-offer-content button').on('click', function () {
+    $('.thanks').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
 
-    $('.feedback').on('click', function(){
-        $('.write-me').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
-    
-    $('.question-content button').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  $('.faq button').on('click', function () {
+    $('.thanks').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
 
-    $('.money-easy a').on('click', function(){
-        $('.become-partner').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
-    
-    $('.job-benefits .job-benefits-become a').on('click', function(){
-        $('.become-partner').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  $('.feedback').on('click', function () {
+    $('.write-me').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
 
-    $('.request').on('click', function(){
-        $('.request-offer').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
-    
-    $('.personal-area-order-form button').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  $('.question-content button').on('click', function () {
+    $('.thanks').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
 
-    $('.send-calculation').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
-    
-    $('.apply-policy-online button').on('click', function(){
-        $('.dev-error').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
-    
-    $('.apply-policy-with-delivery button').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  $('.money-easy a').on('click', function () {
+    $('.become-partner').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
 
-    $('.calculate-green-card button').on('click', function(){
-        $('.thanks').addClass('open-popup');
-        $('.dark-display').addClass('open-popup')
-    })
+  $('.job-benefits .job-benefits-become a').on('click', function () {
+    $('.become-partner').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
 
-    $('.header-nav li').hover(function(){
-        $(this).find('.dropdown').toggleClass('active')
-    }) 
-    $('.dropdown li').hover(function(){
-        $(this).find('ul').toggleClass('active')
-    })
-    
-});
+  $('.request').on('click', function () {
+    $('.request-offer').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
+
+  $('.personal-area-order-form button').on('click', function () {
+    $('.thanks').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
+
+  //   $('.send-calculation').on('click', function () {
+  //     $('.thanks').addClass('open-popup')
+  //     $('.dark-display').addClass('open-popup')
+  //   })
+
+  $('.apply-policy-online button').on('click', function () {
+    $('.dev-error').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
+
+  $('.apply-policy-with-delivery button').on('click', function () {
+    $('.thanks').addClass('open-popup')
+    $('.dark-display').addClass('open-popup')
+  })
+
+  // $('.calculate-green-card button').on('click', function(){
+  //     $('.thanks').addClass('open-popup');
+  //     $('.dark-display').addClass('open-popup')
+  // })
+
+  $('.header-nav li').hover(function () {
+    $(this).find('.dropdown').toggleClass('active')
+  })
+  $('.dropdown li').hover(function () {
+    $(this).find('ul').toggleClass('active')
+  })
+})
