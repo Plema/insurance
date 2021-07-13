@@ -894,7 +894,7 @@
 .insurance-companies {
   z-index: 0;
   position: relative;
-  padding: 10px 0 10px;
+  padding: 30px 0 15px;
   .title {
     margin-bottom: 15px;
     text-align: center;
@@ -1045,7 +1045,7 @@
     }
   }
   @media (min-width: 1024px) {
-    padding: 12px 0 15px;
+    padding: 40px 0 20px;
     .title {
       margin-bottom: 22px;
       h3 {
@@ -1122,7 +1122,7 @@
   @media (min-width: 1280px) {
   }
   @media (min-width: 1400px) {
-    padding: 14px 0 15px;
+    padding: 50px 0 25px;
     .title {
       margin-bottom: 24px;
       h3 {
@@ -1192,6 +1192,9 @@
     }
     .slick-slide {
       margin: 0 10px;
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      }
     }
     .best-deals-item {
       border: 1px solid #e4e4e9;
@@ -1448,7 +1451,7 @@
 .apply-policy-online {
   z-index: 0;
   position: relative;
-  padding: 10px 0 5px;
+  padding: 20px 0 5px;
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -1457,7 +1460,7 @@
       color: #517ea1;
       font-weight: 700;
       line-height: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     p {
       font-size: 18px;
@@ -1522,7 +1525,7 @@
     }
   }
   @media (min-width: 1024px) {
-    padding: 12px 0 15px;
+    padding: 30px 0 15px;
     .title {
       margin-bottom: 22px;
       h3 {
@@ -1555,7 +1558,7 @@
     }
   }
   @media (min-width: 1400px) {
-    padding: 14px 0 15px;
+    padding: 50px 0 15px;
     .title {
       margin-bottom: 35px;
       h3 {
@@ -1583,7 +1586,7 @@
 .apply-policy-with-delivery {
   z-index: 0;
   position: relative;
-  padding: 10px 0 5px;
+  padding: 20px 0 5px;
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -1815,7 +1818,7 @@
     }
   }
   @media (min-width: 1024px) {
-    padding: 12px 0 15px;
+    padding: 30px 0 15px;
     .title {
       margin-bottom: 22px;
       h3 {
@@ -1882,7 +1885,7 @@
     }
   }
   @media (min-width: 1400px) {
-    padding: 14px 0 15px;
+    padding: 40px 0 15px;
     .title {
       h3 {
         font-size: 36px;
