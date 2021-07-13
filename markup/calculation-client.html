@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>INSURANCE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/calculation.min.css" data-inprogress="">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>INSURANCE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
-  <link rel="stylesheet" href="css/calculation.min.css" data-inprogress="">
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="header">
+  <body>
+    <!-- Header -->
+    <header class="header">
     <div class="container">
         <div class="header-top">
             <div class="logo-region">
@@ -592,22 +591,23 @@
 </div> 
 </header>
 
-  <div class="bread-crumbs">
-    <div class="container">
-      <ul>
+    <div class="bread-crumbs">
+      <div class="container">
+        <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="index.html">Частным клиентам</a></li>
           <li><a href="private-clients-cars.html">Автомобили</a></li>
-          <li><a href="calculation-osago-online-client.html">Расчет стоимости полиса ОСАГО</a></li>
+          <li>
+            <a href="calculation-osago-online-client.html">Расчет стоимости полиса ОСАГО</a>
+          </li>
           <li><span>Вывод результатов</span></li>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
 
-   <!-- Основной контент -->
-  <section class="wrapper">
-    
-    <section class="banner">
+    <!-- Основной контент -->
+    <section class="wrapper">
+      <section class="banner">
     <div class="container">
       <div class="banner-slider">
         <div>
@@ -706,436 +706,493 @@
     </div>
   </section>
 
-    <section class="online-calculation-description">
-      <div class="container">
-        <div class="title">
-          <h3>Он-лайн расчет</h3>
-        </div>
-        <div class="content">
-          <p>Именно коэффициенты ОСАГО влияют на размер страховой премии. Они рассчитываются индивидуально для водителя или действуют в пределах целого региона. При этом сами страховые компании на законодательном уровне не могут завышать или занижать стоимость страховки.</p>
-          <p>Для расчета ОСАГО коэффициенты в 2017 году используются следующие:</p>
-          <ul>
-            <li>ТБ – базовый тариф;</li>
-            <li>КТ – территориальный коэффициент;</li>
-            <li>КБМ – коэффициент бонус-малус;</li>
-            <li>КВС – коэффициент возраст-стаж;</li>
-            <li>КО – ограничивающий коэффициент;</li>
-            <li>КМ – коэффициент мощности двигателя;</li>
-            <li>КС – коэффициент сезонности;</li>
-            <li>КН – коэффициент нарушений;</li>
-            <li>КП – коэффициент срока страхования.</li>
-            <li>Все значения подставляются в формулу: П = ТБ * КТ * КБМ * КВС * КО * КМ * КС * КН * КП.</li>
-            <li>Следует сразу отметить, что дороже всего обойдется покупка полиса новичкам, проживающим в крупных городах. Но чем дальше от мегаполиса и чем опытней будет водитель, тем меньше для него размер страховой премии.</li>
-        </ul>
-          </div>
-      </div>
-    </section>
-
-    <section class="precalculating">
-      <div class="container">
-        <div class="title">
-          <h3>Предварительный расчет стоимости полиса на 31.07.2020</h3>
-        </div>
-        <div class="precalculating-parameters">
+      <section class="online-calculation-description">
+        <div class="container">
           <div class="title">
-            <h3>Параметры расчета:</h3>
+            <h3>Он-лайн расчет</h3>
           </div>
-          <div class="category-car">
-            <h4>Автомобиль</h4>
-            <p>Kia Rio</p>
-            <div>
-              <p>123 л.с, 2017 г.в</p>
-              <p>600 000 руб.</p>
-            </div>
+          <div class="content">
+            <p>
+              Именно коэффициенты ОСАГО влияют на размер страховой премии. Они
+              рассчитываются индивидуально для водителя или действуют в пределах
+              целого региона. При этом сами страховые компании на
+              законодательном уровне не могут завышать или занижать стоимость
+              страховки.
+            </p>
+            <p>
+              Для расчета ОСАГО коэффициенты в 2017 году используются следующие:
+            </p>
+            <ul>
+              <li>ТБ – базовый тариф;</li>
+              <li>КТ – территориальный коэффициент;</li>
+              <li>КБМ – коэффициент бонус-малус;</li>
+              <li>КВС – коэффициент возраст-стаж;</li>
+              <li>КО – ограничивающий коэффициент;</li>
+              <li>КМ – коэффициент мощности двигателя;</li>
+              <li>КС – коэффициент сезонности;</li>
+              <li>КН – коэффициент нарушений;</li>
+              <li>КП – коэффициент срока страхования.</li>
+              <li>
+                Все значения подставляются в формулу: П = ТБ * КТ * КБМ * КВС *
+                КО * КМ * КС * КН * КП.
+              </li>
+              <li>
+                Следует сразу отметить, что дороже всего обойдется покупка
+                полиса новичкам, проживающим в крупных городах. Но чем дальше от
+                мегаполиса и чем опытней будет водитель, тем меньше для него
+                размер страховой премии.
+              </li>
+            </ul>
           </div>
-          <div class="category-driver">
-            <div class="driver">
-              <h4>1 водитель</h4>          
-              <p>м, 43 года ( 22.04.1977 )</p>              
-              <p>стаж - 25 лет ( 12.05.1995 )</p>      
-            </div>
-            <div class="driver">
-              <h4>2 водитель</h4>          
-              <p>м, 43 года ( 22.04.1977 )</p>              
-              <p>стаж - 25 лет ( 12.05.1995 )</p>      
-            </div>
-          </div>
-          <div class="insurance-period">
-            <h4>Период страхования</h4>          
-            <p>м, 43 года ( 22.04.1977 )</p>              
-            <p>стаж - 25 лет ( 12.05.1995 )</p>      
-          </div>          
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="osago">
-      <div class="container">
-        <div class="title">
-          <h3>ОСАГО</h3>
-        </div>
-        <div class="osago-insurance-companies">
-          <div class="insurance-company">
-            <div class="company-item">
-              <img src="img/client-companies-img2.jpg" alt="">
-              <a href="javascript:void(0)">Подробнее</a>
-            </div>
-            <div class="cost">
-              <div>
-                <h5>Страховая сумма</h5>
-                <p>1000 000 р.</p>
-              </div>
-              <button type="button">Оформить он-лайн</button>
-              <button type="button">Оформить через менеджера Брокера</button>         
-            </div>         
-          </div>
-
-          <div class="insurance-company">
-            <div class="company-item">
-              <img src="img/client-companies-img4.jpg" alt="">
-              <a href="javascript:void(0)">Подробнее</a>
-            </div>
-            <div class="cost">
-              <div>
-                <h5>Страховая сумма</h5>
-                <p>1000 000 р.</p>
-              </div>
-              <button type="button">Оформить он-лайн</button>
-              <button type="button">Оформить через менеджера Брокера</button>         
-            </div>         
-          </div>
-        </div>
-
-        <div class="osago-insurance-companies-desktop">                    
-          <div class="title-row">
-            <div>Страховая компания</div>
-            <div>Страховая сумма</div>
-            <div>Условия</div>
-            <div>Стоимость</div>
-            <div>Комиссионное вознаграждение ( % )</div>
-            <div>Комиссионное вознаграждение ( руб )</div>
-            <div></div>
-          </div>
-          <div class="insurance-row">
-            <div>
-              <img src="img/companies-item1-hover.png" alt="">
-              <a href="javascript:void(0)">Подробнее </a>
-            </div>
-            <div>1000 000 р.</div>
-            <div>Без скидки</div>
-            <div>11 992 р.</div>
-            <div>00%</div>
-            <div>11 992 р.</div>
-            <div class="buttons">
-              <button type="button">Оформить он-лайн</button>
-              <button type="button">Оформить через менеджера Брокера</button>
-              <a href="javascript:void(0)">Подробнее </a>
-            </div>
-          </div>
-          <div class="drop-down">
-            <div class="files">
-              <a href="javascript:void(0)">Правила страхования.pdf</a>
-              <a href="javascript:void(0)">Пример страхового полиса.doc</a>
-            </div>    
-            <div class="options">
-              <div class="standart-option">
-                <h4>Стандартные опции</h4>          
-                <ul>
-                  <li>Пожар</li>
-                  <li>Взрыв</li>
-                  <li>Террористический акт</li>
-                  <li>Противоправные действия третьих лиц</li>
-                  <li>Залив водой</li>
-                  <li>Стихийные бедствия</li>
-                  <li>Удар молнии</li>
-                  <li>Наезд транспортного средства</li>
-                  <li>Кража с незаконным проникновением</li>
-                  <li>Падение летательных аппаратов</li>
-                  <li>Расходы по расчистке</li>
-                  <li>Бой стёкол</li>
-                </ul>
-              </div>
-              <div class="not-include">
-                <h4>Страховка не включает</h4>
-                <ul>
-                  <li>Поджог</li>
-                  <li>Авария инженерных систем</li>
-                </ul>
-              </div>
-            </div> 
-          </div>        
-          <div class="insurance-row">
-            <div>
-              <img src="img/companies-item3-hover.png" alt="">
-              <a href="javascript:void(0)">Подробнее </a>
-            </div>
-            <div>1000 000 р.</div>
-            <div>Без скидки</div>
-            <div>11 992 р.</div>
-            <div>00%</div>
-            <div>11 992 р.</div>
-            <div class="buttons">
-              <button type="button">Оформить он-лайн</button>
-              <button type="button">Оформить через менеджера Брокера</button>
-              <a href="javascript:void(0)">Подробнее </a>
-            </div>
-          </div>
-          <div class="drop-down">
-            <div class="files">
-              <a href="javascript:void(0)">Правила страхования.pdf</a>
-              <a href="javascript:void(0)">Пример страхового полиса.doc</a>
-            </div>    
-            <div class="options">
-              <div class="standart-option">
-                <h4>Стандартные опции</h4>          
-                <ul>
-                  <li>Пожар</li>
-                  <li>Взрыв</li>
-                  <li>Террористический акт</li>
-                  <li>Противоправные действия третьих лиц</li>
-                  <li>Залив водой</li>
-                  <li>Стихийные бедствия</li>
-                  <li>Удар молнии</li>
-                  <li>Наезд транспортного средства</li>
-                  <li>Кража с незаконным проникновением</li>
-                  <li>Падение летательных аппаратов</li>
-                  <li>Расходы по расчистке</li>
-                  <li>Бой стёкол</li>
-                </ul>
-              </div>
-              <div class="not-include">
-                <h4>Страховка не включает</h4>
-                <ul>
-                  <li>Поджог</li>
-                  <li>Авария инженерных систем</li>
-                </ul>
-              </div>
-            </div> 
-          </div>
-        </div>
-        
-        
-          
-
-        <div class="osago-insurance-companies-desktop">
-          <div class="insurance-row">
-            <div>
-              <img src="img/companies-item1-hover.png" alt="">
-              <a href="javascript:void(0)">Подробнее </a>
-            </div>            
-            <div>1000 000 р.</div>
-            <div>Без скидки</div>
-            <div class="info">
-              <span><strong>X</strong> Расчет не доступен</span>              
-            </div>
-            <div></div>
-            <div></div>
-            <div class="buttons">
-              <button type="button">Оформить он-лайн</button>
-              <button type="button">Оформить через менеджера Брокера</button>
-              <a href="javascript:void(0)">Подробнее </a>
-            </div>
-          </div>
-          <div class="drop-down">
-            <div class="files">
-              <a href="javascript:void(0)">Правила страхования.pdf</a>
-              <a href="javascript:void(0)">Пример страхового полиса.doc</a>
-            </div>    
-            <div class="options">
-              <div class="standart-option">
-                <h4>Стандартные опции</h4>          
-                <ul>
-                  <li>Пожар</li>
-                  <li>Взрыв</li>
-                  <li>Террористический акт</li>
-                  <li>Противоправные действия третьих лиц</li>
-                  <li>Залив водой</li>
-                  <li>Стихийные бедствия</li>
-                  <li>Удар молнии</li>
-                  <li>Наезд транспортного средства</li>
-                  <li>Кража с незаконным проникновением</li>
-                  <li>Падение летательных аппаратов</li>
-                  <li>Расходы по расчистке</li>
-                  <li>Бой стёкол</li>
-                </ul>
-              </div>
-              <div class="not-include">
-                <h4>Страховка не включает</h4>
-                <ul>
-                  <li>Поджог</li>
-                  <li>Авария инженерных систем</li>
-                </ul>
-              </div>
-            </div> 
-          </div>
-        </div>
-        <div class="osago-insurance-companies">
-          <div class="insurance-company">
-            <div class="company-item">
-              <img src="img/client-companies-img2.jpg" alt="">
-              <a href="javascript:void(0)">Подробнее</a>
-            </div>
-            <div class="info">
-              <strong>X</strong>
-              <span>Расчет не доступен</span>
-            </div>
-            <div class="cost">
-              <div>
-                <h5>Страховая сумма</h5>
-                <p>1000 000 р.</p>
-              </div>
-              <button type="button">Оформить он-лайн</button>
-              <button type="button">Оформить через менеджера Брокера</button> 
-              <a href="javascript:void(0)">Подробнее</a>         
-            </div>         
-          </div>
-        </div>
-
-        <div class="send-calculation">
+      <section class="precalculating">
+        <div class="container">
           <div class="title">
-            <p>Отправить расчет стоимость полиса на E-mail</p>
+            <h3>Предварительный расчет стоимости полиса на 31.07.2020</h3>
           </div>
-         
-          <form>
-            <input type="text" placeholder="введите e-mail">
-            <button type="button">Отправить расчет</button>
-            <button type="button">Новый расчет</button>
-          </form>
+          <div class="precalculating-parameters">
+            <div class="title">
+              <h3>Параметры расчета:</h3>
+            </div>
+            <div class="category-car">
+              <h4>Автомобиль</h4>
+              <p>Kia Rio</p>
+              <div>
+                <p>123 л.с, 2017 г.в</p>
+                <p>600 000 руб.</p>
+              </div>
+            </div>
+            <div class="category-driver">
+              <div class="driver">
+                <h4>1 водитель</h4>
+                <p>м, 43 года ( 22.04.1977 )</p>
+                <p>стаж - 25 лет ( 12.05.1995 )</p>
+              </div>
+              <div class="driver">
+                <h4>2 водитель</h4>
+                <p>м, 43 года ( 22.04.1977 )</p>
+                <p>стаж - 25 лет ( 12.05.1995 )</p>
+              </div>
+            </div>
+            <div class="insurance-period">
+              <h4>Период страхования</h4>
+              <p>м, 43 года ( 22.04.1977 )</p>
+              <p>стаж - 25 лет ( 12.05.1995 )</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="osago">
+        <div class="container">
+          <div class="title">
+            <h3>ОСАГО</h3>
+          </div>
+          <div class="osago-insurance-companies">
+            <div class="insurance-company">
+              <div class="company-item">
+                <img src="img/client-companies-img2.jpg" alt="">
+                <a href="javascript:void(0)">Подробнее</a>
+              </div>
+              <div class="cost">
+                <div>
+                  <h5>Страховая сумма</h5>
+                  <p>1000 000 р.</p>
+                </div>
+                <button type="button">Оформить он-лайн</button>
+                <button type="button">Оформить через менеджера Брокера</button>
+              </div>
+            </div>
 
-    <section class="why-leader">
-      <div class="container">
-        <div class="title">
-          <h3>Почему Leader 24?</h3>
-        </div>
-        <div class="why-leader-items">
-          <div class="why-leader-item">
-            <div class="icon">
-              <img src="img/why-leader-icon1.png" alt="">
+            <div class="insurance-company">
+              <div class="company-item">
+                <img src="img/client-companies-img4.jpg" alt="">
+                <a href="javascript:void(0)">Подробнее</a>
+              </div>
+              <div class="cost">
+                <div>
+                  <h5>Страховая сумма</h5>
+                  <p>1000 000 р.</p>
+                </div>
+                <button type="button">Оформить он-лайн</button>
+                <button type="button">Оформить через менеджера Брокера</button>
+              </div>
             </div>
-            <p>Вы выбираете страховую компанию, мы - предоставляем скидки и понижаем стоимость полиса</p>
           </div>
-          <div class="why-leader-item">
-            <div class="icon">
-              <img src="img/why-leader-icon2.png" alt="">
-            </div>
-            <p>	Учитываем рейтинг компании, чтобы оставался выше категории А+</p>
-          </div>
-          <div class="why-leader-item">
-            <div class="icon">
-              <img src="img/why-leader-icon3.png" alt="">
-            </div>
-            <p>Предоставляем более 50 страховых программ, включая страхование имущества и жизни</p>
-          </div>
-          <div class="why-leader-item">
-            <div class="icon">
-              <img src="img/why-leader-icon4.png" alt="">
-            </div>
-            <p>Сотрудничаем как с частными, так и с корпоративными клиентами</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="best-deals">
-      <div class="container">
-        <div class="title">
-          <h3>Лучшие предложения</h3>
-        </div>
-        <div class="best-deals-slider">
-          <div>
-            <div class="best-deals-item">
-              <div class="img" style="background: url('img/best-deals-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <div class="name">
-                  <h5>Юридическая помощь</h5>
-                  <span></span>
+          <div class="osago-insurance-companies-desktop">
+            <div class="title-row">
+              <div>Страховая компания</div>
+              <div>Страховая сумма</div>
+              <div>Условия</div>
+              <div>Стоимость</div>
+              <div>Комиссионное вознаграждение ( % )</div>
+              <div>Комиссионное вознаграждение ( руб )</div>
+              <div></div>
+            </div>
+            <div class="insurance-row">
+              <div>
+                <img src="img/companies-item1-hover.png" alt="">
+                <a href="javascript:void(0)">Подробнее </a>
+              </div>
+              <div>1000 000 р.</div>
+              <div>Без скидки</div>
+              <div>11 992 р.</div>
+              <div>00%</div>
+              <div>11 992 р.</div>
+              <div class="buttons">
+                <button type="button">Оформить он-лайн</button>
+                <button type="button">Оформить через менеджера Брокера</button>
+                <a href="javascript:void(0)">Подробнее </a>
+              </div>
+            </div>
+            <div class="drop-down">
+              <div class="files">
+                <a href="javascript:void(0)">Правила страхования.pdf</a>
+                <a href="javascript:void(0)">Пример страхового полиса.doc</a>
+              </div>
+              <div class="options">
+                <div class="standart-option">
+                  <h4>Стандартные опции</h4>
+                  <ul>
+                    <li>Пожар</li>
+                    <li>Взрыв</li>
+                    <li>Террористический акт</li>
+                    <li>Противоправные действия третьих лиц</li>
+                    <li>Залив водой</li>
+                    <li>Стихийные бедствия</li>
+                    <li>Удар молнии</li>
+                    <li>Наезд транспортного средства</li>
+                    <li>Кража с незаконным проникновением</li>
+                    <li>Падение летательных аппаратов</li>
+                    <li>Расходы по расчистке</li>
+                    <li>Бой стёкол</li>
+                  </ul>
                 </div>
-                <div class="description">
-                  <p>Защита Вашего автомобиля по рискам либо «Угон(хищение)», либо «Угон(хищение)»+  «Полная Гибель» всего за 
-                    20-30% от стоимости годового полиса Каско, от ведущих страховых компаний ТОП-20, доставка полисов в 
-                    пределах Спб и Лен.области.</p>
-                  <a href="javascript:void(0)">Узнать больше</a>
+                <div class="not-include">
+                  <h4>Страховка не включает</h4>
+                  <ul>
+                    <li>Поджог</li>
+                    <li>Авария инженерных систем</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="insurance-row">
+              <div>
+                <img src="img/companies-item3-hover.png" alt="">
+                <a href="javascript:void(0)">Подробнее </a>
+              </div>
+              <div>1000 000 р.</div>
+              <div>Без скидки</div>
+              <div>11 992 р.</div>
+              <div>00%</div>
+              <div>11 992 р.</div>
+              <div class="buttons">
+                <button type="button">Оформить он-лайн</button>
+                <button type="button">Оформить через менеджера Брокера</button>
+                <a href="javascript:void(0)">Подробнее </a>
+              </div>
+            </div>
+            <div class="drop-down">
+              <div class="files">
+                <a href="javascript:void(0)">Правила страхования.pdf</a>
+                <a href="javascript:void(0)">Пример страхового полиса.doc</a>
+              </div>
+              <div class="options">
+                <div class="standart-option">
+                  <h4>Стандартные опции</h4>
+                  <ul>
+                    <li>Пожар</li>
+                    <li>Взрыв</li>
+                    <li>Террористический акт</li>
+                    <li>Противоправные действия третьих лиц</li>
+                    <li>Залив водой</li>
+                    <li>Стихийные бедствия</li>
+                    <li>Удар молнии</li>
+                    <li>Наезд транспортного средства</li>
+                    <li>Кража с незаконным проникновением</li>
+                    <li>Падение летательных аппаратов</li>
+                    <li>Расходы по расчистке</li>
+                    <li>Бой стёкол</li>
+                  </ul>
+                </div>
+                <div class="not-include">
+                  <h4>Страховка не включает</h4>
+                  <ul>
+                    <li>Поджог</li>
+                    <li>Авария инженерных систем</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div>
-            <div class="best-deals-item">
-              <div class="img" style="background: url('img/best-deals-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <div class="name">
-                  <h5>Страхование от угона</h5>
-                  <span>Скидка 10% - 12%</span>
-                </div>
-                <div class="description">
-                  <p>Защита Вашего автомобиля по рискам либо «Угон(хищение)», либо «Угон(хищение)»+  «Полная Гибель» всего за 
-                    20-30% от стоимости годового полиса Каско, от ведущих страховых компаний ТОП-20, доставка полисов в 
-                    пределах Спб и Лен.области.</p>
-                  <a href="javascript:void(0)">Узнать больше</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="best-deals-item">
-              <div class="img" style="background: url('img/best-deals-img3.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <div class="name">
-                  <h5>Страхование туристов</h5>
-                  <span>От 150руб</span>
-                </div>
-                <div class="description">
-                  <p>Защита Вашего автомобиля по рискам либо «Угон(хищение)», либо «Угон(хищение)»+  «Полная Гибель» всего за 
-                    20-30% от стоимости годового полиса Каско, от ведущих страховых компаний ТОП-20, доставка полисов в 
-                    пределах Спб и Лен.области.</p>
-                  <a href="javascript:void(0)">Узнать больше</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="best-deals-item">
-              <div class="img" style="background: url('img/best-deals-img4.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <div class="name">
-                  <h5>Страхование имущества</h5>
-                  <span>Скидка 20% - 25%</span>
-                </div>
-                <div class="description">
-                  <p>Защита Вашего автомобиля по рискам либо «Угон(хищение)», либо «Угон(хищение)»+  «Полная Гибель» всего за 
-                    20-30% от стоимости годового полиса Каско, от ведущих страховых компаний ТОП-20, доставка полисов в 
-                    пределах Спб и Лен.области.</p>
-                  <a href="javascript:void(0)">Узнать больше</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="best-deals-item">
-              <div class="img" style="background: url('img/best-deals-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <div class="name">
-                  <h5>Юридическая помощь</h5>
-                  <span></span>
-                </div>
-                <div class="description">
-                  <p>Защита Вашего автомобиля по рискам либо «Угон(хищение)», либо «Угон(хищение)»+  «Полная Гибель» всего за 
-                    20-30% от стоимости годового полиса Каско, от ведущих страховых компаний ТОП-20, доставка полисов в 
-                    пределах Спб и Лен.области.</p>
-                  <a href="javascript:void(0)">Узнать больше</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="hot-offer">
+          <div class="osago-insurance-companies-desktop">
+            <div class="insurance-row">
+              <div>
+                <img src="img/companies-item1-hover.png" alt="">
+                <a href="javascript:void(0)">Подробнее </a>
+              </div>
+              <div>1000 000 р.</div>
+              <div>Без скидки</div>
+              <div class="info">
+                <span><strong>X</strong> Расчет не доступен</span>
+              </div>
+              <div></div>
+              <div></div>
+              <div class="buttons">
+                <button type="button">Оформить он-лайн</button>
+                <button type="button">Оформить через менеджера Брокера</button>
+                <a href="javascript:void(0)">Подробнее </a>
+              </div>
+            </div>
+            <div class="drop-down">
+              <div class="files">
+                <a href="javascript:void(0)">Правила страхования.pdf</a>
+                <a href="javascript:void(0)">Пример страхового полиса.doc</a>
+              </div>
+              <div class="options">
+                <div class="standart-option">
+                  <h4>Стандартные опции</h4>
+                  <ul>
+                    <li>Пожар</li>
+                    <li>Взрыв</li>
+                    <li>Террористический акт</li>
+                    <li>Противоправные действия третьих лиц</li>
+                    <li>Залив водой</li>
+                    <li>Стихийные бедствия</li>
+                    <li>Удар молнии</li>
+                    <li>Наезд транспортного средства</li>
+                    <li>Кража с незаконным проникновением</li>
+                    <li>Падение летательных аппаратов</li>
+                    <li>Расходы по расчистке</li>
+                    <li>Бой стёкол</li>
+                  </ul>
+                </div>
+                <div class="not-include">
+                  <h4>Страховка не включает</h4>
+                  <ul>
+                    <li>Поджог</li>
+                    <li>Авария инженерных систем</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="osago-insurance-companies">
+            <div class="insurance-company">
+              <div class="company-item">
+                <img src="img/client-companies-img2.jpg" alt="">
+                <a href="javascript:void(0)">Подробнее</a>
+              </div>
+              <div class="info">
+                <strong>X</strong>
+                <span>Расчет не доступен</span>
+              </div>
+              <div class="cost">
+                <div>
+                  <h5>Страховая сумма</h5>
+                  <p>1000 000 р.</p>
+                </div>
+                <button type="button">Оформить он-лайн</button>
+                <button type="button">Оформить через менеджера Брокера</button>
+                <a href="javascript:void(0)">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="send-calculation">
+            <div class="title">
+              <p>Отправить расчет стоимость полиса на E-mail</p>
+            </div>
+
+            <form>
+              <input type="text" placeholder="введите e-mail">
+              <button type="button">Отправить расчет</button>
+              <button type="button">Новый расчет</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-leader">
+        <div class="container">
+          <div class="title">
+            <h3>Почему Leader 24?</h3>
+          </div>
+          <div class="why-leader-items">
+            <div class="why-leader-item">
+              <div class="icon">
+                <img src="img/why-leader-icon1.png" alt="">
+              </div>
+              <p>
+                Вы выбираете страховую компанию, мы - предоставляем скидки и
+                понижаем стоимость полиса
+              </p>
+            </div>
+            <div class="why-leader-item">
+              <div class="icon">
+                <img src="img/why-leader-icon2.png" alt="">
+              </div>
+              <p>
+                Учитываем рейтинг компании, чтобы оставался выше категории А+
+              </p>
+            </div>
+            <div class="why-leader-item">
+              <div class="icon">
+                <img src="img/why-leader-icon3.png" alt="">
+              </div>
+              <p>
+                Предоставляем более 50 страховых программ, включая страхование
+                имущества и жизни
+              </p>
+            </div>
+            <div class="why-leader-item">
+              <div class="icon">
+                <img src="img/why-leader-icon4.png" alt="">
+              </div>
+              <p>
+                Сотрудничаем как с частными, так и с корпоративными клиентами
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="best-deals">
+        <div class="container">
+          <div class="title">
+            <h3>Лучшие предложения</h3>
+          </div>
+          <div class="best-deals-slider">
+            <div>
+              <div class="best-deals-item">
+                <div class="img" style="
+                    background: url('img/best-deals-img1.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <div class="name">
+                    <h5>Юридическая помощь</h5>
+                    <span></span>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Защита Вашего автомобиля по рискам либо «Угон(хищение)»,
+                      либо «Угон(хищение)»+ «Полная Гибель» всего за 20-30% от
+                      стоимости годового полиса Каско, от ведущих страховых
+                      компаний ТОП-20, доставка полисов в пределах Спб и
+                      Лен.области.
+                    </p>
+                    <a href="javascript:void(0)">Узнать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="best-deals-item">
+                <div class="img" style="
+                    background: url('img/best-deals-img2.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <div class="name">
+                    <h5>Страхование от угона</h5>
+                    <span>Скидка 10% - 12%</span>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Защита Вашего автомобиля по рискам либо «Угон(хищение)»,
+                      либо «Угон(хищение)»+ «Полная Гибель» всего за 20-30% от
+                      стоимости годового полиса Каско, от ведущих страховых
+                      компаний ТОП-20, доставка полисов в пределах Спб и
+                      Лен.области.
+                    </p>
+                    <a href="javascript:void(0)">Узнать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="best-deals-item">
+                <div class="img" style="
+                    background: url('img/best-deals-img3.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <div class="name">
+                    <h5>Страхование туристов</h5>
+                    <span>От 150руб</span>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Защита Вашего автомобиля по рискам либо «Угон(хищение)»,
+                      либо «Угон(хищение)»+ «Полная Гибель» всего за 20-30% от
+                      стоимости годового полиса Каско, от ведущих страховых
+                      компаний ТОП-20, доставка полисов в пределах Спб и
+                      Лен.области.
+                    </p>
+                    <a href="javascript:void(0)">Узнать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="best-deals-item">
+                <div class="img" style="
+                    background: url('img/best-deals-img4.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <div class="name">
+                    <h5>Страхование имущества</h5>
+                    <span>Скидка 20% - 25%</span>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Защита Вашего автомобиля по рискам либо «Угон(хищение)»,
+                      либо «Угон(хищение)»+ «Полная Гибель» всего за 20-30% от
+                      стоимости годового полиса Каско, от ведущих страховых
+                      компаний ТОП-20, доставка полисов в пределах Спб и
+                      Лен.области.
+                    </p>
+                    <a href="javascript:void(0)">Узнать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="best-deals-item">
+                <div class="img" style="
+                    background: url('img/best-deals-img1.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <div class="name">
+                    <h5>Юридическая помощь</h5>
+                    <span></span>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Защита Вашего автомобиля по рискам либо «Угон(хищение)»,
+                      либо «Угон(хищение)»+ «Полная Гибель» всего за 20-30% от
+                      стоимости годового полиса Каско, от ведущих страховых
+                      компаний ТОП-20, доставка полисов в пределах Спб и
+                      Лен.области.
+                    </p>
+                    <a href="javascript:void(0)">Узнать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hot-offer">
     <div class="container">
       <div class="title">
         <h3>Получайте больше горячих предложени</h3>
@@ -1158,241 +1215,322 @@
     </div>
   </section>
 
-    <section class="reasons-to-order">
-      <div class="container">
-        <div class="title">
-          <h3>8 причин сделать заказ</h3>
-        </div>
-        <ul>
-          <li>- Оформляем ОСАГО для регионов.</li>
-          <li>- Мы работаем только с надежными страховыми(28 лучших компаний РФ).</li>
-          <li>- Поможем восстановить Ваш действующий КБМ.</li>
-          <li>- Удобный онлайн калькулятор расчета стоимости ОСАГО.</li>
-          <li>- Бесплатная доставка до трех часов в пределах Санкт-Петербурга.</li>
-          <li>- В течение всего срока страхования мы остаемся с Вами (юридические консультации, изменения, восстановление при утере).</li>
-          <li>- При продаже авто возвращаем деньги, либо зачислим остаток на новый полис.</li>
-          <li>- Помогаем получить диагностическую карту.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="faq">
-      <div class="container">
-        <div class="title">
-          <h3>Часто задаваемые вопросы</h3>
-        </div>
-        <div class="faq-content">
-          <ul id="faq-accordion" class="accordionjs">
+      <section class="reasons-to-order">
+        <div class="container">
+          <div class="title">
+            <h3>8 причин сделать заказ</h3>
+          </div>
+          <ul>
+            <li>- Оформляем ОСАГО для регионов.</li>
             <li>
+              - Мы работаем только с надежными страховыми(28 лучших компаний
+              РФ).
+            </li>
+            <li>- Поможем восстановить Ваш действующий КБМ.</li>
+            <li>- Удобный онлайн калькулятор расчета стоимости ОСАГО.</li>
+            <li>
+              - Бесплатная доставка до трех часов в пределах Санкт-Петербурга.
+            </li>
+            <li>
+              - В течение всего срока страхования мы остаемся с Вами
+              (юридические консультации, изменения, восстановление при утере).
+            </li>
+            <li>
+              - При продаже авто возвращаем деньги, либо зачислим остаток на
+              новый полис.
+            </li>
+            <li>- Помогаем получить диагностическую карту.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="title">
+            <h3>Часто задаваемые вопросы</h3>
+          </div>
+          <div class="faq-content">
+            <ul id="faq-accordion" class="accordionjs">
+              <li>
                 <div>С кем будет заключен договор</div>
                 <div>
-                    <p>Договор (страховой полис) заключается с одним из надежных партнеров, входящих в ТОП наиболее успешных организаций, работающих на страховом рынке.</p>
-                    <p>За 17 лет работы страховой брокер "LEADER" успешно сотрудничает более чем с 30 страховыми компаниями</p>
+                  <p>
+                    Договор (страховой полис) заключается с одним из надежных
+                    партнеров, входящих в ТОП наиболее успешных организаций,
+                    работающих на страховом рынке.
+                  </p>
+                  <p>
+                    За 17 лет работы страховой брокер "LEADER" успешно
+                    сотрудничает более чем с 30 страховыми компаниями
+                  </p>
                 </div>
-            </li>
-            <li>
+              </li>
+              <li>
                 <div>Как осуществляется оплата?</div>
                 <div>
-                  <p>Договор (страховой полис) заключается с одним из надежных партнеров, входящих в ТОП наиболее успешных организаций, работающих на страховом рынке.</p>
-                  <p>За 17 лет работы страховой брокер "LEADER" успешно сотрудничает более чем с 30 страховыми компаниями</p>
+                  <p>
+                    Договор (страховой полис) заключается с одним из надежных
+                    партнеров, входящих в ТОП наиболее успешных организаций,
+                    работающих на страховом рынке.
+                  </p>
+                  <p>
+                    За 17 лет работы страховой брокер "LEADER" успешно
+                    сотрудничает более чем с 30 страховыми компаниями
+                  </p>
                 </div>
-            </li>
-            <li>
+              </li>
+              <li>
                 <div>Зачем пользоваться услугами страхового брокера?</div>
                 <div>
-                  <p>Договор (страховой полис) заключается с одним из надежных партнеров, входящих в ТОП наиболее успешных организаций, работающих на страховом рынке.</p>
-                  <p>За 17 лет работы страховой брокер "LEADER" успешно сотрудничает более чем с 30 страховыми компаниями</p>
+                  <p>
+                    Договор (страховой полис) заключается с одним из надежных
+                    партнеров, входящих в ТОП наиболее успешных организаций,
+                    работающих на страховом рынке.
+                  </p>
+                  <p>
+                    За 17 лет работы страховой брокер "LEADER" успешно
+                    сотрудничает более чем с 30 страховыми компаниями
+                  </p>
                 </div>
-            </li>
-          </ul>
-          <div class="form">
-            <h4>Остались вопросы?</h4>
-            <p>Оставьте пожалуйста, свой номер телефона, в  ближайшее время мы Вам перезвоним и ответим на все 
-              интерисующие  вопросы!</p>
+              </li>
+            </ul>
+            <div class="form">
+              <h4>Остались вопросы?</h4>
+              <p>
+                Оставьте пожалуйста, свой номер телефона, в ближайшее время мы
+                Вам перезвоним и ответим на все интерисующие вопросы!
+              </p>
+              <form>
+                <div class="inputs">
+                  <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+                  <input type="text" placeholder="Ваше имя">
+                  <input type="text" placeholder="Ваш номер телефона">
+                  <input type="text" placeholder="Ваш e-mail">
+                  <button type="button">Обратный звонок</button>
+                </div>
+                <div class="button">
+                  <label><input type="checkbox" checked="">Я согласен с правилами
+                    использования сервиса и обработки персональных данных</label>
+                  <button type="button">Обратный звонок</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="apply-policy-online">
+        <div class="container">
+          <div class="title">
+            <h3>Как получить полис?</h3>
+            <h3>Оформите полис он-лайн самостоятельно</h3>
+            <p>
+              Рассчитайте и самостоятельно либо при помощи наших менеджеров
+              оформите страховые полисы от ведущих страховых компаний
+            </p>
+          </div>
+          <div class="apply-policy-online-items">
+            <div class="apply-policy-online-item">
+              <div class="icon">
+                <img src="img/apply-policy-online1.png" alt="">
+              </div>
+              <p>Создание личного кабинета</p>
+            </div>
+            <div class="apply-policy-online-item">
+              <div class="icon">
+                <img src="img/apply-policy-online2.png" alt="">
+              </div>
+              <p>Ввод данных для оформления полиса страхования</p>
+            </div>
+            <div class="apply-policy-online-item">
+              <div class="icon">
+                <img src="img/apply-policy-online3.png" alt="">
+              </div>
+              <p>Оплата полиса он-лайн любым удобным способом</p>
+            </div>
+            <div class="apply-policy-online-item">
+              <div class="icon">
+                <img src="img/apply-policy-online4.png" alt="">
+              </div>
+              <p>Получение полиса</p>
+            </div>
+          </div>
+          <div class="button">
+            <button type="button">Онлайн оформление</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="apply-policy-with-delivery">
+        <div class="container">
+          <div class="title">
+            <h3>
+              Оформите полис через нашего менеджера с доставкойй по г. СПБ и Лен
+              об
+            </h3>
+          </div>
+          <div class="apply-policy-with-delivery-items">
+            <div class="apply-policy-with-delivery-item">
+              <div class="icon">
+                <img src="img/apply-policy-with-delivery1.png" alt="">
+              </div>
+              <p>Оставляете заявку на сайте или по телефону;</p>
+            </div>
+            <div class="apply-policy-with-delivery-item">
+              <div class="icon">
+                <img src="img/apply-policy-with-delivery2.png" alt="">
+              </div>
+              <p>
+                Отправляете копии/сканы необходимых документов (паспорт
+                гражданина, водительские права,ПТС (СТС), диагностическую
+                карту(если есть)
+              </p>
+            </div>
+            <div class="apply-policy-with-delivery-item">
+              <div class="icon">
+                <img src="img/apply-policy-with-delivery3.png" alt="">
+              </div>
+              <p>Определяете куда и когда нужно доставить полис;</p>
+            </div>
+            <div class="apply-policy-with-delivery-item">
+              <div class="icon">
+                <img src="img/apply-policy-with-delivery4.png" alt="">
+              </div>
+              <p>К Вам приезжает курьер и отдает готовый полис.</p>
+            </div>
+            <div class="apply-policy-with-delivery-item">
+              <div class="icon">
+                <img src="img/apply-policy-with-delivery5.png" alt="">
+              </div>
+              <p>
+                Оплата любым удобным для Вас способом при получении полиса. Мы
+                принимаем наличные,банковские карты,электронные деньги
+              </p>
+            </div>
+          </div>
+          <form>
+            <div class="inputs">
+              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+              <input type="text" placeholder="Ваше имя">
+              <input type="text" placeholder="Ваш телефон">
+            </div>
+            <div class="button">
+              <label><input type="checkbox" checked="">Я согласен с правилами
+                использования сервиса и обработки персональных данных</label>
+              <button type="button">Заказать полис через нас</button>
+              <button type="button">
+                Заказать оформление полиса нашим менеджером
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="title">
+            <h3>Новости</h3>
+          </div>
+          <div class="news-slider">
+            <div>
+              <div class="news-item">
+                <a href="javascript:void(0)"></a>
+                <div class="img" style="
+                    background: url('img/news-item-img1.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <p>
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
+                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                    текстов...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="news-item">
+                <a href="javascript:void(0)"></a>
+                <div class="img" style="
+                    background: url('img/news-item-img2.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <p>
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
+                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                    текстов...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="news-item">
+                <a href="javascript:void(0)"></a>
+                <div class="img" style="
+                    background: url('img/news-item-img3.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <p>
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
+                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                    текстов...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="news-item">
+                <a href="javascript:void(0)"></a>
+                <div class="img" style="
+                    background: url('img/news-item-img2.jpg') no-repeat 50% 50%;
+                    background-size: cover;
+                  "></div>
+                <div class="text">
+                  <p>
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
+                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                    текстов...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="question">
+        <div class="container">
+          <div class="title">
+            <h3>Появился вопрос?</h3>
+            <p>
+              Оставьте пожалуйста, свой номер телефона, в ближайшее время мы Вам
+              перезвоним и ответим на все интурисующие вопросы
+            </p>
+          </div>
+          <div class="question-content">
             <form>
               <div class="inputs">
                 <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-                <input type="text" placeholder="Ваше имя"> 
-                <input type="text" placeholder="Ваш номер телефона">
+                <input type="text" placeholder="Ваше имя">
                 <input type="text" placeholder="Ваш e-mail">
-                <button type="button">Обратный звонок</button>
+                <input type="text" placeholder="Ваш телефон">
               </div>
+              <textarea placeholder="Ваше сообщение"></textarea>
               <div class="button">
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Обратный звонок</button>
+                <label><input type="checkbox" checked="">Я согласен с правилами
+                  использования сервиса и обработки персональных данных</label>
+                <button type="button">Отправить</button>
               </div>
             </form>
           </div>
         </div>
-      </div>
+      </section>
     </section>
 
-    <section class="apply-policy-online">
-      <div class="container">
-        <div class="title">
-          <h3>Как получить полис?</h3>
-          <h3>Оформите полис он-лайн самостоятельно</h3>
-          <p>Рассчитайте и самостоятельно либо при помощи наших менеджеров оформите страховые полисы от ведущих страховых компаний</p>
-        </div>
-        <div class="apply-policy-online-items">
-          <div class="apply-policy-online-item">
-            <div class="icon">
-              <img src="img/apply-policy-online1.png" alt="">
-            </div>
-            <p>Создание личного кабинета</p>
-          </div>
-          <div class="apply-policy-online-item">
-            <div class="icon">
-              <img src="img/apply-policy-online2.png" alt="">
-            </div>
-            <p>Ввод данных для оформления полиса страхования</p>
-          </div>
-          <div class="apply-policy-online-item">
-            <div class="icon">
-              <img src="img/apply-policy-online3.png" alt="">
-            </div>
-            <p>Оплата полиса он-лайн любым удобным способом</p>
-          </div>
-          <div class="apply-policy-online-item">
-            <div class="icon">
-              <img src="img/apply-policy-online4.png" alt="">
-            </div>
-            <p>Получение полиса</p>
-          </div>
-        </div>
-        <div class="button">
-          <button type="button">Онлайн оформление</button>
-        </div>        
-      </div>
-    </section>
-
-    <section class="apply-policy-with-delivery">
-      <div class="container">
-        <div class="title">
-          <h3>Оформите полис через нашего менеджера с доставкойй по г. СПБ и Лен об</h3>
-        </div>
-        <div class="apply-policy-with-delivery-items">
-          <div class="apply-policy-with-delivery-item">
-            <div class="icon">
-              <img src="img/apply-policy-with-delivery1.png" alt="">
-            </div>
-            <p>Оставляете заявку на сайте или по телефону;</p>
-          </div>
-          <div class="apply-policy-with-delivery-item">
-            <div class="icon">
-              <img src="img/apply-policy-with-delivery2.png" alt="">
-            </div>
-            <p>Отправляете копии/сканы необходимых документов (паспорт гражданина, водительские права,ПТС (СТС), диагностическую карту(если есть)</p>
-          </div>
-          <div class="apply-policy-with-delivery-item">
-            <div class="icon">
-              <img src="img/apply-policy-with-delivery3.png" alt="">
-            </div>
-            <p>Определяете куда и когда нужно доставить полис;</p>
-          </div>
-          <div class="apply-policy-with-delivery-item">
-            <div class="icon">
-              <img src="img/apply-policy-with-delivery4.png" alt="">
-            </div>
-            <p>К Вам приезжает курьер и отдает готовый полис.</p>
-          </div>
-          <div class="apply-policy-with-delivery-item">
-            <div class="icon">
-              <img src="img/apply-policy-with-delivery5.png" alt="">
-            </div>
-            <p>Оплата любым удобным для Вас способом при получении полиса. Мы принимаем наличные,банковские карты,электронные деньги</p>
-          </div>
-        </div>
-        <form>
-          <div class="inputs">
-            <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-            <input type="text" placeholder="Ваше имя"> 
-            <input type="text" placeholder="Ваш телефон">
-          </div>
-          <div class="button">
-            <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-            <button type="button">Заказать полис через нас</button>
-            <button type="button">Заказать оформление полиса нашим менеджером</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="news">
-      <div class="container">
-        <div class="title">
-          <h3>Новости</h3>
-        </div>
-        <div class="news-slider">
-          <div>
-            <div class="news-item">
-              <a href="javascript:void(0)"></a>
-              <div class="img" style="background: url('img/news-item-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="news-item">
-              <a href="javascript:void(0)"></a>
-              <div class="img" style="background: url('img/news-item-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="news-item">
-              <a href="javascript:void(0)"></a>
-              <div class="img" style="background: url('img/news-item-img3.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="news-item">
-              <a href="javascript:void(0)"></a>
-              <div class="img" style="background: url('img/news-item-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-              <div class="text">
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="question">
-      <div class="container">
-        <div class="title">
-          <h3>Появился вопрос?</h3>
-          <p>Оставьте пожалуйста, свой номер телефона, в ближайшее время мы Вам перезвоним и ответим на все интурисующие вопросы</p>
-        </div>
-        <div class="question-content">
-          <form>
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-              <input type="text" placeholder="Ваше имя"> 
-              <input type="text" placeholder="Ваш e-mail">
-              <input type="text" placeholder="Ваш телефон">
-            </div>
-            <textarea placeholder="Ваше сообщение"></textarea>
-            <div class="button">
-              <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-              <button type="button">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="logo">
@@ -1464,16 +1602,14 @@
     </div>
 </footer>
 
-  <!-- Скрипты -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.matchHeight.min.js"></script>
-  <script src="js/jcf.min.js"></script>
-  <script src="js/jcf.checkbox.min.js"></script>
-  <script src="js/accordion.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/script.min.js"></script>
-  <script src="js/calculation.min.js"></script>
-
-</body>
-
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.matchHeight.min.js"></script>
+    <script src="js/jcf.min.js"></script>
+    <script src="js/jcf.checkbox.min.js"></script>
+    <script src="js/accordion.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/calculation.min.js"></script>
+  </body>
 </html>
