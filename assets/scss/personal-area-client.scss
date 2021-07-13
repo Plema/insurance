@@ -352,6 +352,7 @@
       justify-content: flex-end;
       border: 1px solid #e4e4e4;
       &:hover {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
         .img {
           transform: scale(1.1);
         }
@@ -950,7 +951,9 @@
       .legal-services-item {
         position: relative;
         margin-bottom: 22px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        &:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
         a {
           top: 0;
           left: 0;
@@ -1261,9 +1264,12 @@
   .shares-content {
     .shares-items {
       margin-bottom: 30px;
+
       .shares-item {
         margin-bottom: 24px;
         &:hover {
+          transition: all 0.7s ease-in-out;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
           .text {
             .text-hover {
               transform: rotateY(0);
@@ -1283,7 +1289,7 @@
             text-align: center;
           }
           .text-hover {
-            top: 0;
+            top: 100%;
             left: 0;
             z-index: 1;
             width: 100%;
