@@ -1,126 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>INSURANCE</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/personal-area-client.min.css"
+      data-inprogress=""
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>INSURANCE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="css/personal-area-client.min.css" data-inprogress="">
-</head>
+  <body>
+    <!-- Header -->
+    <include src="assets/templates/header.html"></include>
 
-<body>
-  <!-- Header -->
-  <include src="assets/templates/header.html"></include>
-
-  <div class="bread-crumbs">
+    <div class="bread-crumbs">
       <div class="container">
         <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="personal-area-client.html">Личный кабинет клиента</a></li>
-            <li><span>Услуги юриста</span></li>
+          <li><a href="index.html">Главная</a></li>
+          <li>
+            <a href="personal-area-client.html">Личный кабинет клиента</a>
+          </li>
+          <li><span>Услуги юриста</span></li>
         </ul>
       </div>
-  </div>
+    </div>
 
-   <!-- Основной контент -->
-  <section class="wrapper">
-
-    <section class="personal-area-legal-services">
+    <!-- Основной контент -->
+    <section class="wrapper">
+      <section class="personal-area-legal-services">
         <div class="container">
-            <div class="title">
-                <h3>Услуги юриста </h3>
+          <div class="title">
+            <h3>Услуги юриста</h3>
+          </div>
+          <div class="legal-services-content">
+            <div class="legal-services-text">
+              <h3>
+                Квалифицированная помощь при отказе страховых компаний
+                выплачивать Вам положенные страховые выплаты.
+              </h3>
+              <h5>Мы осуществляем:</h5>
+              <ul>
+                <li>консультации;</li>
+                <li>экспертизу документов, оценку судебной перспективы;</li>
+                <li>выработку правовой позиции;</li>
+                <li>
+                  подготовку процессуальных документов (искового заявления,
+                  претензий, жалоб, ответов на них и пр.);
+                </li>
+                <li>участие во всех назначенных судебных заседаниях.</li>
+              </ul>
             </div>
-            <div class="legal-services-content">
-                <div class="legal-services-text">
-                    <h3>Квалифицированная помощь при отказе страховых компаний выплачивать Вам положенные страховые выплаты. </h3>
-                    <h5>Мы осуществляем:</h5>
-                    <ul>
-                        <li>консультации;</li>
-                        <li>экспертизу документов, оценку судебной перспективы;</li>
-                        <li>выработку правовой позиции;</li>
-                        <li>подготовку процессуальных документов (искового заявления, претензий, жалоб, ответов на них и пр.);</li>
-                        <li>участие во всех назначенных судебных заседаниях.</li>
-                    </ul>
+            <div class="legal-services-items">
+              <div class="legal-services-item">
+                <a href="javascript:void(0)"></a>
+                <div
+                  class="img"
+                  style="
+                    background: url('img/legal-services-img1.jpg') no-repeat 50%
+                      50%;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="text">
+                  <h4>Консультация по страховым спорам</h4>
                 </div>
-                <div class="legal-services-items">
-                    <div class="legal-services-item">
-                        <a href="javascript:void(0)"></a>
-                        <div class="img" style="background: url('img/legal-services-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-                        <div class="text">
-                            <h4>Консультация по страховым спорам</h4>
-                        </div>
-                    </div>
-                    <div class="legal-services-item">
-                        <a href="javascript:void(0)"></a>
-                        <div class="img" style="background: url('img/legal-services-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-                        <div class="text">
-                            <h4>Консультация по нестраховым спорам</h4>
-                        </div>
-                    </div>
-                    <div class="legal-services-item">
-                        <a href="javascript:void(0)"></a>
-                        <div class="img" style="background: url('img/legal-services-img3.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-                        <div class="text">
-                            <h4>Составление претензий</h4>
-                        </div>
-                    </div>
-                    <div class="legal-services-item">
-                        <a href="javascript:void(0)"></a>
-                        <div class="img" style="background: url('img/legal-services-img4.jpg') no-repeat 50% 50%; background-size: cover;"></div>
-                        <div class="text">
-                            <h4>Полное или частичное споровождение в суде</h4>
-                        </div>
-                    </div>
+              </div>
+              <div class="legal-services-item">
+                <a href="javascript:void(0)"></a>
+                <div
+                  class="img"
+                  style="
+                    background: url('img/legal-services-img2.jpg') no-repeat 50%
+                      50%;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="text">
+                  <h4>Консультация по нестраховым спорам</h4>
                 </div>
+              </div>
+              <div class="legal-services-item">
+                <a href="javascript:void(0)"></a>
+                <div
+                  class="img"
+                  style="
+                    background: url('img/legal-services-img3.jpg') no-repeat 50%
+                      50%;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="text">
+                  <h4>Составление претензий</h4>
+                </div>
+              </div>
+              <div class="legal-services-item">
+                <a href="javascript:void(0)"></a>
+                <div
+                  class="img"
+                  style="
+                    background: url('img/legal-services-img4.jpg') no-repeat 50%
+                      50%;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="text">
+                  <h4>Полное или частичное споровождение в суде</h4>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="question">
+      <section class="question">
         <div class="container">
           <div class="title">
             <h3>Появился вопрос?</h3>
-            <p>Оставьте пожалуйста, свой номер телефона, в ближайшее время мы Вам перезвоним и ответим на все интурисующие вопросы</p>
+            <p>
+              Оставьте пожалуйста, свой номер телефона, в ближайшее время мы Вам
+              перезвоним и ответим на все интурисующие вопросы
+            </p>
           </div>
           <div class="question-content">
             <form>
               <div class="inputs">
                 <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-                <input type="text" placeholder="Ваше имя"> 
-                <input type="text" placeholder="Ваш e-mail">
-                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="text" placeholder="Ваш e-mail" />
+                <input type="text" placeholder="Ваш телефон" />
               </div>
               <textarea placeholder="Ваше сообщение"></textarea>
               <div class="button">
-                <label><input type="checkbox" checked>Я согласен с правилами использования сервиса и обработки персональных данных</label>
+                <label
+                  ><input type="checkbox" checked />Я согласен с правилами
+                  использования сервиса и обработки персональных данных</label
+                >
                 <button type="button">Отправить</button>
               </div>
             </form>
           </div>
         </div>
+      </section>
     </section>
 
-  </section>
+    <!-- Footer -->
+    <include src="assets/templates/footer.html"></include>
 
-  <!-- Footer -->
-  <include src="assets/templates/footer.html"></include>
-
-  <!-- Скрипты -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script src="js/jquery.matchHeight.min.js"></script>
-  <script src="js/jcf.min.js"></script>
-  <script src="js/jcf.checkbox.min.js"></script>
-  <script src="js/jquery.showmore.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/script.min.js"></script>
-  <script src="js/personal-area-client.min.js"></script>
-
-</body>
-
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/jquery.matchHeight.min.js"></script>
+    <script src="js/jcf.min.js"></script>
+    <script src="js/jcf.checkbox.min.js"></script>
+    <script src="js/jquery.showmore.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/personal-area-client.min.js"></script>
+  </body>
 </html>
