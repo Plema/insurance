@@ -6,6 +6,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     adaptiveHeight: false,
     autoplaySpeed: 15000,
+    infinity: true,
     nextArrow:
       '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
     prevArrow:
@@ -55,10 +56,11 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          dots: true,
+          dots: false,
           arrows: false,
           slidesToShow: 5,
           slidesToScroll: 4,
+          speed: 15000,
         },
       },
     ],
