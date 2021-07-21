@@ -195,9 +195,10 @@
   nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    text-align: left;
+    // align-items: center;
     ul {
+      padding-left: 15px;
       li {
         margin-bottom: 25px;
         &:last-child {
