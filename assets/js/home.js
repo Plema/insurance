@@ -107,9 +107,22 @@ $(document).ready(function () {
       },
     ],
   })
-  $('.best-deals-slider .best-deals-item').hover(function () {
-    $(this).find('.description').slideToggle()
-  })
+  // if ($(window).width() <= 1023) {
+  //   $('.best-deals-slider .best-deals-item').click(function () {
+  //     $(this).find('.description').slideToggle()
+  //   })
+  // } else {
+  //   $('.best-deals-slider .best-deals-item').hover(function () {
+  //     $(this).find('.description').slideToggle()
+  //   })
+  // }
+  $(window).width() <= 1023
+    ? $('.best-deals-slider .best-deals-item').click(function () {
+        $(this).find('.description').slideToggle()
+      })
+    : $('.best-deals-slider .best-deals-item').hover(function () {
+        $(this).find('.description').slideToggle()
+      })
 
   $('.news-slider').slick({
     dots: false,
