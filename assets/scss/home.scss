@@ -40,7 +40,7 @@
           }
         }
         .img {
-          border: 1px solid #e4e4e4;
+          // border: 1px solid #e4e4e4;
           img {
             width: 100%;
             display: block;
@@ -103,10 +103,10 @@
       background: #517ea1;
       border: 1px solid #517ea1;
       transition: all 0.5s;
-      &:hover {
-        color: #517ea1;
-        background: #fff;
-      }
+      // &:hover {
+      //   color: #517ea1;
+      //   background: #fff;
+      // }
     }
   }
   @media (min-width: 768px) {
@@ -700,10 +700,10 @@
           background: #517ea1;
           border: 1px solid #517ea1;
           transition: all 0.3s;
-          &:hover {
-            color: #517ea1;
-            background: #ffffff;
-          }
+          // &:hover {
+          //   color: #517ea1;
+          //   background: #ffffff;
+          // }
         }
       }
       .button {
@@ -766,10 +766,10 @@
           background: #517ea1;
           border: 1px solid #517ea1;
           transition: all 0.3s;
-          &:hover {
-            color: #517ea1;
-            background: #ffffff;
-          }
+          // &:hover {
+          //   color: #517ea1;
+          //   background: #ffffff;
+          // }
         }
       }
     }
