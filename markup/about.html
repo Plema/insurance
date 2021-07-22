@@ -227,369 +227,473 @@
         </div>
     </div>
     <div class="mobile-menu">
-    <nav>
-        <ul>
-            <li class="active"><a href="index.html">Частным клиентам</a></li>
-            <li><a href="index-corporate.html">Корпоративным клиентам</a></li>
-            <li><a href="partners-insurance-companies.html">Партнерам</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="about.html">О компании</a></li>
+  <nav>
+    <ul>
+      <li class="active">
+        <a href="index.html">Частным клиентам</a>
+        <button class="click-to-show">click</button>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="javascript:void(0)">Автомобили</a>
+            <button class="click-to-show">click</button>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:void(0)">ОСАГО</a></li>
+              <li><a href="javascript:void(0)">КАСКО</a></li>
+              <li><a href="javascript:void(0)">Зеленая карта+ВЗР</a></li>
+              <li><a href="javascript:void(0)">Проверка по базе РСА</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Здоровье</a>
+            <ul>
+              <li><a href="javascript:void(0)">Несчастный случай</a></li>
+              <li><a href="javascript:void(0)">ДМС</a></li>
+              <li><a href="javascript:void(0)">ДМС для мигрантов</a></li>
+              <li><a href="javascript:void(0)">ВЗР</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Имущество</a>
+            <ul>
+              <li><a href="javascript:void(0)">Квартира</a></li>
+              <li><a href="javascript:void(0)">Дача</a></li>
+              <li>
+                <a href="javascript:void(0)">Гражданская ответственность</a>
+              </li>
+              <li><a href="javascript:void(0)">Ипотека</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Путешествия</a>
+            <ul>
+              <li><a href="javascript:void(0)">Зеленая карта</a></li>
+              <li><a href="javascript:void(0)">ВЗР</a></li>
+              <li><a href="javascript:void(0)">Отмена поездки</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Другие виды страхования</a>
+            <ul>
+              <li>
+                <a href="javascript:void(0)">Страхование катеров, маломерных судов</a>
+              </li>
+              <li><a href="javascript:void(0)">Страхование телефонов</a></li>
+              <li><a href="javascript:void(0)">Страхование животных</a></li>
+              <li><a href="javascript:void(0)">Другие виды страхования</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Акции</a>
+            <ul>
+              <li><a href="javascript:void(0)">Акции</a></li>
+              <li><a href="javascript:void(0)">Новости</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Услуги юриста</a>
+            <ul>
+              <li>
+                <a href="javascript:void(0)">Консультации юриста по страховым спорам</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Консультации юриста по нестраховым спорам</a>
+              </li>
+              <li><a href="javascript:void(0)">Составление претензий</a></li>
+              <li>
+                <a href="javascript:void(0)">Полное или частичное сопровождение в суде</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Страховые компании</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Стать страховым агентом</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Личный кабинет</a>
+          </li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="index-corporate.html">Корпоративным клиентам</a></li>
+      <li><a href="partners-insurance-companies.html">Партнерам</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="about.html">О компании</a></li>
+    </ul>
+  </nav>
 </div>
 
-<div class="dark-display">
-</div>
+<div class="dark-display"></div>
 
 <div class="popup connecting">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Присоединиться</h3>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Присоединиться</h3>
-        </div>
-        <form>
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-              <input type="text" placeholder="Ваше имя"> 
-              <input type="text" placeholder="Ваш e-mail">
-              <input type="text" placeholder="Ваш телефон">
-            </div>
-            <textarea placeholder="Ваш комментарий"></textarea>
-            <div class="button">
-                <p>Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)</p>
-                <button type="button">Прикрепить файл</button>
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-          </form>
-    </div>
-</div>   
+    <form>
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш e-mail">
+        <input type="text" placeholder="Ваш телефон">
+      </div>
+      <textarea placeholder="Ваш комментарий"></textarea>
+      <div class="button">
+        <p>
+          Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)
+        </p>
+        <button type="button">Прикрепить файл</button>
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="popup write-me">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Написать нам</h3>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Написать нам</h3>
-        </div>
-        <form>
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-              <input type="text" placeholder="Ваше имя"> 
-              <input type="text" placeholder="Ваш e-mail">
-            </div>
-            <textarea placeholder="Ваш комментарий"></textarea>
-            <div class="button">
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-          </form>
-    </div>
-</div> 
+    <form>
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш e-mail">
+      </div>
+      <textarea placeholder="Ваш комментарий"></textarea>
+      <div class="button">
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="popup request-offer">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Запросить предложение</h3>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Запросить предложение</h3>
-        </div>
-        <form>
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-              <input type="text" placeholder="Ваше имя"> 
-              <input type="text" placeholder="Ваш e-mail">
-            </div>
-            <textarea placeholder="Ваш комментарий"></textarea>
-            <div class="button">
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Запросить предложение</button>
-            </div>
-          </form>
-    </div>
-</div> 
+    <form>
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш e-mail">
+      </div>
+      <textarea placeholder="Ваш комментарий"></textarea>
+      <div class="button">
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Запросить предложение</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="popup send-form">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Присоединиться</h3>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Присоединиться</h3>
-        </div>
-        <form>
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-              <input type="text" placeholder="Ваше имя"> 
-              <input type="text" placeholder="Ваш e-mail">
-              <input type="text" placeholder="Ваш телефон">
-            </div>
-            <textarea placeholder="Ваш комментарий"></textarea>
-            <div class="button">
-                <p>Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)</p>
-                <button type="button">Прикрепить файл</button>
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-          </form>
-    </div>
-</div>   
+    <form>
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш e-mail">
+        <input type="text" placeholder="Ваш телефон">
+      </div>
+      <textarea placeholder="Ваш комментарий"></textarea>
+      <div class="button">
+        <p>
+          Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)
+        </p>
+        <button type="button">Прикрепить файл</button>
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="popup become-partner">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Присоединиться</h3>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Присоединиться</h3>
-        </div>
-        <form>
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-              <input type="text" placeholder="Ваше имя"> 
-              <input type="text" placeholder="Ваш e-mail">
-              <input type="text" placeholder="Ваш телефон">
-            </div>
-            <textarea placeholder="Ваш комментарий"></textarea>
-            <div class="button">
-                <p>Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)</p>
-                <a href="javascript:void(0)">Скачать образец анкеты</a>
-                <button type="button">Прикрепить файл</button>
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-          </form>
-    </div>
-</div> 
+    <form>
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш e-mail">
+        <input type="text" placeholder="Ваш телефон">
+      </div>
+      <textarea placeholder="Ваш комментарий"></textarea>
+      <div class="button">
+        <p>
+          Приложите заполненную анкету и копию паспорта (1-2 страницы, прописку)
+        </p>
+        <a href="javascript:void(0)">Скачать образец анкеты</a>
+        <button type="button">Прикрепить файл</button>
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="phone">
-    <nav>
-        <ul>
-            <li><a href="tel:+7(123)1567899">+7 (123) 156 78 99</a></li>
-            <li><a href="tel:+7(123)1567899">+7 (123) 156 78 99</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="tel:+7(123)1567899">+7 (123) 156 78 99</a></li>
+      <li><a href="tel:+7(123)1567899">+7 (123) 156 78 99</a></li>
+    </ul>
+  </nav>
 </div>
 
 <div class="popup error">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
-    </div>
-    <div class="wrapper">
-        <p>Ошибка данных!</p>
-    </div>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="wrapper">
+    <p>Ошибка данных!</p>
+  </div>
 </div>
 
 <div class="popup thanks">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
-    </div>
-    <div class="wrapper">
-        <p>Ваша заявка отправлена.</p>
-    </div>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="wrapper">
+    <p>Ваша заявка отправлена.</p>
+  </div>
 </div>
 
 <div class="popup dev-error">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
-    </div>
-    <div class="wrapper">
-        <p>Раздел находится в разработке</p>
-    </div>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="wrapper">
+    <p>Раздел находится в разработке</p>
+  </div>
 </div>
 
 <div class="popup login">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Войти как</h3>
+      <div class="selector-tabs">
+        <div data-group="client" class="active">Клиент</div>
+        <div data-group="agent">Агент</div>
+      </div>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Войти как</h3>
-            <div class="selector-tabs">
-                <div data-group="client" class="active">Клиент</div>
-                <div data-group="agent">Агент</div>
-            </div>
+    <form class="client active">
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваш e-mail">
+        <div class="password">
+          <input type="text" placeholder="Введите пароль">
+          <a href="javascript:void(0)">Забыли пароль?</a>
         </div>
-        <form class="client active">
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error --> 
-              <input type="text" placeholder="Ваш e-mail">
-              <div class="password">
-                <input type="text" placeholder="Введите пароль">
-                <a href="javascript:void(0)">Забыли пароль?</a>
-              </div>
-              
-            </div>
-            <div class="button">
-                <button type="button">Войти</button>
-                <a href="javascript:void(0)">Зарегестрироватся</a>
-            </div>
-          </form>
-          <form class="agent">
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error --> 
-              <input type="text" placeholder="Ваш e-mail">
-              <div class="password">
-                <input type="text" placeholder="Введите пароль">
-                <a href="javascript:void(0)">Забыли пароль?</a>
-              </div>
-              
-            </div>
-            <div class="button">
-                <button type="button">Войти</button>
-                <a href="javascript:void(0)">Зарегестрироватся</a>
-            </div>
-          </form>
-    </div>
+      </div>
+      <div class="button">
+        <button type="button">Войти</button>
+        <a href="javascript:void(0)">Зарегестрироватся</a>
+      </div>
+    </form>
+    <form class="agent">
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <input type="text" placeholder="Ваш e-mail">
+        <div class="password">
+          <input type="text" placeholder="Введите пароль">
+          <a href="javascript:void(0)">Забыли пароль?</a>
+        </div>
+      </div>
+      <div class="button">
+        <button type="button">Войти</button>
+        <a href="javascript:void(0)">Зарегестрироватся</a>
+      </div>
+    </form>
+  </div>
 </div>
 
 <div class="popup registration">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Зарегистрироваться как</h3>
+      <div class="selector-tabs">
+        <div data-group="client" class="active">Клиент</div>
+        <div data-group="agent">Агент</div>
+      </div>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Зарегистрироваться как</h3>
-            <div class="selector-tabs">
-                <div data-group="client" class="active">Клиент</div>
-                <div data-group="agent">Агент</div>
-            </div>
+    <form class="client active">
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <div class="wrapper">
+          <div class="subtitle">Впишите ваше имя</div>
+          <input type="text" placeholder="Ваше имя">
         </div>
-        <form class="client active">
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-                <div class="wrapper">
-                    <div class="subtitle">Впишите ваше имя</div>
-                    <input type="text" placeholder="Ваше имя">
-                </div>
-                <div class="wrapper">
-                    <div class="subtitle">Впишите ваш телефон</div>                     
-                    <input type="text" placeholder="Ваш e-mail">  
-                </div>
-                <div class="wrapper">
-                    <div class="subtitle">Впишите вашу почту</div>
-                    <input type="text" placeholder="Ваш телефон">
-                </div>
-                <div class="password">
-                    <div class="wrapper">
-                        <div class="subtitle">Придумайте пароль</div>
-                        <input type="text">
-                    </div>
-                    <div class="wrapper">
-                        <div class="subtitle">Повторите пароль</div>
-                        <input type="text">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-        </form>
-        <form class="agent">
-        <div class="inputs">
-            <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-            <div class="wrapper">
-                <div class="subtitle">Впишите ваше имя</div>
-                <input type="text" placeholder="Ваше имя">
-            </div>
-            <div class="wrapper">
-                <div class="subtitle">Впишите ваш телефон</div>                     
-                <input type="text" placeholder="Ваш e-mail">  
-            </div>
-            <div class="wrapper">
-                <div class="subtitle">Впишите вашу почту</div>
-                <input type="text" placeholder="Ваш телефон">
-            </div>
-            <div class="password">
-                <div class="wrapper">
-                    <div class="subtitle">Придумайте пароль</div>
-                    <input type="text">
-                </div>
-                <div class="wrapper">
-                    <div class="subtitle">Повторите пароль</div>
-                    <input type="text">
-                </div>
-            </div>
+        <div class="wrapper">
+          <div class="subtitle">Впишите ваш телефон</div>
+          <input type="text" placeholder="Ваш e-mail">
         </div>
-        <div class="button">
-            <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-            <button type="button">Отправить</button>
+        <div class="wrapper">
+          <div class="subtitle">Впишите вашу почту</div>
+          <input type="text" placeholder="Ваш телефон">
         </div>
-        </form>
-    </div>
-</div> 
+        <div class="password">
+          <div class="wrapper">
+            <div class="subtitle">Придумайте пароль</div>
+            <input type="text">
+          </div>
+          <div class="wrapper">
+            <div class="subtitle">Повторите пароль</div>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+    <form class="agent">
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <div class="wrapper">
+          <div class="subtitle">Впишите ваше имя</div>
+          <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="wrapper">
+          <div class="subtitle">Впишите ваш телефон</div>
+          <input type="text" placeholder="Ваш e-mail">
+        </div>
+        <div class="wrapper">
+          <div class="subtitle">Впишите вашу почту</div>
+          <input type="text" placeholder="Ваш телефон">
+        </div>
+        <div class="password">
+          <div class="wrapper">
+            <div class="subtitle">Придумайте пароль</div>
+            <input type="text">
+          </div>
+          <div class="wrapper">
+            <div class="subtitle">Повторите пароль</div>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="popup recovery">
-    <div class="close-popup">
-        <i class="icon-cross"></i>
+  <div class="close-popup">
+    <i class="icon-cross"></i>
+  </div>
+  <div class="content-popup">
+    <div class="title">
+      <h3>Восстановленте пароля</h3>
+      <div class="selector-tabs">
+        <div data-group="client" class="active">Клиент</div>
+        <div data-group="agent">Агент</div>
+      </div>
     </div>
-    <div class="content-popup">
-        <div class="title">
-            <h3>Восстановленте пароля</h3>
-            <div class="selector-tabs">
-                <div data-group="client" class="active">Клиент</div>
-                <div data-group="agent">Агент</div>
-            </div>
+    <form class="client active">
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <div class="wrapper">
+          <div class="subtitle">Впишите вашу почту</div>
+          <input type="text" placeholder="Ваш e-mail">
         </div>
-        <form class="client active">
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-                <div class="wrapper">
-                    <div class="subtitle">Впишите вашу почту</div>
-                    <input type="text" placeholder="Ваш e-mail">
-                </div>
-                <div class="wrapper">
-                    <p>Ссылка для подтверждения нового пароля будет отправлена на вашу почту.</p> 
-                </div>
-                <div class="password">
-                    <div class="wrapper">
-                        <div class="subtitle">Введите новый пароль</div>
-                        <input type="text">
-                    </div>
-                    <div class="wrapper">
-                        <div class="subtitle">Повторите пароль</div>
-                        <input type="text">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-        </form>
-        <form class="agent">
-            <div class="inputs">
-              <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
-                <div class="wrapper">
-                    <div class="subtitle">Впишите вашу почту</div>
-                    <input type="text" placeholder="Ваш e-mail">
-                </div>
-                <div class="wrapper">
-                    <p>Ссылка для подтверждения нового пароля будет отправлена на вашу почту.</p> 
-                </div>
-                <div class="password">
-                    <div class="wrapper">
-                        <div class="subtitle">Введите новый пароль</div>
-                        <input type="text">
-                    </div>
-                    <div class="wrapper">
-                        <div class="subtitle">Повторите пароль</div>
-                        <input type="text">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <label><input type="checkbox" checked="">Я согласен с правилами использования сервиса и обработки персональных данных</label>
-                <button type="button">Отправить</button>
-            </div>
-        </form>
-    </div>
-</div> 
+        <div class="wrapper">
+          <p>
+            Ссылка для подтверждения нового пароля будет отправлена на вашу
+            почту.
+          </p>
+        </div>
+        <div class="password">
+          <div class="wrapper">
+            <div class="subtitle">Введите новый пароль</div>
+            <input type="text">
+          </div>
+          <div class="wrapper">
+            <div class="subtitle">Повторите пароль</div>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+    <form class="agent">
+      <div class="inputs">
+        <!-- Если есть ошибка в написание или не заполнино поле е input должен быть класс error -->
+        <div class="wrapper">
+          <div class="subtitle">Впишите вашу почту</div>
+          <input type="text" placeholder="Ваш e-mail">
+        </div>
+        <div class="wrapper">
+          <p>
+            Ссылка для подтверждения нового пароля будет отправлена на вашу
+            почту.
+          </p>
+        </div>
+        <div class="password">
+          <div class="wrapper">
+            <div class="subtitle">Введите новый пароль</div>
+            <input type="text">
+          </div>
+          <div class="wrapper">
+            <div class="subtitle">Повторите пароль</div>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <label><input type="checkbox" checked="">Я согласен с правилами использования
+          сервиса и обработки персональных данных</label>
+        <button type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 </header>
 
     <div class="bread-crumbs">
