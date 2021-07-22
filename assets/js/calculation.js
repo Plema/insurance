@@ -100,10 +100,11 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          dots: true,
+          dots: false,
           arrows: false,
           slidesToShow: 5,
           slidesToScroll: 4,
+          speed: 15000,
         },
       },
     ],
