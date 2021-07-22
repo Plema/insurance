@@ -11,6 +11,7 @@
       img {
         width: 100%;
         display: block;
+        height: 27px;
       }
     }
     .region {
@@ -157,6 +158,9 @@
     .header-top {
       .logo {
         width: 110px;
+        img {
+          height: 30px;
+        }
       }
       .personal-area {
         .area {
@@ -335,6 +339,11 @@
   @media (min-width: 1280px) {
     .header-top {
       margin: 0 -10px;
+      .logo {
+        img {
+          height: 31px;
+        }
+      }
       .personal-area {
         .tel {
           display: none;
@@ -382,6 +391,9 @@
       .logo {
         width: 124px;
         margin-right: 83px;
+        img {
+          height: 34px;
+        }
       }
       .region {
         span {

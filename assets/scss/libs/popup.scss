@@ -187,7 +187,7 @@
 .mobile-menu,
 .phone {
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   min-width: 320px;
   width: 100%;
   z-index: 111;
@@ -196,7 +196,6 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    // align-items: center;
     ul {
       padding-left: 15px;
       li {
@@ -223,6 +222,58 @@
             transition: all 0.3s;
           }
         }
+      }
+      .dropdown-menu {
+        // display: none;
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        z-index: 0;
+        padding: 10px 0 10px 10px;
+        background-color: #ffffff;
+        opacity: 0;
+        box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
+        transition: all 0.1s, opacity 0.7s;
+        top: 20px;
+        left: 0;
+        min-width: 200px;
+        li {
+          margin-right: 0;
+          margin-bottom: 5px;
+          ul {
+            display: block;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            top: 0;
+            left: 100%;
+            background: #fff;
+            min-width: 200px;
+            padding: 10px 0 10px 10px;
+            box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
+            transition: all 0.1s, opacity 0.7s;
+          }
+
+          a {
+            font-size: 14px;
+            color: #373737;
+            line-height: 18px;
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s;
+            position: relative;
+            &::after {
+              display: none;
+            }
+            &:hover {
+              color: #517ea1;
+            }
+          }
+        }
+      }
+      .show-menu {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
