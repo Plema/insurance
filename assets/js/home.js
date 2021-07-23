@@ -185,6 +185,11 @@ $(document).ready(function () {
   } else {
     $('.insurance-items').css({ height: 'auto' })
   }
+  if ($(window).width() < 1024) {
+    $('.insurance-item .img').click(function () {
+      $('ul').toggleClass('text-hover-show')
+    })
+  }
 
   $('.insurance-cost .show-more').click(function () {
     var autoHeight = $('.insurance-hide').height()
