@@ -4,7 +4,7 @@
   padding: 7px 0 10px;
   .title {
     margin-bottom: 18px;
-    text-align: center;
+    text-align: left;
     h3 {
       font-size: 24px;
       color: #517ea1;
@@ -16,7 +16,7 @@
     img {
       width: 190px;
       display: block;
-      margin: 0 auto 34px;
+      margin: 0 0 34px 0;
     }
     p {
       font-size: 16px;
@@ -28,7 +28,8 @@
         padding-bottom: 0;
       }
       strong {
-        color: #517ea1;
+        // color: #517ea1;
+        color: #373737;
         line-height: 19px;
         font-weight: bold;
       }
@@ -158,6 +159,7 @@
       .insurance-item {
         margin: 14px 0;
         &:hover {
+          box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
           .text {
             box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
             ul {
@@ -230,10 +232,10 @@
       background: #517ea1;
       border: 1px solid #517ea1;
       transition: all 0.5s;
-      &:hover {
-        color: #517ea1;
-        background: #fff;
-      }
+      // &:hover {
+      //   color: #517ea1;
+      //   background: #fff;
+      // }
     }
   }
   .active {
@@ -333,6 +335,7 @@
       }
 
       .insurance-items {
+        overflow: hidden;
         .insurance-item {
           width: 31.33%;
           margin: 0 1% 20px;
