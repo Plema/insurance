@@ -374,7 +374,7 @@
 .question {
   z-index: 0;
   position: relative;
-  padding: 5px 0 17px;
+  padding: 25px 0 17px;
   .title {
     margin-bottom: 12px;
     text-align: center;
@@ -3395,6 +3395,7 @@
 }
 
 .personal-area-text {
+  padding: 50px 0 20px;
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -3402,7 +3403,7 @@
       font-size: 20px;
       color: #517ea1;
       font-weight: 700;
-      line-height: 28px;
+      // line-height: 28px;
       margin-bottom: 10px;
     }
     p {
@@ -3482,27 +3483,28 @@
 
 .personal-area-table {
   .title {
-    margin-bottom: 17px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;
     h3 {
       font-size: 20px;
       color: #517ea1;
       font-weight: 700;
-      line-height: 28px;
-      margin-bottom: 10px;
+      // line-height: 28px;
+      // margin-bottom: 10px;
     }
   }
   .table {
-    padding: 20px 0 10px;
+    padding: 10px 0 10px;
     .download {
       font-size: 16px;
-      color: #517ea1;
+      color: #373737;
       font-weight: 500;
-      line-height: 21px;
+      // line-height: 21px;
       a {
         display: flex;
+        color: #517ea1;
         font-size: 14px;
-        color: #373737;
         line-height: 23px;
         font-weight: normal;
         text-decoration: underline;
@@ -3510,6 +3512,10 @@
     }
     table {
       display: none;
+    }
+    a {
+      display: inline-block;
+      color: #517ea1;
     }
   }
   @media (min-width: 768px) {
