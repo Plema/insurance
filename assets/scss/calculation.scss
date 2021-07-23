@@ -271,10 +271,26 @@
             font-size: 13px;
             line-height: 15px;
             color: #8898a0;
+            width: 135px;
+            margin-bottom: 5px;
+            &:last-of-type {
+              margin-top: 10px;
+            }
           }
           p {
             font-size: 18px;
             line-height: 21px;
+          }
+          span {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+          }
+          strong {
+            padding-right: 10px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
           }
         }
         button {
@@ -2504,6 +2520,21 @@
           font-size: 15px;
           line-height: 18px;
         }
+        .koof-KT {
+          margin-right: 29px;
+        }
+        .koof-KM {
+          margin-right: 29px;
+        }
+        .koof-KL {
+          margin-right: 34px;
+        }
+        .koof-KVS {
+          margin-right: 27px;
+        }
+        .text-mobile {
+          margin-right: 37px;
+        }
       }
       .subdescription,
       .subtitle {
@@ -2561,7 +2592,7 @@
     }
   }
   .award {
-    text-align: right;
+    // text-align: right;
     h4 {
       font-weight: 500;
       font-size: 15px;

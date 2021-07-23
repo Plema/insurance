@@ -59,6 +59,7 @@
             text-align: center;
           }
           ul {
+            display: none;
             left: 0;
             top: 43px;
             z-index: 2;
@@ -71,6 +72,7 @@
             transform-style: preserve-3d;
             backface-visibility: hidden;
             transition: all 0.7s ease-in-out;
+
             li {
               margin-bottom: 14px;
               &:last-child {
@@ -87,6 +89,9 @@
                 }
               }
             }
+          }
+          .text-hover-show {
+            display: block;
           }
         }
       }
@@ -154,6 +159,11 @@
         .insurance-item {
           width: 31.33%;
           margin: 0 1% 20px;
+          .text {
+            ul {
+              display: block;
+            }
+          }
         }
       }
     }
