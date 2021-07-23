@@ -1237,7 +1237,7 @@
 }
 
 .start-work {
-  padding: 9px 0 11px;
+  padding: 9px 0 0px;
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -1248,7 +1248,7 @@
       line-height: 28px;
     }
   }
-  .start-work-slider {
+  .start-work {
     .start-work-item {
       text-align: center;
       margin-bottom: 41px;
@@ -1270,36 +1270,36 @@
         }
       }
     }
-    .slick-dots {
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      position: absolute;
-      justify-content: center;
-      li {
-        margin: 0 4px;
-        display: flex;
-        button {
-          width: 7px;
-          height: 7px;
-          border: none;
-          cursor: pointer;
-          border-radius: 50%;
-          text-indent: -9999px;
-          background: #97b6d3;
-          transition: all 0.3s;
-          &:hover {
-            background: #517ea1;
-          }
-        }
-      }
-      li.slick-active {
-        button {
-          background: #517ea1;
-        }
-      }
-    }
+    // .slick-dots {
+    //   left: 0;
+    //   bottom: 0;
+    //   width: 100%;
+    //   display: flex;
+    //   position: absolute;
+    //   justify-content: center;
+    //   li {
+    //     margin: 0 4px;
+    //     display: flex;
+    //     button {
+    //       width: 7px;
+    //       height: 7px;
+    //       border: none;
+    //       cursor: pointer;
+    //       border-radius: 50%;
+    //       text-indent: -9999px;
+    //       background: #97b6d3;
+    //       transition: all 0.3s;
+    //       &:hover {
+    //         background: #517ea1;
+    //       }
+    //     }
+    //   }
+    //   li.slick-active {
+    //     button {
+    //       background: #517ea1;
+    //     }
+    //   }
+    // }
   }
   @media (min-width: 768px) {
     padding: 10px 0 12px;
