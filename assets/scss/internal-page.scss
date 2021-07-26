@@ -187,6 +187,7 @@
             text-align: center;
           }
           ul {
+            display: none;
             left: 0;
             top: 43px;
             z-index: 2;
@@ -216,6 +217,9 @@
                 }
               }
             }
+          }
+          .text-hover-show {
+            display: block;
           }
         }
       }
@@ -335,10 +339,16 @@
       }
 
       .insurance-items {
-        overflow: hidden;
+        // overflow: hidden;
+        overflow: visible;
         .insurance-item {
           width: 31.33%;
           margin: 0 1% 20px;
+          .text {
+            ul {
+              display: block;
+            }
+          }
         }
       }
     }
