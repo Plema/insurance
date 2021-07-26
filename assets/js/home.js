@@ -225,8 +225,24 @@ $(document).ready(function () {
   })
 })
 
+// $('.click-to-show').click(function (event) {
+//   // $('.second-level-menu').slideToggle('slow')
+//   // $('.click-to-show').toggleClass('show-list')
+//   $('.click-to-show, .header-link').toggleClass('header-link_hover')
+// })
+$('.click-to-show').on('click', function () {
+  $(this).next().slideToggle('slow')
+  $(this).toggleClass('show-list')
+})
+
 $(window).resize(function () {
   $('.insurance-item .img').height($('.insurance-item .img').width() / 1.83)
+
+  if ($(window).width() < 1024) {
+    $('.insurance-item .img').click(function () {
+      $('ul').toggleClass('text-hover-show')
+    })
+  }
 
   if ($(window).width() <= 767) {
     $('.insurance-items').height(($('.insurance-item').height() + 10.5) * 4)
