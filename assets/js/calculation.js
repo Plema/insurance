@@ -185,6 +185,10 @@ $(document).ready(function () {
     $('.' + formItem).addClass('active')
   })
 
+  $('.more-details-button').on('click', function () {
+    $(this).parent().next().slideToggle()
+    $(this).toggleClass('active')
+  })
   $('.buttons a').on('click', function () {
     $(this).parent().parent().next().slideToggle()
     $(this).toggleClass('active')
