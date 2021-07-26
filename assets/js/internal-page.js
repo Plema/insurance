@@ -72,6 +72,18 @@ $(document).ready(function () {
 
   $('.insurance-item .img').height($('.insurance-item .img').width() / 1.83)
 
+  if ($(window).width() <= 767) {
+    $('.insurance-items').height(($('.insurance-item').height() + 10.5) * 4)
+  } else {
+    $('.insurance-items').css({ height: 'auto' })
+  }
+
+  if ($(window).width() < 1024) {
+    $('.insurance-item .img').click(function () {
+      $('ul').toggleClass('text-hover-show')
+    })
+  }
+
   $('.insurance-cost .show-more').click(function () {
     var autoHeight = $('.insurance-hide').height()
     $('.insurance-items').toggleClass('hide')
@@ -88,6 +100,11 @@ $(document).ready(function () {
     }
     return false
   })
+  if ($(window).width() >= 768) {
+    $('.best-deals-item .img').height($('.insurance-item .img').width() / 1.12)
+  } else {
+    $('.best-deals-item .img').height($('.insurance-item .img').width() / 1.64)
+  }
 
   if ($(window).width() >= 768) {
     $('.best-deals-item .img').height($('.best-deals-item .img').width() / 1.12)
@@ -104,6 +121,12 @@ $(document).ready(function () {
 
 $(window).resize(function () {
   $('.insurance-item .img').height($('.insurance-item .img').width() / 1.83)
+
+  if ($(window).width() < 1024) {
+    $('.insurance-item .img').click(function () {
+      $('ul').toggleClass('text-hover-show')
+    })
+  }
 
   if ($(window).width() <= 767) {
     $('.insurance-items').height(($('.insurance-item').height() + 10.5) * 4)
