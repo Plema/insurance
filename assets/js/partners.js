@@ -188,6 +188,9 @@ $(document).ready(function () {
   $('#my-accordion').accordionjs({
     closeAble: true,
     slideSpeed: 300,
+    scroll: true,
+
+    animated: 'easeslide',
   })
 
   $('.start-work-slider').slick({
