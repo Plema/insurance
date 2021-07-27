@@ -60,11 +60,18 @@ $(document).ready(function () {
           arrows: false,
           slidesToShow: 5,
           slidesToScroll: 4,
-          speed: 15000,
+          speed: 25000,
         },
       },
     ],
   })
+
+  $(window).blur(function () {
+    $('.companies-slider').slick('slickPause')
+  }) //Покинули вкладку
+  $(window).focus(function () {
+    $('.companies-slider').slick('slickPlay')
+  }) //Во вкладке
 
   $('.best-deals-slider').slick({
     dots: false,
@@ -233,6 +240,7 @@ $(document).ready(function () {
 $('.click-to-show').on('click', function () {
   $(this).next().slideToggle('slow')
   $(this).toggleClass('show-list')
+  $(this).parent().toggleClass('header-link_hover')
 })
 
 $(window).resize(function () {
