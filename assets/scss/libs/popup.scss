@@ -214,9 +214,6 @@
             color: #517ea1;
           }
         }
-        .header-link_hover {
-          color: #517ea1;
-        }
 
         .click-to-show {
           position: relative;
@@ -237,13 +234,21 @@
             color: #517ea1;
           }
         }
-        .click-to-show::after.show-list {
-          transform: rotate(0deg);
+        .click-to-show.show-list {
+          &::after {
+            transform: rotate(0deg);
+            color: #517ea1;
+          }
+        }
+      }
+      .header-link_hover {
+        a {
+          color: #517ea1;
         }
       }
       .second-level-menu {
         display: none;
-        transition: all 0.1s, opacity 0.7s;
+        transition: all 0.5s ease 0s;
         min-width: 200px;
         li {
           margin-bottom: 5px;
