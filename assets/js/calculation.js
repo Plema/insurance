@@ -104,7 +104,7 @@ $(document).ready(function () {
           arrows: false,
           slidesToShow: 5,
           slidesToScroll: 4,
-          speed: 15000,
+          speed: 25000,
         },
       },
     ],
