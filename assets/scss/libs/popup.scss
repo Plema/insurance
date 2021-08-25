@@ -192,7 +192,7 @@
   min-width: 320px;
   width: 100%;
   z-index: 111;
-  border-bottom: 2px solid #517ea1;
+  // border-bottom: 2px solid #517ea1;
   nav {
     display: flex;
     flex-direction: column;
@@ -221,7 +221,7 @@
             font-family: 'fontello';
             font-size: 5px;
             position: absolute;
-            top: 8.5px;
+            top: 1px;
             right: -20px;
             content: '\E804';
             transition: all 0.3s;
