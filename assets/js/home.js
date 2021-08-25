@@ -237,11 +237,11 @@ $(document).ready(function () {
 //   // $('.click-to-show').toggleClass('show-list')
 //   $('.click-to-show, .header-link').toggleClass('header-link_hover')
 // })
-$('.click-to-show').on('click', function () {
-  $(this).next().slideToggle('slow')
-  $(this).toggleClass('show-list')
-  $(this).parent().toggleClass('header-link_hover')
-})
+// $('.click-to-show').on('click', function () {
+//   $(this).next().slideToggle('slow')
+//   $(this).toggleClass('show-list')
+//   $(this).parent().toggleClass('header-link_hover')
+// })
 
 $(window).resize(function () {
   $('.insurance-item .img').height($('.insurance-item .img').width() / 1.83)
