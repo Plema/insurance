@@ -95,6 +95,11 @@ $(document).ready(function () {
   $('.click-to-show').click(function () {
     $('.dropdown-menu').toggleClass('show-menu')
   })
+  $('.click-to-show').on('click', function () {
+    $(this).next().slideToggle('slow')
+    $(this).toggleClass('show-list')
+    $(this).parent().toggleClass('header-link_hover')
+  })
 
   let vh = window.innerHeight * 0.01
   // Then we set the value in the --vh custom property to the root of the document
