@@ -92,9 +92,9 @@ $(document).ready(function () {
   $('.dropdown li').hover(function () {
     $(this).find('ul').toggleClass('active')
   })
-  $('.click-to-show').click(function () {
-    $('.dropdown-menu').toggleClass('show-menu')
-  })
+  // $('.click-to-show').click(function () {
+  //   $('.dropdown-menu').toggleClass('show-menu')
+  // })
   $('.click-to-show').on('click', function () {
     $(this).next().slideToggle('slow')
     $(this).toggleClass('show-list')
