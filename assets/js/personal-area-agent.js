@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 10000,
     infinity: true,
     nextArrow:
       '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
@@ -32,6 +32,12 @@ $(document).ready(function () {
       $(this).find('.prev').css('left', '-100%')
     }
   )
+  $(window).blur(function () {
+    $('.banner-slider').slick('slickPause')
+  }) //Покинули вкладку
+  $(window).focus(function () {
+    $('.banner-slider').slick('slickPlay')
+  }) //Во вкладке
 
   if ($(window).width() >= 1024) {
     $('.banner-item .content').matchHeight({

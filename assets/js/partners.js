@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     nextArrow:
       '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
     prevArrow:
