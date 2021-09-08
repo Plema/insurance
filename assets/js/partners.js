@@ -186,9 +186,9 @@ $(document).ready(function () {
   $('.earn-item .img').height($('.earn-item .img').width() / 1.07)
 
   $('#my-accordion').accordionjs({
-    closeAble: true,
-    slideSpeed: 300,
-    scroll: true,
+    closeAble: false,
+    slideSpeed: 700,
+    scroll: false,
 
     animated: 'easeslide',
   })
