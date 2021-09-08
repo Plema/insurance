@@ -268,6 +268,7 @@
     }
     .partners-item {
       position: relative;
+      transition: all 0.7s;
       a {
         top: 0;
         left: 0;
@@ -278,6 +279,7 @@
       }
       .img {
         margin-bottom: 21px;
+        transition: all 0.7s;
       }
       .text {
         h4 {
@@ -293,6 +295,13 @@
           color: #373737;
           line-height: 21px;
           font-weight: normal;
+        }
+      }
+      &:hover,
+      &:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        .img {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
         }
       }
     }
@@ -396,6 +405,16 @@
         }
       }
     }
+    .partners-slider {
+      .slick-list {
+        padding-bottom: 2px;
+      }
+      .partners-item {
+        .text {
+          padding: 0 5px;
+        }
+      }
+    }
   }
   @media (min-width: 1280px) {
     .partners-slider {
@@ -485,16 +504,28 @@
     padding-bottom: 57px;
     .slick-list {
       margin: 0 -8px;
+      padding-bottom: 5px;
     }
     .slick-slide {
       margin: 0 8px;
+      padding-bottom: 5px;
     }
     .cooperation-item {
+      transition: all 0.7s;
+      &:hover,
+      &:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        .img {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+      }
       .img {
         margin-bottom: 23px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        transition: all 0.7s;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
       }
       .text {
+        padding: 0 5px 5px;
         h4 {
           font-size: 20px;
           padding: 0 20px;
@@ -793,16 +824,28 @@
     padding-bottom: 42px;
     .slick-list {
       margin: 0 -8px;
+      padding-bottom: 5px;
     }
     .slick-slide {
       margin: 0 8px;
+      padding-bottom: 5px;
     }
     .earn-item {
+      transition: all 0.7s;
+      &:hover,
+      &:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+        .img {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+      }
       .img {
         margin-bottom: 22px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        transition: all 0.7s;
       }
       .text {
+        padding: 0 5px 5px;
         h4 {
           font-size: 18px;
           color: #517ea1;

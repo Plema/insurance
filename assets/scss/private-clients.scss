@@ -503,9 +503,18 @@
     }
     .slick-slide {
       margin: 0 10px;
+      padding-bottom: 5px;
     }
     .news-item {
       position: relative;
+      transition: all 0.7s;
+      &:hover,
+      &:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        .img {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+      }
       a {
         top: 0;
         left: 0;
@@ -516,10 +525,11 @@
       }
       .img {
         margin-bottom: 20px;
+        transition: all 0.7s;
       }
       .text {
         position: relative;
-        padding-top: 25px;
+        padding: 25px 5px 5px;
         &::after {
           content: '';
           top: 0;
