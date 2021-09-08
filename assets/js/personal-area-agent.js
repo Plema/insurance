@@ -54,6 +54,12 @@ $(document).ready(function () {
     onlyWithWindowMaxWidth: 767,
   })
 
+  if ($(window).width() < 1024) {
+    $('.shares-item .img').click(function () {
+      $('.text-hover').toggleClass('text-hover-show')
+    })
+  }
+
   $('.shares-items').showmore({
     closedHeight: 635,
     buttonTextMore: 'Еще акции',

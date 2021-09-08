@@ -6,6 +6,7 @@ $(document).ready(function () {
       $('.text-hover').toggleClass('text-hover-show')
     })
   }
+
   if ($(window).width() >= 768) {
     $('.shares-item .text h5').matchHeight({
       byRow: true,
