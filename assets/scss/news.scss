@@ -48,6 +48,13 @@
       .news-item {
         position: relative;
         margin-bottom: 27px;
+        transition: all 0.7s;
+        &:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          .img {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          }
+        }
         a {
           top: 0;
           left: 0;
@@ -58,8 +65,10 @@
         }
         .img {
           margin-bottom: 14px;
+          transition: all 0.7s;
         }
         .text {
+          padding: 0 5px 5px;
           h4 {
             font-size: 16px;
             color: #517ea1;
@@ -104,10 +113,6 @@
         .news-item {
           width: 48%;
           margin: 0 1% 25px;
-          transition: all 0.4s;
-          &:hover {
-            transform: translate(0, -15px);
-          }
         }
       }
     }
@@ -150,7 +155,7 @@
     }
     .news-content {
       .news-items {
-        margin: 0 -1% 30px;
+        // margin: 0 -1% 30px;
         .news-item {
           margin: 0 1% 33px;
         }

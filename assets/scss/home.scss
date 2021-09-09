@@ -1,5 +1,4 @@
-@import 'libs/slick.scss', 'libs/hot-offer.scss', 'libs/banner.scss',
-  'libs/best-deals.scss';
+@import 'libs/slick.scss', 'libs/hot-offer.scss', 'libs/banner.scss', 'libs/best-deals.scss';
 
 .insurance-cost {
   z-index: 2;
@@ -325,12 +324,7 @@
         width: 150px;
         height: 110px;
         position: absolute;
-        background: linear-gradient(
-          90deg,
-          #ffffff 50%,
-          rgba(255, 255, 255, 0.539626) 59.66%,
-          rgba(255, 255, 255, 0) 78.51%
-        );
+        background: linear-gradient(90deg, #ffffff 50%, rgba(255, 255, 255, 0.539626) 59.66%, rgba(255, 255, 255, 0) 78.51%);
         transform: translate(0, -50%);
       }
       &::before {
@@ -341,12 +335,7 @@
         width: 150px;
         height: 110px;
         position: absolute;
-        background: linear-gradient(
-          90deg,
-          #fff 50%,
-          rgba(255, 255, 255, 0.539626) 59.66%,
-          rgba(255, 255, 255, 0) 78.51%
-        );
+        background: linear-gradient(90deg, #fff 50%, rgba(255, 255, 255, 0.539626) 59.66%, rgba(255, 255, 255, 0) 78.51%);
         transform: translate(0, -50%) rotate(-180deg);
       }
     }
@@ -380,21 +369,11 @@
     .insurance-companies-content {
       &::after {
         left: -20px;
-        background: linear-gradient(
-          90deg,
-          #fff 25%,
-          rgba(255, 255, 255, 0.539626) 59.66%,
-          rgba(255, 255, 255, 0) 78.51%
-        );
+        background: linear-gradient(90deg, #fff 25%, rgba(255, 255, 255, 0.539626) 59.66%, rgba(255, 255, 255, 0) 78.51%);
       }
       &::before {
         right: -20px;
-        background: linear-gradient(
-          90deg,
-          #fff 25%,
-          rgba(255, 255, 255, 0.539626) 59.66%,
-          rgba(255, 255, 255, 0) 78.51%
-        );
+        background: linear-gradient(90deg, #fff 25%, rgba(255, 255, 255, 0.539626) 59.66%, rgba(255, 255, 255, 0) 78.51%);
       }
     }
     .companies-slider {
@@ -967,9 +946,18 @@
     }
     .slick-slide {
       margin: 0 10px;
+      padding-bottom: 5px;
     }
     .news-item {
       position: relative;
+      transition: all 0.7s;
+      &:hover,
+      &:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        .img {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+      }
       a {
         top: 0;
         left: 0;
@@ -980,10 +968,11 @@
       }
       .img {
         margin-bottom: 13px;
+        transition: all 0.7s;
       }
       .text {
         position: relative;
-        padding-top: 17px;
+        padding: 17px 5px 5px;
         &::after {
           content: '';
           top: 0;

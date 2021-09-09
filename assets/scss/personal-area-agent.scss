@@ -2152,6 +2152,22 @@
   z-index: 0;
   position: relative;
   padding: 7px 0 12px;
+  .shadow-box {
+    transition: all 0.7s;
+    .text {
+      padding: 0 5px 5px;
+    }
+    .download-list {
+      padding: 20px 5px 5px;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      .img {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -2219,12 +2235,15 @@
     padding-bottom: 25px;
     .slick-list {
       margin: 0 -10px;
+      padding-bottom: 5px;
     }
     .slick-slide {
       margin: 0 10px;
+      padding-bottom: 5px;
     }
     .img {
       margin-bottom: 20px;
+      transition: all 0.7s;
     }
     .text {
       p {
@@ -2321,6 +2340,22 @@
   z-index: 0;
   position: relative;
   padding: 7px 0 12px;
+  .shadow-box {
+    transition: all 0.7s;
+    .text {
+      padding: 0 5px 5px;
+    }
+    .download-list {
+      padding: 20px 5px 5px;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      .img {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -2388,12 +2423,15 @@
     padding-bottom: 25px;
     .slick-list {
       margin: 0 -10px;
+      padding-bottom: 5px;
     }
     .slick-slide {
       margin: 0 10px;
+      padding-bottom: 5px;
     }
     .img {
       margin-bottom: 20px;
+      transition: all 0.7s;
     }
     .text {
       p {
@@ -2490,6 +2528,22 @@
   z-index: 0;
   position: relative;
   padding: 7px 0 12px;
+  .shadow-box {
+    transition: all 0.7s;
+    .text {
+      padding: 0 5px 5px;
+    }
+    .download-list {
+      padding: 20px 5px 5px;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      .img {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
   .title {
     margin-bottom: 17px;
     text-align: center;
@@ -2557,12 +2611,15 @@
     padding-bottom: 25px;
     .slick-list {
       margin: 0 -10px;
+      padding-bottom: 5px;
     }
     .slick-slide {
       margin: 0 10px;
+      padding-bottom: 5px;
     }
     .img {
       margin-bottom: 20px;
+      transition: all 0.7s;
     }
     .text {
       p {
