@@ -6,11 +6,13 @@ $(document).ready(function () {
     slidesToScroll: 1,
     adaptiveHeight: false,
     autoplaySpeed: 10000,
+    speed: 1000,
     infinity: true,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    waitForAtimation: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -32,12 +34,12 @@ $(document).ready(function () {
       $(this).find('.prev').css('left', '-100%')
     }
   )
-  $(window).blur(function () {
-    $('.banner-slider').slick('slickPause')
-  }) //Покинули вкладку
-  $(window).focus(function () {
-    $('.banner-slider').slick('slickPlay')
-  }) //Во вкладке
+  // $(window).blur(function () {
+  //   $('.banner-slider').slick('slickPause')
+  // }) //Покинули вкладку
+  // $(window).focus(function () {
+  //   $('.banner-slider').slick('slickPlay')
+  // }) //Во вкладке
 
   if ($(window).width() >= 1024) {
     $('.banner-item .content').matchHeight({
@@ -71,9 +73,7 @@ $(document).ready(function () {
 
   $('.shares-item .img').height($('.shares-item .img').width() / 1.85)
 
-  $('.legal-services-item .img').height(
-    $('.legal-services-item .img').width() / 1.12
-  )
+  $('.legal-services-item .img').height($('.legal-services-item .img').width() / 1.12)
 
   $('.legal-services-item .text').matchHeight({
     byRow: false,
@@ -90,10 +90,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -186,13 +184,9 @@ $(document).ready(function () {
   })
 
   if ($(window).width() >= 768) {
-    $('.information-news-slider .img').height(
-      $('.information-news-slider .img').width() / 1.72
-    )
+    $('.information-news-slider .img').height($('.information-news-slider .img').width() / 1.72)
   } else {
-    $('.information-news-slider .img').height(
-      $('.information-news-slider .img').width() / 1.25
-    )
+    $('.information-news-slider .img').height($('.information-news-slider .img').width() / 1.25)
   }
 
   $('.presentation-content .text').showmore({
@@ -234,13 +228,9 @@ $(document).ready(function () {
   })
 
   if ($(window).width() >= 768) {
-    $('.presentation-slider .img').height(
-      $('.presentation-slider .img').width() / 1.72
-    )
+    $('.presentation-slider .img').height($('.presentation-slider .img').width() / 1.72)
   } else {
-    $('.presentation-slider .img').height(
-      $('.presentation-slider .img').width() / 1.25
-    )
+    $('.presentation-slider .img').height($('.presentation-slider .img').width() / 1.25)
   }
 
   $('.video-webinars-content .text').showmore({
@@ -282,13 +272,9 @@ $(document).ready(function () {
   })
 
   if ($(window).width() >= 768) {
-    $('.video-webinars-slider .img').height(
-      $('.video-webinars-slider .img').width() / 1.72
-    )
+    $('.video-webinars-slider .img').height($('.video-webinars-slider .img').width() / 1.72)
   } else {
-    $('.video-webinars-slider .img').height(
-      $('.video-webinars-slider .img').width() / 1.25
-    )
+    $('.video-webinars-slider .img').height($('.video-webinars-slider .img').width() / 1.25)
   }
 
   $('.personal-area-reporting .text').showmore({
@@ -313,9 +299,7 @@ $(document).ready(function () {
 $(window).resize(function () {
   $('.shares-item .img').height($('.shares-item .img').width() / 1.85)
 
-  $('.legal-services-item .img').height(
-    $('.legal-services-item .img').width() / 1.12
-  )
+  $('.legal-services-item .img').height($('.legal-services-item .img').width() / 1.12)
 
   if ($(window).width() >= 768) {
     $('.news-item .img').height($('.news-item .img').width() / 1.72)
@@ -330,32 +314,20 @@ $(window).resize(function () {
   }
 
   if ($(window).width() >= 768) {
-    $('.information-news-slider .img').height(
-      $('.information-news-slider .img').width() / 1.72
-    )
+    $('.information-news-slider .img').height($('.information-news-slider .img').width() / 1.72)
   } else {
-    $('.information-news-slider .img').height(
-      $('.information-news-slider .img').width() / 1.25
-    )
+    $('.information-news-slider .img').height($('.information-news-slider .img').width() / 1.25)
   }
 
   if ($(window).width() >= 768) {
-    $('.presentation-slider .img').height(
-      $('.presentation-slider .img').width() / 1.72
-    )
+    $('.presentation-slider .img').height($('.presentation-slider .img').width() / 1.72)
   } else {
-    $('.presentation-slider .img').height(
-      $('.presentation-slider .img').width() / 1.25
-    )
+    $('.presentation-slider .img').height($('.presentation-slider .img').width() / 1.25)
   }
 
   if ($(window).width() >= 768) {
-    $('.video-webinars-slider .img').height(
-      $('.video-webinars-slider .img').width() / 1.72
-    )
+    $('.video-webinars-slider .img').height($('.video-webinars-slider .img').width() / 1.72)
   } else {
-    $('.video-webinars-slider .img').height(
-      $('.video-webinars-slider .img').width() / 1.25
-    )
+    $('.video-webinars-slider .img').height($('.video-webinars-slider .img').width() / 1.25)
   }
 })
