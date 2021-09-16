@@ -6,11 +6,13 @@ $(document).ready(function () {
     slidesToScroll: 1,
     adaptiveHeight: false,
     autoplaySpeed: 10000,
+    speed: 1000,
     infinity: true,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    waitForAtimation: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -38,12 +40,12 @@ $(document).ready(function () {
     })
   }
 
-  $(window).blur(function () {
-    $('.banner-slider').slick('slickPause')
-  }) //Покинули вкладку
-  $(window).focus(function () {
-    $('.banner-slider').slick('slickPlay')
-  }) //Во вкладке
+  // $(window).blur(function () {
+  //   $('.banner-slider').slick('slickPause')
+  // }) //Покинули вкладку
+  // $(window).focus(function () {
+  //   $('.banner-slider').slick('slickPlay')
+  // }) //Во вкладке
 
   $('.personal-area-content article').showmore({
     closedHeight: 315,
@@ -69,9 +71,7 @@ $(document).ready(function () {
     dateFormat: 'Y-m-d',
   })
 
-  $('.legal-services-item .img').height(
-    $('.legal-services-item .img').width() / 1.12
-  )
+  $('.legal-services-item .img').height($('.legal-services-item .img').width() / 1.12)
 
   $('.legal-services-item .text').matchHeight({
     byRow: false,
@@ -105,10 +105,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -140,9 +138,7 @@ $(document).ready(function () {
 })
 
 $(window).resize(function () {
-  $('.legal-services-item .img').height(
-    $('.legal-services-item .img').width() / 1.12
-  )
+  $('.legal-services-item .img').height($('.legal-services-item .img').width() / 1.12)
 
   $('.shares-item .img').height($('.shares-item .img').width() / 1.85)
 
