@@ -8,10 +8,11 @@ $(document).ready(function () {
     autoplaySpeed: 10000,
     speed: 1000,
     infinity: true,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    waitForAtimation: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -34,12 +35,12 @@ $(document).ready(function () {
     }
   )
 
-  $(window).blur(function () {
-    $('.banner-slider').slick('slickPause')
-  }) //Покинули вкладку
-  $(window).focus(function () {
-    $('.banner-slider').slick('slickPlay')
-  }) //Во вкладке
+  // $(window).blur(function () {
+  //   $('.banner-slider').slick('slickPause')
+  // }) //Покинули вкладку
+  // $(window).focus(function () {
+  //   $('.banner-slider').slick('slickPlay')
+  // }) //Во вкладке
 
   $('.companies-slider').slick({
     dots: false,
@@ -87,10 +88,8 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1280,
@@ -98,10 +97,8 @@ $(document).ready(function () {
           dots: false,
           slidesToShow: 3,
           slidesToScroll: 1,
-          nextArrow:
-            '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-          prevArrow:
-            '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+          nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+          prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         },
       },
       {
@@ -146,10 +143,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -213,10 +208,7 @@ $(document).ready(function () {
     $('.insurance-items').toggleClass('hide')
     if ($('.insurance-items').hasClass('hide')) {
       $('.show-more').html('Еще предложения')
-      $('.insurance-items').animate(
-        { height: ($('.insurance-item').height() + 10.5) * 4 + 'px' },
-        1000
-      )
+      $('.insurance-items').animate({ height: ($('.insurance-item').height() + 10.5) * 4 + 'px' }, 1000)
     } else {
       $('.show-more').html('Скрыть')
       //$('.hide').animate({height: autoHeight}, 1000)
