@@ -6,10 +6,13 @@ $(document).ready(function () {
     slidesToScroll: 1,
     adaptiveHeight: false,
     autoplaySpeed: 10000,
-    nextArrow:
-      '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
-    prevArrow:
-      '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+    speed: 1000,
+    infinity: true,
+    waitForAtimation: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+    prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -32,12 +35,12 @@ $(document).ready(function () {
     }
   )
 
-  $(window).blur(function () {
-    $('.banner-slider').slick('slickPause')
-  }) //Покинули вкладку
-  $(window).focus(function () {
-    $('.banner-slider').slick('slickPlay')
-  }) //Во вкладке
+  // $(window).blur(function () {
+  //   $('.banner-slider').slick('slickPause')
+  // }) //Покинули вкладку
+  // $(window).focus(function () {
+  //   $('.banner-slider').slick('slickPlay')
+  // }) //Во вкладке
 
   if ($(window).width() >= 1024) {
     $('.banner-item .content').matchHeight({
@@ -130,9 +133,7 @@ $(document).ready(function () {
   $('.cooperation-item .img').height($('.cooperation-item .img').width() / 0.95)
 
   if ($(window).width() >= 768) {
-    $('.cooperation-item .img').height(
-      $('.cooperation-item .img').width() / 1.2
-    )
+    $('.cooperation-item .img').height($('.cooperation-item .img').width() / 1.2)
   }
 
   $('.who-more').on('click', function () {
@@ -224,9 +225,7 @@ $(window).resize(function () {
   if ($(window).width() >= 768) {
     $('.partners-item .img').height($('.partners-item .img').width() / 1.7)
 
-    $('.cooperation-item .img').height(
-      $('.cooperation-item .img').width() / 1.2
-    )
+    $('.cooperation-item .img').height($('.cooperation-item .img').width() / 1.2)
   }
 
   $('.cooperation-item .img').height($('.cooperation-item .img').width() / 0.95)
