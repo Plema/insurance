@@ -188,7 +188,7 @@ $(document).ready(function () {
 
   $('#my-accordion').accordionjs({
     closeAble: false,
-    slideSpeed: 700,
+    slideSpeed: 900,
     scroll: false,
 
     animated: 'easeslide',
