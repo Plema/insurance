@@ -62,14 +62,14 @@ $(document).ready(function () {
     })
   }
 
-  $('.shares-items').showmore({
-    closedHeight: 635,
-    buttonTextMore: 'Еще акции',
-    buttonTextLess: 'Скрыть',
-    buttonCssClass: 'showmore-button',
-    animationSpeed: 0.5,
-    onlyWithWindowMaxWidth: 767,
-  })
+  // $('.shares-items').showmore({
+  //   closedHeight: 635,
+  //   buttonTextMore: 'Еще акции',
+  //   buttonTextLess: 'Скрыть',
+  //   buttonCssClass: 'showmore-button',
+  //   animationSpeed: 0.5,
+  //   onlyWithWindowMaxWidth: 767,
+  // })
 
   $('.shares-item .img').height($('.shares-item .img').width() / 1.85)
 

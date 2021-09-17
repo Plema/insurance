@@ -91,7 +91,7 @@ $(document).ready(function () {
     })
   }
 
-  $('.shares-items').showmore({
+  $('.shares-items').click({
     closedHeight: 635,
     buttonTextMore: 'Еще акции',
     buttonTextLess: 'Скрыть',
