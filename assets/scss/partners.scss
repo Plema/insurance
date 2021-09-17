@@ -262,9 +262,11 @@
     padding-bottom: 42px;
     .slick-list {
       margin: 0 -8px;
+      padding-bottom: 5px;
     }
     .slick-slide {
       margin: 0 8px;
+      padding-bottom: 10px;
     }
     .partners-item {
       position: relative;
@@ -282,6 +284,7 @@
         transition: all 0.7s;
       }
       .text {
+        padding: 5px;
         h4 {
           font-size: 20px;
           color: #517ea1;

@@ -610,7 +610,7 @@
         margin-bottom: 24px;
         &:hover {
           transition: all 0.7s ease-in-out;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
           .text {
             // .text-hover,
             .text-hover-show {
@@ -638,7 +638,7 @@
             position: absolute;
             background: #ffffff;
             padding: 32px 20px 28px 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
             transform: rotateY(-90deg);
             transform-style: preserve-3d;
             backface-visibility: hidden;
@@ -672,6 +672,23 @@
       }
     }
     .showmore-button {
+      width: 255px;
+      display: table;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 19px;
+      padding: 14px 12px;
+      text-align: center;
+      background: #517ea1;
+      border: 1px solid #517ea1;
+      transition: all 0.3s;
+      &:hover {
+        color: #517ea1;
+        background: #ffffff;
+      }
+    }
+    .shares-all {
       width: 255px;
       display: table;
       margin: 0 auto;
