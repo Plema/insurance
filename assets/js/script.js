@@ -1,6 +1,20 @@
 $(document).ready(function () {
   jcf.replaceAll()
 
+  $(window).resize(function () {
+    if ($(window).width() < 1024) {
+      $('.insurance-item .img').click(function () {
+        $('ul').toggleClass('text-hover-show')
+      })
+    }
+  })
+
+  if ($(window).width() < 1024) {
+    $('.insurance-item .img').click(function () {
+      $('ul').toggleClass('text-hover-show')
+    })
+  }
+
   $('.selector-tabs div').on('click', function () {
     var formItem = $(this).data('group')
     $('.selector-tabs div').removeClass('active')
