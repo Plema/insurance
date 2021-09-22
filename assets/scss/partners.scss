@@ -1233,6 +1233,13 @@
           .acc_head {
             margin-right: 10%;
             padding-left: 60px;
+            &::after {
+              content: '\E802';
+              right: -10px;
+              top: 10%;
+              font-size: 24px;
+              transform: rotate(90deg);
+            }
           }
           .acc_content {
             padding-left: 60px;
@@ -1240,6 +1247,22 @@
               li {
                 width: 23%;
               }
+            }
+          }
+        }
+        .acc_section.acc_active {
+          .acc_head {
+            &::after {
+              content: '\E802';
+              right: -12px;
+              top: 10%;
+              font-size: 24px;
+              color: #90a1b8;
+              position: absolute;
+              font-family: 'fontello';
+              transition: all 0.3s;
+              transform: translate(0, -50%);
+              transform: rotate(0deg);
             }
           }
         }
