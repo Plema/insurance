@@ -202,11 +202,16 @@ $(document).ready(function () {
   // } else {
   //   $('.insurance-items').css({ height: 'auto' })
   // }
-  // if ($(window).width() < 1024) {
-  //   $('.insurance-item .img').click(function () {
-  //     $('ul').toggleClass('text-hover-show')
-  //   })
-  // }
+  if ($(window).width() < 1024) {
+    $('.insurance-item .img').click(function () {
+      if ($(this).next().hasClass('text-hover-show')) {
+        $('.insurance-item .text').removeClass('text-hover-show')
+      } else {
+        $('.insurance-item .text').removeClass('text-hover-show')
+        $(this).next().addClass('text-hover-show')
+      }
+    })
+  }
 
   // $('.insurance-cost .show-more').click(function () {
   //   var autoHeight = $('.insurance-hide').height()
