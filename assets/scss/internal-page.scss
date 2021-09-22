@@ -162,10 +162,6 @@
           box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
           .text {
             box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
-            ul {
-              transform: rotateY(0);
-              transition: all 0.7s ease-in-out;
-            }
           }
         }
         .img {
@@ -187,7 +183,7 @@
             text-align: center;
           }
           ul {
-            display: none;
+            display: block;
             left: 0;
             top: 42px;
             z-index: 2;
@@ -218,8 +214,11 @@
               }
             }
           }
-          .text-hover-show {
-            display: block;
+        }
+        .text-hover-show {
+          ul {
+            transform: rotateY(0);
+            transition: all 0.7s ease-in-out;
           }
         }
       }
@@ -344,6 +343,16 @@
         .insurance-item {
           width: 31.33%;
           margin: 0 1% 20px;
+          &:hover {
+            box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
+            .text {
+              box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.25);
+              ul {
+                transform: rotateY(0);
+                transition: all 0.7s ease-in-out;
+              }
+            }
+          }
           .text {
             ul {
               display: block;
