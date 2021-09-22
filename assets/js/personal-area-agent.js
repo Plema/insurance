@@ -56,12 +56,21 @@ $(document).ready(function () {
     onlyWithWindowMaxWidth: 767,
   })
 
+  // if ($(window).width() < 1024) {
+  //   $('.shares-item .img').click(function () {
+  //     $('.text-hover').toggleClass('text-hover-show')
+  //   })
+  // }
   if ($(window).width() < 1024) {
     $('.shares-item .img').click(function () {
-      $('.text-hover').toggleClass('text-hover-show')
+      if ($(this).next().hasClass('text-hover-show')) {
+        $('.shares-item .text').removeClass('text-hover-show')
+      } else {
+        $('.shares-item .text').removeClass('text-hover-show')
+        $(this).next().addClass('text-hover-show')
+      }
     })
   }
-
   // $('.shares-items').showmore({
   //   closedHeight: 635,
   //   buttonTextMore: 'Еще акции',
@@ -298,6 +307,17 @@ $(document).ready(function () {
 
 $(window).resize(function () {
   $('.shares-item .img').height($('.shares-item .img').width() / 1.85)
+
+  if ($(window).width() < 1024) {
+    $('.shares-item .img').click(function () {
+      if ($(this).next().hasClass('text-hover-show')) {
+        $('.shares-item .text').removeClass('text-hover-show')
+      } else {
+        $('.shares-item .text').removeClass('text-hover-show')
+        $(this).next().addClass('text-hover-show')
+      }
+    })
+  }
 
   $('.legal-services-item .img').height($('.legal-services-item .img').width() / 1.12)
 

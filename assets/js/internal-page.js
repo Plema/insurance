@@ -76,7 +76,12 @@ $(document).ready(function () {
 
   if ($(window).width() < 1024) {
     $('.insurance-item .img').click(function () {
-      $('ul').toggleClass('text-hover-show')
+      if ($(this).next().hasClass('text-hover-show')) {
+        $('.insurance-item .text').removeClass('text-hover-show')
+      } else {
+        $('.insurance-item .text').removeClass('text-hover-show')
+        $(this).next().addClass('text-hover-show')
+      }
     })
   }
 
@@ -118,14 +123,14 @@ $(document).ready(function () {
 $(window).resize(function () {
   $('.insurance-item .img').height($('.insurance-item .img').width() / 1.83)
 
-  if ($(window).width() < 1024) {
-    $('.insurance-item .img').click(function () {
-      $('ul').toggleClass('text-hover-show')
-    })
-  }
+  // if ($(window).width() < 1024) {
+  //   $('.insurance-item .img').click(function () {
+  //     $(this).next().toggleClass('text-hover-show')
+  //   })
+  // }
 
   if ($(window).width() <= 767) {
-    $('.insurance-items').height(($('.insurance-item').height() + 10.5) * 4)
+    $('.insurance-items').height(($('.insurance-item').height() + 10.5) * 8)
   } else {
     $('.insurance-items').css({ height: 'auto' })
   }
